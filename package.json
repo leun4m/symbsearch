@@ -1,0 +1,18 @@
+{
+  "name": "symbsearch",
+  "version": "0.0.1",
+  "description": "Background software for searching symbols and special letters",
+  "main": "main.js",
+  "scripts": {
+    "start": "node_modules/.bin/electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "search",
+    "symbols",
+    "letters",
+    "greek"
+  ],
+  "author": "Leun4m",
+  "license": "ISC"
+}
