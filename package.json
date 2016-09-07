@@ -1,6 +1,6 @@
 {
   "name": "symbsearch",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Background software for searching symbols and special letters",
   "main": "main.js",
   "scripts": {
@@ -13,6 +13,10 @@
     "letters",
     "greek"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Leun4m/symbsearch.git"
+  },
   "author": "Leun4m",
   "license": "ISC"
 }
