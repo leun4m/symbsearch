@@ -1,0 +1,19 @@
+{
+  "symbols": [
+    {
+      "name": "alpha",
+      "symbol": "α",
+      "cat": "greek"
+    },
+    {
+      "name": "beta",
+      "symbol": "β",
+      "cat": "greek"
+    },
+    {
+      "name": "gamma",
+      "symbol": "γ",
+      "cat": "greek"
+    }
+  ]
+}
