@@ -1,10 +1,44 @@
 //PARSE JSON
 //var symbols = ...
 //if txtchange
-const list = require('list.js');
+const listjs = require('list.js');
 let symbols = require('./data/symbols.json').symbols;
+/*
+let options = {
+    valueNames: [ 'symbol', 'name' ],
+    item: '<li><h3 class="symbol"></h3><p class="name"></p></li>'
+};
+let symbollist = new List('symbollist', options, symbols);
+*/
 
-window.onload = init;
+
+// +++
+var options = {
+  valueNames: [ 'name', 'born' ],
+  item: '<li><h3 class="name"></h3><p class="born"></p></li>'
+};
+var values = [{
+    name: 'Jonny Strömberg',
+    born: 1986
+  },
+  {
+    name: 'Jonas Arnklint',
+    born: 1985
+  },
+  {
+    name: 'Martina Elm',
+    born: 1986
+}];
+
+var userList = new List('users', options, values);
+
+userList.add({
+  name: "Gustaf Lindqvist",
+  born: 1983
+});
+// +++
+
+//window.onload = init;
 
 function init() {
   let main = document.querySelector('ul');

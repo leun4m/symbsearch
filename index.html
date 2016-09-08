@@ -9,11 +9,24 @@
   <body>
     <header>
       <h1>SymbSearch</h1>
-      <input id="searchbox" type="text" onchange="textChange()">
+      <!--<input id="searchbox" type="text" onchange="textChange()">-->
     </header>
     <main>
-      <ul>
-      </ul>
+      <!--
+      <div id="symbollist">
+        <input class="search" placeholder="Search" />
+        <button class="sort" data-sort="name">Sort by name</button>
+
+        <ul class="list"></ul>
+      </div>-->
+      <div id="users">
+        <input class="search" placeholder="Search" />
+        <button class="sort" data-sort="name">
+          Sort by name
+        </button>
+        <ul class="list"></ul>
+      </div>
     </main>
+    <script src="http://listjs.com/no-cdn/list.js"></script>
   </body>
 </html>
