@@ -1,19 +1,22 @@
 //PARSE JSON
 //var symbols = ...
 //if txtchange
+const list = require('list.js');
 let symbols = require('./data/symbols.json').symbols;
 
 window.onload = init;
 
 function init() {
-  let main = document.querySelector('main');
+  let main = document.querySelector('ul');
   console.log(symbols.length)
   for (let i=0; i<symbols.length; i++) {
-    let d = document.createElement('div');
+    let d = document.createElement('li');
     d.id = "symb-" + symbols[i].name;
     let h = document.createElement('h3');
+    h.classList.add('symbol');
     h.innerHTML = symbols[i].symbol;
     let p = document.createElement('p');
+    p.classList.add('name');
     p.innerHTML = symbols[i].name;
     d.appendChild(h);
     d.appendChild(p);
