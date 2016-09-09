@@ -1,8 +1,18 @@
 {
   "symbols": [
     {
+      "name": "Alpha",
+      "symbol": "Α",
+      "cat": "greek"
+    },
+    {
       "name": "alpha",
       "symbol": "α",
+      "cat": "greek"
+    },
+    {
+      "name": "Beta",
+      "symbol": "Β",
       "cat": "greek"
     },
     {
@@ -11,8 +21,223 @@
       "cat": "greek"
     },
     {
+      "name": "Gamma",
+      "symbol": "Γ",
+      "cat": "greek"
+    },
+    {
       "name": "gamma",
       "symbol": "γ",
+      "cat": "greek"
+    },
+    {
+      "name": "Delta",
+      "symbol": "Ν",
+      "cat": "greek"
+    },
+    {
+      "name": "delta",
+      "symbol": "δ",
+      "cat": "greek"
+    },
+    {
+      "name": "Epsilon",
+      "symbol": "Ε",
+      "cat": "greek"
+    },
+    {
+      "name": "epsilon",
+      "symbol": "ε",
+      "cat": "greek"
+    },
+    {
+      "name": "Zeta",
+      "symbol": "Ζ",
+      "cat": "greek"
+    },
+    {
+      "name": "zeta",
+      "symbol": "ζ",
+      "cat": "greek"
+    },
+    {
+      "name": "Eta",
+      "symbol": "Η",
+      "cat": "greek"
+    },
+    {
+      "name": "eta",
+      "symbol": "η",
+      "cat": "greek"
+    },
+    {
+      "name": "Theta",
+      "symbol": "Θ",
+      "cat": "greek"
+    },
+    {
+      "name": "theta",
+      "symbol": "θ",
+      "cat": "greek"
+    },
+    {
+      "name": "Iota",
+      "symbol": "Ι",
+      "cat": "greek"
+    },
+    {
+      "name": "iota",
+      "symbol": "ι",
+      "cat": "greek"
+    },
+    {
+      "name": "Kappa",
+      "symbol": "Κ",
+      "cat": "greek"
+    },
+    {
+      "name": "kappa",
+      "symbol": "κ",
+      "cat": "greek"
+    },
+    {
+      "name": "Lambda",
+      "symbol": "Λ",
+      "cat": "greek"
+    },
+    {
+      "name": "lamda",
+      "symbol": "λ",
+      "cat": "greek"
+    },
+    {
+      "name": "My",
+      "symbol": "Μ",
+      "cat": "greek"
+    },
+    {
+      "name": "my",
+      "symbol": "µ",
+      "cat": "greek"
+    },
+    {
+      "name": "Ny",
+      "symbol": "Ν",
+      "cat": "greek"
+    },
+    {
+      "name": "ny",
+      "symbol": "ν",
+      "cat": "greek"
+    },
+    {
+      "name": "Xi",
+      "symbol": "Ξ",
+      "cat": "greek"
+    },
+    {
+      "name": "xi",
+      "symbol": "ξ",
+      "cat": "greek"
+    },
+    {
+      "name": "Omikron",
+      "symbol": "Ο",
+      "cat": "greek"
+    },
+    {
+      "name": "omikron",
+      "symbol": "ο",
+      "cat": "greek"
+    },
+    {
+      "name": "Pi",
+      "symbol": "Π",
+      "cat": "greek"
+    },
+    {
+      "name": "pi",
+      "symbol": "π",
+      "cat": "greek"
+    },
+    {
+      "name": "Rho",
+      "symbol": "Ρ",
+      "cat": "greek"
+    },
+    {
+      "name": "rho",
+      "symbol": "ρ",
+      "cat": "greek"
+    },
+    {
+      "name": "Sigma",
+      "symbol": "Σ",
+      "cat": "greek"
+    },
+    {
+      "name": "sigma",
+      "symbol": "σ",
+      "cat": "greek"
+    },
+    {
+      "name": "Tau",
+      "symbol": "Τ",
+      "cat": "greek"
+    },
+    {
+      "name": "tau",
+      "symbol": "τ",
+      "cat": "greek"
+    },
+    {
+      "name": "Ypsilon",
+      "symbol": "Υ",
+      "cat": "greek"
+    },
+    {
+      "name": "ypsilon",
+      "symbol": "υ",
+      "cat": "greek"
+    },
+    {
+      "name": "Phi",
+      "symbol": "Φ",
+      "cat": "greek"
+    },
+    {
+      "name": "phi",
+      "symbol": "φ",
+      "cat": "greek"
+    },
+    {
+      "name": "Chi",
+      "symbol": "Χ",
+      "cat": "greek"
+    },
+    {
+      "name": "chi",
+      "symbol": "χ",
+      "cat": "greek"
+    },
+    {
+      "name": "Psi",
+      "symbol": "Ψ",
+      "cat": "greek"
+    },
+    {
+      "name": "psi",
+      "symbol": "ψ",
+      "cat": "greek"
+    },
+    {
+      "name": "Omega",
+      "symbol": "Ω",
+      "cat": "greek"
+    },
+    {
+      "name": "omega",
+      "symbol": "ω",
       "cat": "greek"
     }
   ]
