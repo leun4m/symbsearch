@@ -4,3 +4,5 @@
   + icon
   + big searchbox
 + help
+
+NOTE: Remember .blur()

@@ -1,4 +1,4 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, globalShortcut} = require('electron')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -23,7 +23,31 @@ function createWindow () {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow)
+
+app.on('ready', () => {
+   // Register a 'CommandOrControl+X' shortcut listener.
+   const ret = globalShortcut.register('Super+S', () => {
+     console.log('Super+S is pressed')
+     if(win==null) {
+       createWindow()
+     } else if (win.isVisible()) {
+       win.hide()
+       console.log("Window hidden")
+     } else {
+       win.show()
+       console.log("Window shown")
+     }
+   })
+
+   if (!ret) {
+     console.log('registration failed')
+   }
+
+   // Check whether a shortcut is registered.
+   console.log(globalShortcut.isRegistered('Super+S'))
+})
+
+//app.on('ready', createWindow)
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
@@ -42,5 +66,9 @@ app.on('activate', () => {
   }
 })
 
+app.on('will-quit', () => {
+  // Unregister all shortcuts.
+  globalShortcut.unregisterAll()
+})
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
