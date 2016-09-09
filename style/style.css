@@ -29,11 +29,16 @@ h3.symbol {
   font-size: 3em;
   font-weight: normal;
   float: left;
+  background-color: transparent;
 }
 p.name {
   float: right;
   margin-top: 2em;
+  background-color: transparent;
 }
 input {
   -webkit-app-region: no-drag;
+}
+li.selected {
+  background-color:#666;
 }
