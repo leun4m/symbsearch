@@ -34,3 +34,6 @@ p.name {
   float: right;
   margin-top: 2em;
 }
+input {
+  -webkit-app-region: no-drag;
+}
