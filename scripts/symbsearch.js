@@ -48,3 +48,7 @@ $(window).keydown(function(e){
       ipcRenderer.send('asynchronous-message', 'hide');
     }
 });
+
+function quit() {
+  ipcRenderer.send('asynchronous-message', 'quit');
+}

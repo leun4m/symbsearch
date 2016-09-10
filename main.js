@@ -76,7 +76,14 @@ app.on('will-quit', () => {
 // code. You can also put them in separate files and require them here.
 
 ipcMain.on('asynchronous-message', (event, msg) => {
-  if (msg === 'hide') {
-    win.blur()
+  switch (msg) {
+    case 'hide':
+      win.blur()
+      break
+    case 'quit':
+      win.close()
+      break
+    default:
+      console.log("GET msg: " + msg)
   }
 })

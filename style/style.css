@@ -36,9 +36,31 @@ p.name {
   margin-top: 2em;
   background-color: transparent;
 }
-input {
+input, button {
   -webkit-app-region: no-drag;
 }
 li.selected {
   background-color:#666;
+}
+button#quit {
+  height: 2em;
+  width: 2em;
+  padding: 0;
+  font-size: 1em;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: rgba(0,0,0,0.5);
+}
+button#quit:hover {
+  background-color: rgba(0,0,0,0.8);
+  transition: background 0.5s;
+}
+input {
+  border: none;
+  background-color: rgba(0,0,0,0.5);
+}
+:focus {
+  outline: none;
 }
