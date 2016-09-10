@@ -1,8 +1,9 @@
-const {app, BrowserWindow, globalShortcut, ipcMain} = require('electron')
+const {app, BrowserWindow, globalShortcut, ipcMain, Tray} = require('electron')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let win
+let tray = null
 
 function createWindow () {
   // Create the browser window.
@@ -47,6 +48,13 @@ app.on('ready', () => {
    // Check whether a shortcut is registered.
    //console.log(globalShortcut.isRegistered('Super+S'))
    console.log('ready')
+   
+   tray = new Tray('style/icon32.png')
+   tray.setToolTip('SymbSearch');
+   tray.displayBalloon({
+     title: "SymbSearch is ready!",
+     content: "You can run it by ⊞ + S"
+   })
 })
 
 //app.on('ready', createWindow)
