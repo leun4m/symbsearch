@@ -15,6 +15,9 @@ let symbollist = new List('symbollist', options, symbols);
 var li = $('li');
 var liSelected;
 $(window).keydown(function(e){
+  if($('.selected') == null) {
+    liSelected = false;
+  }
     if(e.which === 40){
         if(liSelected){
             liSelected.removeClass('selected');
