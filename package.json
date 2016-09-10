@@ -1,6 +1,6 @@
 {
   "name": "symbsearch",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "Background software for searching symbols and special letters",
   "main": "main.js",
   "scripts": {
