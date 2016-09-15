@@ -21,8 +21,10 @@ ul {
 ul li {
   padding: 0.3em 1em;
   height: 3em;
-  max-width: 200px;
   float: none;
+}
+ul li, input {
+  max-width: 200px;
 }
 h3.symbol {
   font-family: serif;
@@ -63,4 +65,7 @@ input {
 }
 :focus {
   outline: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }

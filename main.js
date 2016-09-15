@@ -7,7 +7,7 @@ let tray = null
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({width: 400, height: 400, frame: false, resizable: false})
+  win = new BrowserWindow({width: 320, height: 400, frame: false, resizable: false})
 
   // and load the index.html of the app.
   win.loadURL(`file://${__dirname}/index.html`)
@@ -48,7 +48,7 @@ app.on('ready', () => {
    // Check whether a shortcut is registered.
    //console.log(globalShortcut.isRegistered('Super+S'))
    console.log('ready')
-   
+
    tray = new Tray('style/icon32.png')
    tray.setToolTip('SymbSearch');
    tray.displayBalloon({
