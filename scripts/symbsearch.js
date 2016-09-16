@@ -14,11 +14,10 @@ createCatFilter()
 function createCatFilter() {
   let cats = []
   //Task: Get every Category
-  /*for (let i=0; i<symbols.length; i++) {
-    cats[i].append(symbols[i].cat);
-  }*/
-  //cats = getDoubles(cats)
-  cats = ["greek", "arrows"]
+  for (let i=0; i<symbols.length; i++) {
+    cats.push(symbols[i].cat);
+  }
+  cats = uniq_fast(cats)
   let r;
   let area = document.getElementById("cat-filter")
   for (let i=0; i<cats.length; i++) {
@@ -28,17 +27,27 @@ function createCatFilter() {
   }
 }
 
-
-function getDoubles(a) {
-  for (let i=0; i<a.length-1; i++) {
-    if (a[i] === a[i+1]) {
-      a.slice(i,i+1)
+function uniq_fast(a) {
+    var seen = {};
+    var out = [];
+    var len = a.length;
+    var j = 0;
+    for(let i = 0; i < len; i++) {
+         let item = a[i];
+         if(seen[item] !== 1) {
+               seen[item] = 1;
+               out[j++] = item;
+         }
     }
-  }
+    return out;
 }
+
+/*
 $('button').addEventListener("clicked", () => {
   //filter
 })
+*/
+
 //http://jsfiddle.net/Vtn5Y/
 var li = $('li');
 var liSelected;
