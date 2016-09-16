@@ -28,7 +28,7 @@ function createWindow () {
 
 app.on('ready', () => {
    // Register a 'CommandOrControl+X' shortcut listener.
-   const ret = globalShortcut.register('Super+S', () => {
+   const ret = globalShortcut.register('Ctrl+Q', () => {
      console.log('Super+S is pressed')
      if(win == null) {
        createWindow()
