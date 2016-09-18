@@ -27,9 +27,10 @@ function createWindow () {
 // Some APIs can only be used after this event occurs.
 
 app.on('ready', () => {
+  let shcut = "Ctrl+Q"
    // Register a 'CommandOrControl+X' shortcut listener.
-   const ret = globalShortcut.register('Ctrl+Q', () => {
-     console.log('Super+S is pressed')
+   const ret = globalShortcut.register(shcut, () => {
+     console.log(shcut + ' is pressed')
      if(win == null) {
        createWindow()
      } else if (win.isVisible()) {
@@ -53,7 +54,7 @@ app.on('ready', () => {
    tray.setToolTip('SymbSearch');
    tray.displayBalloon({
      title: "SymbSearch is ready!",
-     content: "You can run it by ⊞ + S"
+     content: "You can run it by " + shcut
    })
 })
 
