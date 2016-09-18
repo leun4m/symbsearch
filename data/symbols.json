@@ -239,6 +239,566 @@
       "name": "omega",
       "symbol": "ω",
       "cat": "greek"
+    },
+    {
+      "name": "leftwards arrow",
+      "symbol": "←",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards arrow",
+      "symbol": "↑",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards arrow",
+      "symbol": "→",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards arrow",
+      "symbol": "↓",
+      "cat": "arrows"
+    },
+    {
+      "name": "left right arrow",
+      "symbol": "↔",
+      "cat": "arrows"
+    },
+    {
+      "name": "up down arrow",
+      "symbol": "↕",
+      "cat": "arrows"
+    },
+    {
+      "name": "north west arrow",
+      "symbol": "↖",
+      "cat": "arrows"
+    },
+    {
+      "name": "north east arrow",
+      "symbol": "↗",
+      "cat": "arrows"
+    },
+    {
+      "name": "south east arrow",
+      "symbol": "↘",
+      "cat": "arrows"
+    },
+    {
+      "name": "south west arrow",
+      "symbol": "↙",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards arrow with stroke",
+      "symbol": "↚",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards arrow with stroke",
+      "symbol": "↛",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards wave arrow",
+      "symbol": "↜",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards wave arrow",
+      "symbol": "↝",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards two headed arrow",
+      "symbol": "↞",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards two headed arrow",
+      "symbol": "↟",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards two headed arrow",
+      "symbol": "↠",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards two headed arrow",
+      "symbol": "↡",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards arrow with tail",
+      "symbol": "↢",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards arrow with tail",
+      "symbol": "↣",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards arrow from bar",
+      "symbol": "↤",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards arrow from bar",
+      "symbol": "↥",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards arrow from bar",
+      "symbol": "↦",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards arrow from bar",
+      "symbol": "↧",
+      "cat": "arrows"
+    },
+    {
+      "name": "up down arrow with base",
+      "symbol": "↨",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards arrow with hook",
+      "symbol": "↩",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards arrow with hook",
+      "symbol": "↪",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards arrow with loop",
+      "symbol": "↫",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards arrow with loop",
+      "symbol": "↬",
+      "cat": "arrows"
+    },
+    {
+      "name": "left right wave arrow",
+      "symbol": "↭",
+      "cat": "arrows"
+    },
+    {
+      "name": "left right arrow with stroke",
+      "symbol": "↮",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards zigzag arrow",
+      "symbol": "↯",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards arrow with tip leftwards",
+      "symbol": "↰",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards arrow with tip rightwards",
+      "symbol": "↱",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards arrow with tip leftwards",
+      "symbol": "↲",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards arrow with tip rightwards",
+      "symbol": "↳",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards arrow with corner downwards",
+      "symbol": "↴",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards arrow with corner leftwards",
+      "symbol": "↵",
+      "cat": "arrows"
+    },
+    {
+      "name": "anticlockwise top semicircle arrow",
+      "symbol": "↶",
+      "cat": "arrows"
+    },
+    {
+      "name": "clockwise top semicircle arrow",
+      "symbol": "↷",
+      "cat": "arrows"
+    },
+    {
+      "name": "north west arrow to long bar",
+      "symbol": "↸",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards arrow to bar over rightwards arrow to bar",
+      "symbol": "↹",
+      "cat": "arrows"
+    },
+    {
+      "name": "anticlockwise open circle arrow",
+      "symbol": "↺",
+      "cat": "arrows"
+    },
+    {
+      "name": "clockwise open circle arrow",
+      "symbol": "↻",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards harpoon with barb upwards",
+      "symbol": "↼",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards harpoon with barb downwards",
+      "symbol": "↽",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards harpoon with barb rightwards",
+      "symbol": "↾",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards harpoon with barb leftwards",
+      "symbol": "↿",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards harpoon with barb upwards",
+      "symbol": "⇀",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards harpoon with barb downwards",
+      "symbol": "⇁",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards harpoon with barb rightwards",
+      "symbol": "⇂",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards harpoon with barb leftwards",
+      "symbol": "⇃",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards arrow over leftwards arrow",
+      "symbol": "⇄",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards arrow leftwards of downwards arrow",
+      "symbol": "⇅",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards arrow over rightwards arrow",
+      "symbol": "⇆",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards paired arrows",
+      "symbol": "⇇",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards paired arrows",
+      "symbol": "⇈",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards paired arrows",
+      "symbol": "⇉",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards paired arrows",
+      "symbol": "⇊",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards harpoon over rightwards harpoon",
+      "symbol": "⇋",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards harpoon over leftwards harpoon",
+      "symbol": "⇌",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards double arrow with stroke",
+      "symbol": "⇍",
+      "cat": "arrows"
+    },
+    {
+      "name": "left right double arrow with stroke",
+      "symbol": "⇎",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards double arrow with stroke",
+      "symbol": "⇏",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards double arrow",
+      "symbol": "⇐",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards double arrow",
+      "symbol": "⇑",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards double arrow",
+      "symbol": "⇒",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards double arrow",
+      "symbol": "⇓",
+      "cat": "arrows"
+    },
+    {
+      "name": "left right double arrow",
+      "symbol": "⇔",
+      "cat": "arrows"
+    },
+    {
+      "name": "up down double arrow",
+      "symbol": "⇕",
+      "cat": "arrows"
+    },
+    {
+      "name": "north west double arrow",
+      "symbol": "⇖",
+      "cat": "arrows"
+    },
+    {
+      "name": "north east double arrow",
+      "symbol": "⇗",
+      "cat": "arrows"
+    },
+    {
+      "name": "south east double arrow",
+      "symbol": "⇘",
+      "cat": "arrows"
+    },
+    {
+      "name": "south west double arrow",
+      "symbol": "⇙",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards triple arrow",
+      "symbol": "⇚",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards triple arrow",
+      "symbol": "⇛",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards squiggle arrow",
+      "symbol": "⇜",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards squiggle arrow",
+      "symbol": "⇝",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards arrow with double stroke",
+      "symbol": "⇞",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards arrow with double stroke",
+      "symbol": "⇟",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards dashed arrow",
+      "symbol": "⇠",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards dashed arrow",
+      "symbol": "⇡",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards dashed arrow",
+      "symbol": "⇢",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards dashed arrow",
+      "symbol": "⇣",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards arrow to bar",
+      "symbol": "⇤",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards arrow to bar",
+      "symbol": "⇥",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards white arrow",
+      "symbol": "⇦",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards white arrow",
+      "symbol": "⇧",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards white arrow",
+      "symbol": "⇨",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards white arrow",
+      "symbol": "⇩",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards white arrow from bar",
+      "symbol": "⇪",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards white arrow on pedestal",
+      "symbol": "⇫",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards white arrow on pedestal with horizontal bar",
+      "symbol": "⇬",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards white arrow on pedestal with vertical bar",
+      "symbol": "⇭",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards white double arrow",
+      "symbol": "⇮",
+      "cat": "arrows"
+    },
+    {
+      "name": "upwards white double arrow on pedestal",
+      "symbol": "⇯",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards white arrow from wall",
+      "symbol": "⇰",
+      "cat": "arrows"
+    },
+    {
+      "name": "north west arrow to corner",
+      "symbol": "⇱",
+      "cat": "arrows"
+    },
+    {
+      "name": "south east arrow to corner",
+      "symbol": "⇲",
+      "cat": "arrows"
+    },
+    {
+      "name": "up down white arrow",
+      "symbol": "⇳",
+      "cat": "arrows"
+    },
+    {
+      "name": "right arrow with small circle",
+      "symbol": "⇴",
+      "cat": "arrows"
+    },
+    {
+      "name": "downwards arrow leftwards of upwards arrow",
+      "symbol": "⇵",
+      "cat": "arrows"
+    },
+    {
+      "name": "three rightwards arrows",
+      "symbol": "⇶",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards arrow with vertical stroke",
+      "symbol": "⇷",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards arrow with vertical stroke",
+      "symbol": "⇸",
+      "cat": "arrows"
+    },
+    {
+      "name": "left right arrow with vertical stroke",
+      "symbol": "⇹",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards arrow with double vertical stroke",
+      "symbol": "⇺",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards arrow with double vertical stroke",
+      "symbol": "⇻",
+      "cat": "arrows"
+    },
+    {
+      "name": "left right arrow with double vertical stroke",
+      "symbol": "⇼",
+      "cat": "arrows"
+    },
+    {
+      "name": "leftwards open-headed arrow",
+      "symbol": "⇽",
+      "cat": "arrows"
+    },
+    {
+      "name": "rightwards open-headed arrow",
+      "symbol": "⇾",
+      "cat": "arrows"
+    },
+    {
+      "name": "left right open-headed arrow",
+      "symbol": "⇿",
+      "cat": "arrows"
     }
   ]
 }
