@@ -7,12 +7,12 @@
   </head>
   <body style="-webkit-app-region: drag">
     <header>
-      <button id="quit" onclick="quit()">×</button>
+      <button id="quit" onclick="quit()" tabindex="-1">×</button>
     </header>
     <main>
       <div id="symbollist">
-        <input class="search" placeholder="SymbSearch" autofocus/>
-        <div id="cat-filter"></div>
+        <input id="searchbox" class="search" placeholder="SymbSearch" autofocus/>
+        <form id="cat-filter"></form>
         <!--<button class="sort" data-sort="name">Sort by name</button>-->
         <ul class="list"></ul>
       </div>

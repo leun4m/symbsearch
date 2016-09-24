@@ -15,21 +15,22 @@ function createCatFilter() {
   let cats = getCategories();
   cats.unshift("all");
   let r, l;
-  let area = document.getElementById("cat-filter")
+  let form = document.getElementById("cat-filter");
   for (let i=0; i<cats.length; i++) {
     r = document.createElement("input");
     l = document.createElement("label");
     r.setAttribute("type", "radio");
     r.setAttribute("name", "cats");
     r.setAttribute("value", cats[i]);
+    r.setAttribute("tabindex", "-1");
     if (i === 0) {
       r.checked = true;
     }
     r.setAttribute("id", "cat-" + cats[i]);
-    l.setAttribute("for", cats[i]);
+    l.setAttribute("for","cat-" + cats[i]);
     l.innerHTML = cats[i];
-    area.appendChild(r);
-    area.appendChild(l);
+    form.appendChild(r);
+    form.appendChild(l);
   }
 }
 
@@ -76,9 +77,9 @@ $('input[name="cats"]').on('change', () => {
 var li = $('li');
 var liSelected;
 $(window).keydown(function(e){
-  if($('.selected') == null) {
-    liSelected = false;
-  }
+    if($('.selected') == null) {
+      liSelected = false;
+    }
     if(e.which === 40){
         if(liSelected){
             liSelected.removeClass('selected');

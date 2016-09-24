@@ -42,7 +42,7 @@ input, button {
   -webkit-app-region: no-drag;
 }
 li.selected {
-  background-color:#666;
+  background-color:#555;
 }
 button#quit {
   height: 2em;
@@ -66,6 +66,19 @@ input {
 :focus {
   outline: none;
 }
-::-webkit-scrollbar {
+input[type="radio"] {
+  visibility: hidden;
+}
+input:checked + label {
+  background-color: #08b;
+  color: black;
+}
+label {
+  padding: 0em 1em;
+}
+/*::-webkit-scrollbar {
   display: none;
+}*/
+form {
+  -webkit-app-region: no-drag;
 }
