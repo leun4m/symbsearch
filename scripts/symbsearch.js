@@ -93,6 +93,7 @@ $(window).keydown(function(e){
         }else{
             liSelected = li.eq(0).addClass('selected');
         }
+        $('.selected')[0].scrollIntoView(true);
         break;
       case 38:
         if(liSelected){
@@ -106,6 +107,7 @@ $(window).keydown(function(e){
         }else{
             liSelected = li.last().addClass('selected');
         }
+        $('.selected')[0].scrollIntoView(true);
         break;
       case 13:
         var d = $('.selected h3').text()

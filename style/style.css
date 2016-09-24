@@ -17,6 +17,8 @@ main {
 }
 ul {
   list-style-type: none;
+  overflow-y: scroll;
+  height: 280px;
 }
 ul li {
   padding: 0.3em 1em;
@@ -28,12 +30,13 @@ ul li, input {
 }
 h3.symbol {
   font-family: serif;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: normal;
   float: left;
   background-color: transparent;
 }
 p.name {
+  font-size: 0.5em;
   float: right;
   margin-top: 2em;
   background-color: transparent;
@@ -42,7 +45,7 @@ input, button {
   -webkit-app-region: no-drag;
 }
 li.selected {
-  background-color:#555;
+  background-color:#777;
 }
 button#quit {
   height: 2em;
@@ -76,9 +79,9 @@ input:checked + label {
 label {
   padding: 0em 1em;
 }
-/*::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-}*/
+}
 form {
   -webkit-app-region: no-drag;
 }
