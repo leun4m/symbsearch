@@ -13,21 +13,21 @@ createCatFilter()
 
 function createCatFilter() {
   let cats = getCategories();
-  cats.unshift("all");
+  cats.unshift('all');
   let r, l;
-  let form = document.getElementById("cat-filter");
+  let form = document.getElementById('cat-filter');
   for (let i=0; i<cats.length; i++) {
-    r = document.createElement("input");
-    l = document.createElement("label");
-    r.setAttribute("type", "radio");
-    r.setAttribute("name", "cats");
-    r.setAttribute("value", cats[i]);
-    r.setAttribute("tabindex", "-1");
+    r = document.createElement('input');
+    l = document.createElement('label');
+    r.setAttribute('type', 'radio');
+    r.setAttribute('name', 'cats');
+    r.setAttribute('value', cats[i]);
+    r.setAttribute('tabindex', '-1');
     if (i === 0) {
       r.checked = true;
     }
-    r.setAttribute("id", "cat-" + cats[i]);
-    l.setAttribute("for","cat-" + cats[i]);
+    r.setAttribute('id', 'cat-' + cats[i]);
+    l.setAttribute('for','cat-' + cats[i]);
     l.innerHTML = cats[i];
     form.appendChild(r);
     form.appendChild(l);
@@ -64,7 +64,7 @@ $('input[name="cats"]').on('change', () => {
   symbollist.remove()
   symbollist.add(symbols)
   let cats = getCategories()
-  if (c != "all") {
+  if (c != 'all') {
     for (let i=0; i<cats.length; i++) {
       if (cats[i] != c) {
         symbollist.remove('cat', cats[i])
@@ -80,7 +80,8 @@ $(window).keydown(function(e){
     if($('.selected') == null) {
       liSelected = false;
     }
-    if(e.which === 40){
+    switch (e.which) {
+      case 40:
         if(liSelected){
             liSelected.removeClass('selected');
             next = liSelected.next();
@@ -92,7 +93,8 @@ $(window).keydown(function(e){
         }else{
             liSelected = li.eq(0).addClass('selected');
         }
-    }else if(e.which === 38){
+        break;
+      case 38:
         if(liSelected){
             liSelected.removeClass('selected');
             next = liSelected.prev();
@@ -104,13 +106,16 @@ $(window).keydown(function(e){
         }else{
             liSelected = li.last().addClass('selected');
         }
-    }
-    else if (e.which === 13) {
-      var d = $('.selected h3').text()
-      clipboard.writeText(d)
-      console.log(clipboard.readText())
-      //MESSAGE
-      ipcRenderer.send('asynchronous-message', 'hide');
+        break;
+      case 13:
+        var d = $('.selected h3').text()
+        clipboard.writeText(d)
+        console.log(clipboard.readText())
+        //MESSAGE
+        ipcRenderer.send('asynchronous-message', 'hide');
+        break;
+      default:
+        return;
     }
 });
 
