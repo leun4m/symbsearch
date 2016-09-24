@@ -12,19 +12,24 @@ let symbollist = new List('symbollist', options, symbols);
 createCatFilter()
 
 function createCatFilter() {
-  let cats = []
-  //Task: Get every Category
-  for (let i=0; i<symbols.length; i++) {
-    cats.push(symbols[i].cat);
-  }
-  cats = uniq_fast(cats)
+  let cats = getCategories();
   let r;
   let area = document.getElementById("cat-filter")
   for (let i=0; i<cats.length; i++) {
     r = document.createElement("button");
+    r.id = "cat-" + cats[i];
     r.innerHTML = cats[i];
     area.appendChild(r);
   }
+}
+
+function getCategories() {
+  let cats = [];
+  for (let i=0; i<symbols.length; i++) {
+    cats.push(symbols[i].cat);
+  }
+  cats = uniq_fast(cats)
+  return cats;
 }
 
 function uniq_fast(a) {
@@ -42,11 +47,19 @@ function uniq_fast(a) {
     return out;
 }
 
-/*
-$('button').addEventListener("clicked", () => {
-  //filter
-})
-*/
+
+$('button').click((e) => {
+  c = e.target.id.replace('cat-','')
+  symbollist.remove()
+  symbollist.add(symbols)
+  let cats = getCategories()
+  for (let i=0; i<cats.length; i++) {
+    if (cats[i] != c) {
+      symbollist.remove('cat', cats[i])
+    }
+  }
+});
+
 
 //http://jsfiddle.net/Vtn5Y/
 var li = $('li');
