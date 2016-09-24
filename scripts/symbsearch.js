@@ -13,6 +13,7 @@ createCatFilter()
 
 function createCatFilter() {
   let cats = getCategories();
+  cats.unshift("all");
   let r, l;
   let area = document.getElementById("cat-filter")
   for (let i=0; i<cats.length; i++) {
@@ -21,8 +22,11 @@ function createCatFilter() {
     r.setAttribute("type", "radio");
     r.setAttribute("name", "cats");
     r.setAttribute("value", cats[i]);
-    l.setAttribute("for", cats[i]);
+    if (i === 0) {
+      r.checked = true;
+    }
     r.setAttribute("id", "cat-" + cats[i]);
+    l.setAttribute("for", cats[i]);
     l.innerHTML = cats[i];
     area.appendChild(r);
     area.appendChild(l);
@@ -59,9 +63,11 @@ $('input[name="cats"]').on('change', () => {
   symbollist.remove()
   symbollist.add(symbols)
   let cats = getCategories()
-  for (let i=0; i<cats.length; i++) {
-    if (cats[i] != c) {
-      symbollist.remove('cat', cats[i])
+  if (c != "all") {
+    for (let i=0; i<cats.length; i++) {
+      if (cats[i] != c) {
+        symbollist.remove('cat', cats[i])
+      }
     }
   }
 })
