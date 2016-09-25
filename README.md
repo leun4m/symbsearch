@@ -1,4 +1,4 @@
-# SymbSearch
+# SymbSearch ![logo](https://github.com/Leun4m/symbsearch/blob/master/style/icon32.png)
 
 ## What it is supposed to get...
 
