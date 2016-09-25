@@ -59,7 +59,9 @@ function uniq_fast(a) {
 }
 
 
-$('input[name="cats"]').on('change', () => {
+$('input[name="cats"]').on('change', catChange);
+
+function catChange() {
   let c = $('input[name="cats"]:checked').val();
   symbollist.remove()
   symbollist.add(symbols)
@@ -71,11 +73,12 @@ $('input[name="cats"]').on('change', () => {
       }
     }
   }
-})
-
+}
 //http://jsfiddle.net/Vtn5Y/
 var li = $('li');
 var liSelected;
+var tab = $('#cat-filter input');
+var catSelected;
 $(window).keydown(function(e){
     if($('.selected') == null) {
       liSelected = false;
@@ -88,10 +91,10 @@ $(window).keydown(function(e){
             if(next.length > 0){
                 liSelected = next.addClass('selected');
             }else{
-                liSelected = li.eq(0).addClass('selected');
+                liSelected = li.first().addClass('selected');
             }
         }else{
-            liSelected = li.eq(0).addClass('selected');
+            liSelected = li.first().addClass('selected');
         }
         $('.selected')[0].scrollIntoView(true);
         break;
@@ -109,12 +112,26 @@ $(window).keydown(function(e){
         }
         $('.selected')[0].scrollIntoView(true);
         break;
-      case 13:
+      case 13: //enter
         var d = $('.selected h3').text()
         clipboard.writeText(d)
         console.log(clipboard.readText())
         //MESSAGE
         ipcRenderer.send('asynchronous-message', 'hide');
+        break;
+      case 18: //alt
+        if(catSelected != undefined){
+            next = catSelected.next();
+            if(next.length > 0){
+                catSelected = next.prop('checked', true);
+            }else{
+                catSelected = tab.first().prop('checked', true);
+            }
+        }else{
+            catSelected = tab.first().prop('checked', true);
+        }
+        catChange();
+        $('input:checked')[0].scrollIntoViewIfNeeded(true);
         break;
       default:
         return;

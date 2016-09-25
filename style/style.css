@@ -47,6 +47,12 @@ input, button {
 li.selected {
   background-color:#777;
 }
+form#cat-filter {
+  overflow-x: scroll;
+}/*
+form#cat-filter input {
+  float:left;
+}*/
 button#quit {
   height: 2em;
   width: 2em;
@@ -62,7 +68,7 @@ button#quit:hover {
   background-color: rgba(0,0,0,0.8);
   transition: background 0.5s;
 }
-input {
+input#searchbox {
   border: none;
   background-color: rgba(0,0,0,0.5);
 }
