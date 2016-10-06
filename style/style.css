@@ -41,9 +41,7 @@ p.name {
   margin-top: 2em;
   background-color: transparent;
 }
-input, button {
-  -webkit-app-region: no-drag;
-}
+
 li.selected {
   background-color:#777;
 }
@@ -82,6 +80,9 @@ label {
 ::-webkit-scrollbar {
   display: none;
 }
-form {
+body {
+  -webkit-app-region: drag;
+}
+form, input, button {
   -webkit-app-region: no-drag;
 }
