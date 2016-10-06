@@ -34,23 +34,29 @@ h3.symbol {
   font-weight: normal;
   float: left;
   background-color: transparent;
+  width: 1em;
 }
 p.name {
-  font-size: 0.5em;
-  float: right;
-  margin-top: 2em;
+  margin-top: 0.2em;
   background-color: transparent;
+  float: right;
+  width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
 li.selected {
   background-color:#777;
+  height: 4.5em; /* 1.5 x default */
+}
+li.selected p.name {
+  white-space: normal;
+  overflow : hidden;
+  text-overflow: ellipsis;
 }
 form#cat-filter {
   overflow-x: scroll;
-}/*
-form#cat-filter input {
-  float:left;
-}*/
+}
 button#quit {
   height: 2em;
   width: 2em;
