@@ -77,9 +77,9 @@ function catChange() {
 //http://jsfiddle.net/Vtn5Y/
 var tab = $('#cat-filter input');
 var catSelected;
+let liSelected;
 $(window).keydown(function(e){
     let li = $('li');
-    let liSelected;
     if($('.selected') == null) {
       liSelected = false;
     }
