@@ -31,9 +31,9 @@
      inkscape:window-height="1021"
      id="namedview22"
      showgrid="false"
-     inkscape:zoom="0.65186407"
-     inkscape:cx="-478.20198"
-     inkscape:cy="574.68946"
+     inkscape:zoom="29.5"
+     inkscape:cx="16.123792"
+     inkscape:cy="15.639633"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -84,6 +84,19 @@
          id="feGaussianBlur4400"
          stdDeviation="1.1190228" />
     </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4244"
+       x="-0.029999997"
+       width="1.06"
+       y="-0.030000003"
+       height="1.06">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.37300754"
+         id="feGaussianBlur4246" />
+    </filter>
   </defs>
   <metadata
      id="metadata7">
@@ -93,7 +106,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -101,7 +114,7 @@
      transform="translate(0,-1020.3622)"
      id="layer1">
     <use
-       style="filter:url(#filter4398)"
+       style="filter:url(#filter4244)"
        id="use4392"
        xlink:href="#octagon"
        y="0"

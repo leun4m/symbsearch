@@ -1,0 +1,16 @@
+* {
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #046;
+  color: white;
+}
+header, header * {
+  background-color: white;
+  color: #046;
+}
+header {
+  text-align: center;
+  margin: 1em 0;
+  padding: 1em;
+}
