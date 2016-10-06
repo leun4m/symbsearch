@@ -14,3 +14,28 @@ header {
   margin: 1em 0;
   padding: 1em;
 }
+main {
+  margin: 2em 4em;
+  line-height: 1.5;
+}
+p {
+  font-size: 1.2em;
+}
+footer, footer * {
+  background-color: #024;
+}
+footer {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  padding: 1em 0;
+}
+footer small {
+  padding: 1em;
+}
+h2 {
+  margin-bottom: 0.5em;
+}
+p.par {
+  margin-top: 1em;
+}
