@@ -118,6 +118,7 @@ $(window).keydown(function(e){
         var d = $('.selected h3').text()
         clipboard.writeText(d)
         console.log(clipboard.readText())
+        $('#searchbox').select();
         //MESSAGE
         ipcRenderer.send('asynchronous-message', 'hide');
         break;
