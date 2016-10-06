@@ -75,11 +75,11 @@ function catChange() {
   }
 }
 //http://jsfiddle.net/Vtn5Y/
-var li = $('li');
-var liSelected;
 var tab = $('#cat-filter input');
 var catSelected;
 $(window).keydown(function(e){
+    let li = $('li');
+    let liSelected;
     if($('.selected') == null) {
       liSelected = false;
     }
@@ -94,6 +94,7 @@ $(window).keydown(function(e){
                 liSelected = li.first().addClass('selected');
             }
         }else{
+          console.log("Versuch1")
             liSelected = li.first().addClass('selected');
         }
         $('.selected')[0].scrollIntoView(true);
@@ -108,6 +109,7 @@ $(window).keydown(function(e){
                 liSelected = li.last().addClass('selected');
             }
         }else{
+          console.log("Versuch2")
             liSelected = li.last().addClass('selected');
         }
         $('.selected')[0].scrollIntoView(true);
@@ -132,6 +134,7 @@ $(window).keydown(function(e){
         }
         catChange();
         $('input:checked')[0].scrollIntoViewIfNeeded(true);
+        liSelected = null;
         break;
       default:
         return;
