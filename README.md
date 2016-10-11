@@ -1,9 +1,21 @@
 # SymbSearch ![logo][logo]
 
-## What it is supposed to get...
+With SymbSearch you can easily get the special unicode letter or symbol you need.
 
-With SymbSearch you can easily get the special unicode letter or symbol you need. You just need to type in the name of the letter e.g. "delta" and you get - voilá a "δ". You just need to press "ENTER" and so you have it in your clipboard. Pretty cool, isn't it?!
+## How it works
 
-*The trick:* If you press "Delta" you get also the huge "Δ".
+You just need to start the application and can **show** and **hide** the window about the **shortcut**.
+
+Default it is `Ctrl` + `Q`, but in `config.json` you can edit your desired shortcut.  
+The keys should have [this][1] format.
+
+You just need to **type in** the name of the letter e.g. "delta" and you get - voilá a "Δ and δ". You just need to select the one you want (via `↑` | `↓`) and press `Enter` and so you have it in your clipboard. Pretty cool, isn't it?!
+
+You can also **filter** through categories via `Alt`.
+
+## Future ... what it is supposed to get ...
+
+If you press "Delta" you get only the huge "Δ".
 
 [logo]: https://github.com/Leun4m/symbsearch/raw/master/style/icon32.png
+[1]: https://github.com/electron/electron/blob/master/docs/api/accelerator.md

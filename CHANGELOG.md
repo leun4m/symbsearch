@@ -1,5 +1,12 @@
 # Change Log
 
+## [Unreleased]
+### Added
+- `config.json` to change the shortcut
+
+### Changed
+- README instructions
+
 ## [0.3.0] - 2016-10-06
 ### Added
 - Database: symbols.json
@@ -14,4 +21,5 @@
 - Changelog
 - Licence (MIT)
 
+[Unreleased]: hhttps://github.com/Leun4m/symbsearch/compare/v0.3.0...HEAD
 [0.3.0]: https://github.com/Leun4m/symbsearch/tree/v0.3.0
