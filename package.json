@@ -1,10 +1,18 @@
-"build": {
-  "appId": "io.leun4m.symbsearch",
-  "copyright": "Copyright © 2016 Leun4m",
-  "mac": {
-    "category": "public.app-category.utilities",
+{
+  "build": {
+    "appId": "io.leun4m.symbsearch",
+    "copyright": "Copyright © 2016 Leun4m",
+    "mac": {
+      "category": "public.app-category.utilities"
+    }
   },
-  "win": {
-    "iconUrl": "(windows-only) https link to icon"
+  "scripts": {
+    "start": "node_modules/.bin/electron ./app",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "devDependencies": {
+    "electron": "~1.3.5",
+    "electron-builder": "^7.12.2"
   }
 }

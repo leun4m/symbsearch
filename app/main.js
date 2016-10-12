@@ -51,12 +51,14 @@ app.on('ready', () => {
    //console.log(globalShortcut.isRegistered('Super+S'))
    console.log('ready')
 
-   tray = new Tray('style/icon32.png')
+   /*
+   tray = new Tray('app/style/icon32.png');
    tray.setToolTip('SymbSearch');
    tray.displayBalloon({
      title: "SymbSearch is ready!",
      content: "You can run it by " + shcut
    })
+   */
 })
 
 //app.on('ready', createWindow)
