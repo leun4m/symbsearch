@@ -1,29 +1,10 @@
-{
-  "name": "symbsearch",
-  "version": "0.3.0",
-  "description": "Background software for searching symbols and special letters",
-  "main": "main.js",
-  "scripts": {
-    "start": "node_modules/.bin/electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+"build": {
+  "appId": "io.leun4m.symbsearch",
+  "copyright": "Copyright © 2016 Leun4m",
+  "mac": {
+    "category": "public.app-category.utilities",
   },
-  "keywords": [
-    "search",
-    "symbols",
-    "letters",
-    "greek"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Leun4m/symbsearch.git"
-  },
-  "dependencies": {
-    "jquery": "^3.1.0",
-    "list.js": "^1.2.0"
-  },
-  "devDependencies": {
-    "electron": "~1.3.5"
-  },
-  "author": "Leun4m",
-  "license": "MIT"
+  "win": {
+    "iconUrl": "(windows-only) https link to icon"
+  }
 }
