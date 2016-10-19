@@ -1,5 +1,5 @@
-const {app, BrowserWindow, globalShortcut, ipcMain, Tray} = require('electron')
-
+const {app, BrowserWindow, globalShortcut, ipcMain} = require('electron')
+const notifier = require('node-notifier')
 const config = require('./config.json');
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -51,14 +51,11 @@ app.on('ready', () => {
    //console.log(globalShortcut.isRegistered('Super+S'))
    console.log('ready')
 
-   /*
-   tray = new Tray('app/style/icon32.png');
-   tray.setToolTip('SymbSearch');
-   tray.displayBalloon({
-     title: "SymbSearch is ready!",
-     content: "You can run it by " + shcut
-   })
-   */
+   notifier.notify({
+     title: 'SymbSearch is ready!',
+     message: 'You can run it by' + shcut,
+     icon: __dirname + '/style/icon32.png'
+   });
 })
 
 //app.on('ready', createWindow)
