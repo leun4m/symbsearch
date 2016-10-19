@@ -6,7 +6,7 @@ With SymbSearch you can easily get the special unicode letter or symbol you need
 
 You just need to start the application and can **show** and **hide** the window about the **shortcut**.
 
-Default it is `Ctrl` + `Q`, but in `config.json` you can edit your desired shortcut.  
+Default it is `Ctrl` / `Cmd` + `Alt` + `W`, but in `config.json` you can edit your desired shortcut.  
 The keys should have [this][1] format.
 
 You just need to **type in** the name of the letter e.g. "delta" and you get - voilá a "Δ and δ". You just need to select the one you want (via `↑` | `↓`) and press `Enter` and so you have it in your clipboard. Pretty cool, isn't it?!
