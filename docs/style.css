@@ -48,3 +48,11 @@ h2 {
 p.par {
   margin-top: 1em;
 }
+div.download div a{
+  background-color: #088;
+  padding: 0.5em;
+  text-decoration: none;
+}
+div.download div {
+  margin: 1em 0;
+}
