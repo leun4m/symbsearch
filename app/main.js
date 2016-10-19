@@ -41,9 +41,16 @@ app.on('ready', () => {
    //console.log(globalShortcut.isRegistered('Super+S'))
    console.log('SymbSearch is ready!')
 
+   let sc
+   if (process.platform == 'darwin') {
+     sc = shcut.replace('Ctrl','')
+   } else {
+     sc = shcut.replace('CmdOr','')
+   }
+
    notifier.notify({
      title: 'SymbSearch is ready!',
-     message: 'You can run it by ' + shcut,
+     message: 'You can run it by ' + sc,
      icon: __dirname + '/style/icon32.png'
    });
 })
