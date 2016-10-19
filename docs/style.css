@@ -1,0 +1,53 @@
+@import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700';
+
+* {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #046;
+  color: white;
+}
+header, header * {
+  background-color: white;
+  color: #046;
+}
+header {
+  text-align: center;
+  margin: 1em 0;
+  padding: 1em;
+}
+main, article {
+  margin: 2em 4em;
+  line-height: 1.5;
+  float: left;
+}
+p {
+  font-size: 1.2em;
+}
+footer, footer * {
+  background-color: #024;
+}
+footer {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  padding: 1em 0;
+}
+img {
+  max-width: 100%;
+}
+footer small {
+  padding: 1em;
+}
+#gif {
+  float: left;
+}
+h1,h2,h3 {
+  font-family: Tahoma, sans-serif;
+}
+h2 {
+  margin-bottom: 0.5em;
+}
+p.par {
+  margin-top: 1em;
+}
