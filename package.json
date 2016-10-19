@@ -1,12 +1,12 @@
 {
   "name": "symbsearch",
   "productName": "SymbSearch",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Background tool for searching symbols and special letters",
   "main": "main.js",
   "scripts": {
     "start": "node_modules/.bin/electron .",
-    "dist": "node_modules/.bin/electron-packager . --platform=win32 --arch=ia32 --out=dist/ --overwrite --app-copyright=\"Copyright (c) 2016 Leun4m\" --icon=assets/icon --win32metadata.CompanyName=Leun4m --win32metadata.ProductName=SymbSearch --win32metadata.FileDescription=\"Background tool for searching symbols and special letters\" --win32metadata.OriginalFilename=symbsearch.exe",
+    "dist": "node_modules/.bin/electron-packager . --all --out=dist/ --overwrite --app-copyright=\"Copyright (c) 2016 Leun4m\" --icon=assets/icon --win32metadata.CompanyName=Leun4m --win32metadata.ProductName=SymbSearch --win32metadata.FileDescription=\"Background tool for searching symbols and special letters\" --win32metadata.OriginalFilename=symbsearch.exe",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

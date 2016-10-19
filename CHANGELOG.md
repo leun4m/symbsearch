@@ -1,11 +1,16 @@
 # Change Log
 
-## [Unreleased]
+## [0.3.2] - 2016-10-19
 ### Added
 - `config.json` to change the shortcut
 
 ### Changed
 - README instructions
+- Global shortcut set to `Ctrl` / `Cmd` + `Alt` + `W`
+  (`Ctrl` + `Q` is often used for closing apps ...)
+- Optimized start-session
+  (Window is going to be build before calling it)
+- Uses now *node-notifier* instead of *Tray*
 
 ## [0.3.0] - 2016-10-06
 ### Added
@@ -21,5 +26,6 @@
 - Changelog
 - Licence (MIT)
 
-[Unreleased]: hhttps://github.com/Leun4m/symbsearch/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/Leun4m/symbsearch/compare/v0.3.2...HEAD
+[0.3.2]: https://github.com/Leun4m/symbsearch/tree/v0.3.2
 [0.3.0]: https://github.com/Leun4m/symbsearch/tree/v0.3.0
