@@ -10,6 +10,7 @@ function createWindow () {
   win = new BrowserWindow({width: config.width, height: config.height, icon: __dirname + '/style/icon32.png', frame: false, resizable: false})
   // and load the index.html of the app.
   win.loadURL(`file://${__dirname}/index.html`)
+  win.hide()
   //win.webContents.openDevTools()
   // Emitted when the window is closed.
   win.on('closed', () => {
@@ -18,13 +19,12 @@ function createWindow () {
 }
 
 app.on('ready', () => {
+  createWindow()
   let shcut = config.shortcut;
    // Register a 'CommandOrControl+X' shortcut listener.
    const ret = globalShortcut.register(shcut, () => {
      console.log(shcut + ' is pressed')
-     if(win == null) {
-       createWindow()
-     } else if (win.isVisible()) {
+     if (win.isVisible()) {
        win.hide()
        console.log("Window hidden")
      } else {
@@ -43,7 +43,7 @@ app.on('ready', () => {
 
    notifier.notify({
      title: 'SymbSearch is ready!',
-     message: 'You can run it by' + shcut,
+     message: 'You can run it by ' + shcut,
      icon: __dirname + '/style/icon32.png'
    });
 })
