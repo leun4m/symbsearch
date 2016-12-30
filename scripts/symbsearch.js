@@ -1,7 +1,17 @@
 const listjs = require('list.js');
 const $ = require('jquery'); //would like to remove it
 const {clipboard, ipcRenderer} = require('electron');
-let symbols = require('./data/symbols.json').symbols;
+let symbolarray = require('./data/symbols-array.json');
+
+let symbols = [];
+for (let i=0; i<symbolarray.length; i++) {
+  symbols[i] = new symbol();
+  symbols[i].name = symbolarray[i][0];
+  symbols[i].symbol = symbolarray[i][1];
+  symbols[i].cat = symbolarray[i][2];
+}
+
+console.log(symbols);
 
 let options = {
     valueNames: [ 'symbol', 'name' ],
@@ -141,6 +151,12 @@ $(window).keydown(function(e){
         return;
     }
 });
+
+function symbol() {
+  this.name;
+  this.symbol;
+  this.cat;
+}
 
 function quit() {
   ipcRenderer.send('asynchronous-message', 'quit');
