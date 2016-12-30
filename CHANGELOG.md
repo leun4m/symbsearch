@@ -1,5 +1,11 @@
 # Change Log
 
+## NEW
+### Added
+- Database: symbols.json
+  - ASCII symbols
+  - Latin-1 symbols
+
 ## [0.3.2] - 2016-10-19
 ### Added
 - `config.json` to change the shortcut

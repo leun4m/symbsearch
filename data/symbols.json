@@ -959,6 +959,161 @@
      "name": "Tilde",
      "symbol": "~",
      "cat": "ASCII"
+   },
+   {
+     "name": "Inverted Exclamation Mark",
+     "symbol": "¡",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Cent sign",
+     "symbol": "¢",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Pound sign",
+     "symbol": "£",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Currency sign",
+     "symbol": "¤",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Yen sign",
+     "symbol": "¥",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Broken bar",
+     "symbol": "¦",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Section sign",
+     "symbol": "§",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Diaeresis (Umlaut)",
+     "symbol": "¨",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Copyright sign",
+     "symbol": "©",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Feminine Ordinal Indicator",
+     "symbol": "ª",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Left-pointing double angle quotation mark",
+     "symbol": "«",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Not sign",
+     "symbol": "¬",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Soft hyphen",
+     "symbol": "",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Registered sign",
+     "symbol": "®",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Macron",
+     "symbol": "¯",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Degree symbol",
+     "symbol": "°",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Plus-minus sign",
+     "symbol": "±",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Superscript two",
+     "symbol": "²",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Superscript three",
+     "symbol": "³",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Acute accent",
+     "symbol": "´",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Micro sign",
+     "symbol": "µ",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Pilcrow sign",
+     "symbol": "¶",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Middle dot",
+     "symbol": "·",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Cedilla",
+     "symbol": "¸",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Superscript one",
+     "symbol": "¹",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Masculine ordinal indicator",
+     "symbol": "º",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Right-pointing double angle quotation mark",
+     "symbol": "»",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Fraction one quarter",
+     "symbol": "¼",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Fraction one half",
+     "symbol": "½",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Fraction three quarters",
+     "symbol": "¾",
+     "cat": "Latin-1"
+   },
+   {
+     "name": "Inverted Question Mark",
+     "symbol": "¿",
+     "cat": "Latin-1"
    }
   ]
 }
