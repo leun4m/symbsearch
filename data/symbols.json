@@ -1114,6 +1114,966 @@
      "name": "Inverted Question Mark",
      "symbol": "¿",
      "cat": "Latin-1"
+   },
+   {
+     "name": "Multiplication sign",
+     "symbol": "×",
+     "cat": "Math"
+   },
+   {
+     "name": "Division sign",
+     "symbol": "÷",
+     "cat": "Math"
+   },
+   {
+     "name": "Latin Capital Letter A with grave",
+     "symbol": "À",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter A with acute",
+     "symbol": "Á",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter A with circumflex",
+     "symbol": "Â",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter A with tilde",
+     "symbol": "Ã",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter A with diaeresis",
+     "symbol": "Ä",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter A with ring above",
+     "symbol": "Å",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter Æ",
+     "symbol": "Æ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter C with cedilla",
+     "symbol": "Ç",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter E with grave",
+     "symbol": "È",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter E with acute",
+     "symbol": "É",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter E with circumflex",
+     "symbol": "Ê",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter E with diaeresis",
+     "symbol": "Ë",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter I with grave",
+     "symbol": "Ì",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter I with acute",
+     "symbol": "Í",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter I with circumflex",
+     "symbol": "Î",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter I with diaeresis",
+     "symbol": "Ï",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter Eth",
+     "symbol": "Ð",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter N with tilde",
+     "symbol": "Ñ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter O with grave",
+     "symbol": "Ò",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter O with acute",
+     "symbol": "Ó",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter O with circumflex",
+     "symbol": "Ô",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter O with tilde",
+     "symbol": "Õ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter O with diaeresis",
+     "symbol": "Ö",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter O with stroke",
+     "symbol": "Ø",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter U with grave",
+     "symbol": "Ù",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital letter U with acute",
+     "symbol": "Ú",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter U with circumflex",
+     "symbol": "Û",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter U with diaeresis",
+     "symbol": "Ü",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter Y with acute",
+     "symbol": "Ý",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter Thorn",
+     "symbol": "Þ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter sharp S",
+     "symbol": "ß",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter A with grave",
+     "symbol": "à",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter A with acute",
+     "symbol": "á",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter A with circumflex",
+     "symbol": "â",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter A with tilde",
+     "symbol": "ã",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter A with diaeresis",
+     "symbol": "ä",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter A with ring above",
+     "symbol": "å",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter Æ",
+     "symbol": "æ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter C with cedilla",
+     "symbol": "ç",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter E with grave",
+     "symbol": "è",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter E with acute",
+     "symbol": "é",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter E with circumflex",
+     "symbol": "ê",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter E with diaeresis",
+     "symbol": "ë",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter I with grave",
+     "symbol": "ì",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter I with acute",
+     "symbol": "í",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter I with circumflex",
+     "symbol": "î",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter I with diaeresis",
+     "symbol": "ï",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter Eth",
+     "symbol": "ð",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter N with tilde",
+     "symbol": "ñ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter O with grave",
+     "symbol": "ò",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter O with acute",
+     "symbol": "ó",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter O with circumflex",
+     "symbol": "ô",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter O with tilde",
+     "symbol": "õ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter O with diaeresis",
+     "symbol": "ö",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter O with stroke",
+     "symbol": "ø",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter U with grave",
+     "symbol": "ù",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter U with acute",
+     "symbol": "ú",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter U with circumflex",
+     "symbol": "û",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter U with diaeresis",
+     "symbol": "ü",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter Y with acute",
+     "symbol": "ý",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter Thorn",
+     "symbol": "þ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter Y with diaeresis",
+     "symbol": "ÿ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter A with macron",
+     "symbol": "Ā",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter A with macron",
+     "symbol": "ā",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter A with breve",
+     "symbol": "Ă",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter A with breve",
+     "symbol": "ă",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter A with ogonek",
+     "symbol": "Ą",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter A with ogonek",
+     "symbol": "ą",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter C with acute",
+     "symbol": "Ć",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter C with acute",
+     "symbol": "ć",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter C with circumflex",
+     "symbol": "Ĉ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter C with circumflex",
+     "symbol": "ĉ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter C with dot above",
+     "symbol": "Ċ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter C with dot above",
+     "symbol": "ċ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter C with caron",
+     "symbol": "Č",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter C with caron",
+     "symbol": "č",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter D with caron",
+     "symbol": "Ď",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter D with caron",
+     "symbol": "ď",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter D with stroke",
+     "symbol": "Đ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter D with stroke",
+     "symbol": "đ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter E with macron",
+     "symbol": "Ē",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter E with macron",
+     "symbol": "ē",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter E with breve",
+     "symbol": "Ĕ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter E with breve",
+     "symbol": "ĕ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter E with dot above",
+     "symbol": "Ė",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter E with dot above",
+     "symbol": "ė",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter E with ogonek",
+     "symbol": "Ę",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter E with ogonek",
+     "symbol": "ę",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter E with caron",
+     "symbol": "Ě",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter E with caron",
+     "symbol": "ě",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter G with circumflex",
+     "symbol": "Ĝ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter G with circumflex",
+     "symbol": "ĝ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter G with breve",
+     "symbol": "Ğ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter G with breve",
+     "symbol": "ğ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter G with dot above",
+     "symbol": "Ġ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter G with dot above",
+     "symbol": "ġ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter G with cedilla",
+     "symbol": "Ģ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter G with cedilla",
+     "symbol": "ģ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter H with circumflex",
+     "symbol": "Ĥ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter H with circumflex",
+     "symbol": "ĥ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter H with stroke",
+     "symbol": "Ħ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter H with stroke",
+     "symbol": "ħ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter I with tilde",
+     "symbol": "Ĩ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter I with tilde",
+     "symbol": "ĩ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter I with macron",
+     "symbol": "Ī",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter I with macron",
+     "symbol": "ī",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter I with breve",
+     "symbol": "Ĭ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter I with breve",
+     "symbol": "ĭ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter I with ogonek",
+     "symbol": "Į",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter I with ogonek",
+     "symbol": "į",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter I with dot above",
+     "symbol": "İ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter dotless I",
+     "symbol": "ı",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Ligature IJ",
+     "symbol": "Ĳ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Ligature IJ",
+     "symbol": "ĳ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter J with circumflex",
+     "symbol": "Ĵ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter J with circumflex",
+     "symbol": "ĵ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter K with cedilla",
+     "symbol": "Ķ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter K with cedilla",
+     "symbol": "ķ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter Kra",
+     "symbol": "ĸ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter L with acute",
+     "symbol": "Ĺ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter L with acute",
+     "symbol": "ĺ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter L with cedilla",
+     "symbol": "Ļ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter L with cedilla",
+     "symbol": "ļ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter L with caron",
+     "symbol": "Ľ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter L with caron",
+     "symbol": "ľ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter L with middle dot",
+     "symbol": "Ŀ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter L with middle dot",
+     "symbol": "ŀ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter L with stroke",
+     "symbol": "Ł",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter L with stroke",
+     "symbol": "ł",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter N with acute",
+     "symbol": "Ń",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter N with acute",
+     "symbol": "ń",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter N with cedilla",
+     "symbol": "Ņ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter N with cedilla",
+     "symbol": "ņ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter N with caron",
+     "symbol": "Ň",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter N with caron",
+     "symbol": "ň",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter N preceded by apostrophe",
+     "symbol": "ŉ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter Eng",
+     "symbol": "Ŋ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter Eng",
+     "symbol": "ŋ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter O with macron",
+     "symbol": "Ō",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter O with macron",
+     "symbol": "ō",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter O with breve",
+     "symbol": "Ŏ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter O with breve",
+     "symbol": "ŏ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter O with double acute",
+     "symbol": "Ő",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter O with double acute",
+     "symbol": "ő",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Ligature OE",
+     "symbol": "Œ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Ligature OE",
+     "symbol": "œ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter R with acute",
+     "symbol": "Ŕ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter R with acute",
+     "symbol": "ŕ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter R with cedilla",
+     "symbol": "Ŗ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter R with cedilla",
+     "symbol": "ŗ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter R with caron",
+     "symbol": "Ř",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter R with caron",
+     "symbol": "ř",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter S with acute",
+     "symbol": "Ś",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter S with acute",
+     "symbol": "ś",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter S with circumflex",
+     "symbol": "Ŝ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter S with circumflex",
+     "symbol": "ŝ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter S with cedilla",
+     "symbol": "Ş",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter S with cedilla",
+     "symbol": "ş",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter S with caron",
+     "symbol": "Š",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter S with caron",
+     "symbol": "š",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter T with cedilla",
+     "symbol": "Ţ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter T with cedilla",
+     "symbol": "ţ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter T with caron",
+     "symbol": "Ť",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter T with caron",
+     "symbol": "ť",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter T with stroke",
+     "symbol": "Ŧ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter T with stroke",
+     "symbol": "ŧ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter U with tilde",
+     "symbol": "Ũ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter U with tilde",
+     "symbol": "ũ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter U with macron",
+     "symbol": "Ū",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter U with macron",
+     "symbol": "ū",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter U with breve",
+     "symbol": "Ŭ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter U with breve",
+     "symbol": "ŭ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter U with ring above",
+     "symbol": "Ů",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter U with ring above",
+     "symbol": "ů",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter U with double acute",
+     "symbol": "Ű",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter U with double acute",
+     "symbol": "ű",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter U with ogonek",
+     "symbol": "Ų",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter U with ogonek",
+     "symbol": "ų",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter W with circumflex",
+     "symbol": "Ŵ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter W with circumflex",
+     "symbol": "ŵ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter Y with circumflex",
+     "symbol": "Ŷ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter Y with circumflex",
+     "symbol": "ŷ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter Y with diaeresis",
+     "symbol": "Ÿ",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter Z with acute",
+     "symbol": "Ź",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter Z with acute",
+     "symbol": "ź",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter Z with dot above",
+     "symbol": "Ż",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter Z with dot above",
+     "symbol": "ż",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Capital Letter Z with caron",
+     "symbol": "Ž",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter Z with caron",
+     "symbol": "ž",
+     "cat": "Letters+"
+   },
+   {
+     "name": "Latin Small Letter long S",
+     "symbol": "ſ",
+     "cat": "Letters+"
    }
   ]
 }

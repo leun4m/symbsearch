@@ -5,6 +5,8 @@
 - Database: symbols.json
   - ASCII symbols
   - Latin-1 symbols
+  - Math symbols
+  - Letters+ (Latin-1 & Latin Extended-A)
 
 ## [0.3.2] - 2016-10-19
 ### Added
