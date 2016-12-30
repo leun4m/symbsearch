@@ -15,7 +15,7 @@ You can also **filter** through categories via `Alt`.
 
 ## Future ... what it is supposed to get ...
 
-If you press "Delta" you get only the huge "Δ".
+If you type in "Delta" you get only the huge "Δ".
 
 [logo]: https://github.com/Leun4m/symbsearch/raw/master/style/icon32.png
 [1]: https://github.com/electron/electron/blob/master/docs/api/accelerator.md
