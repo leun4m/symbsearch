@@ -8,6 +8,10 @@
   - Math symbols
   - Letters+ (Latin-1 & Latin Extended-A)
 
+## Changed
+- Database: symbols.json from *Object Array* -> *Array*
+  (to minimize storage and better vision)
+
 ## [0.3.2] - 2016-10-19
 ### Added
 - `config.json` to change the shortcut

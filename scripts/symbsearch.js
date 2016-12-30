@@ -1,7 +1,7 @@
 const listjs = require('list.js');
 const $ = require('jquery'); //would like to remove it
 const {clipboard, ipcRenderer} = require('electron');
-let symbolarray = require('./data/symbols-array.json');
+let symbolarray = require('./data/symbols.json');
 
 let symbols = [];
 for (let i=0; i<symbolarray.length; i++) {

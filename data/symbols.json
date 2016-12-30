@@ -1,2079 +1,417 @@
-{
-  "symbols": [
-    {
-      "name": "Alpha",
-      "symbol": "Α",
-      "cat": "greek"
-    },
-    {
-      "name": "alpha",
-      "symbol": "α",
-      "cat": "greek"
-    },
-    {
-      "name": "Beta",
-      "symbol": "Β",
-      "cat": "greek"
-    },
-    {
-      "name": "beta",
-      "symbol": "β",
-      "cat": "greek"
-    },
-    {
-      "name": "Gamma",
-      "symbol": "Γ",
-      "cat": "greek"
-    },
-    {
-      "name": "gamma",
-      "symbol": "γ",
-      "cat": "greek"
-    },
-    {
-      "name": "Delta",
-      "symbol": "Ν",
-      "cat": "greek"
-    },
-    {
-      "name": "delta",
-      "symbol": "δ",
-      "cat": "greek"
-    },
-    {
-      "name": "Epsilon",
-      "symbol": "Ε",
-      "cat": "greek"
-    },
-    {
-      "name": "epsilon",
-      "symbol": "ε",
-      "cat": "greek"
-    },
-    {
-      "name": "Zeta",
-      "symbol": "Ζ",
-      "cat": "greek"
-    },
-    {
-      "name": "zeta",
-      "symbol": "ζ",
-      "cat": "greek"
-    },
-    {
-      "name": "Eta",
-      "symbol": "Η",
-      "cat": "greek"
-    },
-    {
-      "name": "eta",
-      "symbol": "η",
-      "cat": "greek"
-    },
-    {
-      "name": "Theta",
-      "symbol": "Θ",
-      "cat": "greek"
-    },
-    {
-      "name": "theta",
-      "symbol": "θ",
-      "cat": "greek"
-    },
-    {
-      "name": "Iota",
-      "symbol": "Ι",
-      "cat": "greek"
-    },
-    {
-      "name": "iota",
-      "symbol": "ι",
-      "cat": "greek"
-    },
-    {
-      "name": "Kappa",
-      "symbol": "Κ",
-      "cat": "greek"
-    },
-    {
-      "name": "kappa",
-      "symbol": "κ",
-      "cat": "greek"
-    },
-    {
-      "name": "Lambda",
-      "symbol": "Λ",
-      "cat": "greek"
-    },
-    {
-      "name": "lamda",
-      "symbol": "λ",
-      "cat": "greek"
-    },
-    {
-      "name": "My",
-      "symbol": "Μ",
-      "cat": "greek"
-    },
-    {
-      "name": "my",
-      "symbol": "µ",
-      "cat": "greek"
-    },
-    {
-      "name": "Ny",
-      "symbol": "Ν",
-      "cat": "greek"
-    },
-    {
-      "name": "ny",
-      "symbol": "ν",
-      "cat": "greek"
-    },
-    {
-      "name": "Xi",
-      "symbol": "Ξ",
-      "cat": "greek"
-    },
-    {
-      "name": "xi",
-      "symbol": "ξ",
-      "cat": "greek"
-    },
-    {
-      "name": "Omikron",
-      "symbol": "Ο",
-      "cat": "greek"
-    },
-    {
-      "name": "omikron",
-      "symbol": "ο",
-      "cat": "greek"
-    },
-    {
-      "name": "Pi",
-      "symbol": "Π",
-      "cat": "greek"
-    },
-    {
-      "name": "pi",
-      "symbol": "π",
-      "cat": "greek"
-    },
-    {
-      "name": "Rho",
-      "symbol": "Ρ",
-      "cat": "greek"
-    },
-    {
-      "name": "rho",
-      "symbol": "ρ",
-      "cat": "greek"
-    },
-    {
-      "name": "Sigma",
-      "symbol": "Σ",
-      "cat": "greek"
-    },
-    {
-      "name": "sigma",
-      "symbol": "σ",
-      "cat": "greek"
-    },
-    {
-      "name": "Tau",
-      "symbol": "Τ",
-      "cat": "greek"
-    },
-    {
-      "name": "tau",
-      "symbol": "τ",
-      "cat": "greek"
-    },
-    {
-      "name": "Ypsilon",
-      "symbol": "Υ",
-      "cat": "greek"
-    },
-    {
-      "name": "ypsilon",
-      "symbol": "υ",
-      "cat": "greek"
-    },
-    {
-      "name": "Phi",
-      "symbol": "Φ",
-      "cat": "greek"
-    },
-    {
-      "name": "phi",
-      "symbol": "φ",
-      "cat": "greek"
-    },
-    {
-      "name": "Chi",
-      "symbol": "Χ",
-      "cat": "greek"
-    },
-    {
-      "name": "chi",
-      "symbol": "χ",
-      "cat": "greek"
-    },
-    {
-      "name": "Psi",
-      "symbol": "Ψ",
-      "cat": "greek"
-    },
-    {
-      "name": "psi",
-      "symbol": "ψ",
-      "cat": "greek"
-    },
-    {
-      "name": "Omega",
-      "symbol": "Ω",
-      "cat": "greek"
-    },
-    {
-      "name": "omega",
-      "symbol": "ω",
-      "cat": "greek"
-    },
-    {
-      "name": "leftwards arrow",
-      "symbol": "←",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards arrow",
-      "symbol": "↑",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards arrow",
-      "symbol": "→",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards arrow",
-      "symbol": "↓",
-      "cat": "arrows"
-    },
-    {
-      "name": "left right arrow",
-      "symbol": "↔",
-      "cat": "arrows"
-    },
-    {
-      "name": "up down arrow",
-      "symbol": "↕",
-      "cat": "arrows"
-    },
-    {
-      "name": "north west arrow",
-      "symbol": "↖",
-      "cat": "arrows"
-    },
-    {
-      "name": "north east arrow",
-      "symbol": "↗",
-      "cat": "arrows"
-    },
-    {
-      "name": "south east arrow",
-      "symbol": "↘",
-      "cat": "arrows"
-    },
-    {
-      "name": "south west arrow",
-      "symbol": "↙",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards arrow with stroke",
-      "symbol": "↚",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards arrow with stroke",
-      "symbol": "↛",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards wave arrow",
-      "symbol": "↜",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards wave arrow",
-      "symbol": "↝",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards two headed arrow",
-      "symbol": "↞",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards two headed arrow",
-      "symbol": "↟",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards two headed arrow",
-      "symbol": "↠",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards two headed arrow",
-      "symbol": "↡",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards arrow with tail",
-      "symbol": "↢",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards arrow with tail",
-      "symbol": "↣",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards arrow from bar",
-      "symbol": "↤",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards arrow from bar",
-      "symbol": "↥",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards arrow from bar",
-      "symbol": "↦",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards arrow from bar",
-      "symbol": "↧",
-      "cat": "arrows"
-    },
-    {
-      "name": "up down arrow with base",
-      "symbol": "↨",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards arrow with hook",
-      "symbol": "↩",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards arrow with hook",
-      "symbol": "↪",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards arrow with loop",
-      "symbol": "↫",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards arrow with loop",
-      "symbol": "↬",
-      "cat": "arrows"
-    },
-    {
-      "name": "left right wave arrow",
-      "symbol": "↭",
-      "cat": "arrows"
-    },
-    {
-      "name": "left right arrow with stroke",
-      "symbol": "↮",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards zigzag arrow",
-      "symbol": "↯",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards arrow with tip leftwards",
-      "symbol": "↰",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards arrow with tip rightwards",
-      "symbol": "↱",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards arrow with tip leftwards",
-      "symbol": "↲",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards arrow with tip rightwards",
-      "symbol": "↳",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards arrow with corner downwards",
-      "symbol": "↴",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards arrow with corner leftwards",
-      "symbol": "↵",
-      "cat": "arrows"
-    },
-    {
-      "name": "anticlockwise top semicircle arrow",
-      "symbol": "↶",
-      "cat": "arrows"
-    },
-    {
-      "name": "clockwise top semicircle arrow",
-      "symbol": "↷",
-      "cat": "arrows"
-    },
-    {
-      "name": "north west arrow to long bar",
-      "symbol": "↸",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards arrow to bar over rightwards arrow to bar",
-      "symbol": "↹",
-      "cat": "arrows"
-    },
-    {
-      "name": "anticlockwise open circle arrow",
-      "symbol": "↺",
-      "cat": "arrows"
-    },
-    {
-      "name": "clockwise open circle arrow",
-      "symbol": "↻",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards harpoon with barb upwards",
-      "symbol": "↼",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards harpoon with barb downwards",
-      "symbol": "↽",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards harpoon with barb rightwards",
-      "symbol": "↾",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards harpoon with barb leftwards",
-      "symbol": "↿",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards harpoon with barb upwards",
-      "symbol": "⇀",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards harpoon with barb downwards",
-      "symbol": "⇁",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards harpoon with barb rightwards",
-      "symbol": "⇂",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards harpoon with barb leftwards",
-      "symbol": "⇃",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards arrow over leftwards arrow",
-      "symbol": "⇄",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards arrow leftwards of downwards arrow",
-      "symbol": "⇅",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards arrow over rightwards arrow",
-      "symbol": "⇆",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards paired arrows",
-      "symbol": "⇇",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards paired arrows",
-      "symbol": "⇈",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards paired arrows",
-      "symbol": "⇉",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards paired arrows",
-      "symbol": "⇊",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards harpoon over rightwards harpoon",
-      "symbol": "⇋",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards harpoon over leftwards harpoon",
-      "symbol": "⇌",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards double arrow with stroke",
-      "symbol": "⇍",
-      "cat": "arrows"
-    },
-    {
-      "name": "left right double arrow with stroke",
-      "symbol": "⇎",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards double arrow with stroke",
-      "symbol": "⇏",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards double arrow",
-      "symbol": "⇐",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards double arrow",
-      "symbol": "⇑",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards double arrow",
-      "symbol": "⇒",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards double arrow",
-      "symbol": "⇓",
-      "cat": "arrows"
-    },
-    {
-      "name": "left right double arrow",
-      "symbol": "⇔",
-      "cat": "arrows"
-    },
-    {
-      "name": "up down double arrow",
-      "symbol": "⇕",
-      "cat": "arrows"
-    },
-    {
-      "name": "north west double arrow",
-      "symbol": "⇖",
-      "cat": "arrows"
-    },
-    {
-      "name": "north east double arrow",
-      "symbol": "⇗",
-      "cat": "arrows"
-    },
-    {
-      "name": "south east double arrow",
-      "symbol": "⇘",
-      "cat": "arrows"
-    },
-    {
-      "name": "south west double arrow",
-      "symbol": "⇙",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards triple arrow",
-      "symbol": "⇚",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards triple arrow",
-      "symbol": "⇛",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards squiggle arrow",
-      "symbol": "⇜",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards squiggle arrow",
-      "symbol": "⇝",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards arrow with double stroke",
-      "symbol": "⇞",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards arrow with double stroke",
-      "symbol": "⇟",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards dashed arrow",
-      "symbol": "⇠",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards dashed arrow",
-      "symbol": "⇡",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards dashed arrow",
-      "symbol": "⇢",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards dashed arrow",
-      "symbol": "⇣",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards arrow to bar",
-      "symbol": "⇤",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards arrow to bar",
-      "symbol": "⇥",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards white arrow",
-      "symbol": "⇦",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards white arrow",
-      "symbol": "⇧",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards white arrow",
-      "symbol": "⇨",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards white arrow",
-      "symbol": "⇩",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards white arrow from bar",
-      "symbol": "⇪",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards white arrow on pedestal",
-      "symbol": "⇫",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards white arrow on pedestal with horizontal bar",
-      "symbol": "⇬",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards white arrow on pedestal with vertical bar",
-      "symbol": "⇭",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards white double arrow",
-      "symbol": "⇮",
-      "cat": "arrows"
-    },
-    {
-      "name": "upwards white double arrow on pedestal",
-      "symbol": "⇯",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards white arrow from wall",
-      "symbol": "⇰",
-      "cat": "arrows"
-    },
-    {
-      "name": "north west arrow to corner",
-      "symbol": "⇱",
-      "cat": "arrows"
-    },
-    {
-      "name": "south east arrow to corner",
-      "symbol": "⇲",
-      "cat": "arrows"
-    },
-    {
-      "name": "up down white arrow",
-      "symbol": "⇳",
-      "cat": "arrows"
-    },
-    {
-      "name": "right arrow with small circle",
-      "symbol": "⇴",
-      "cat": "arrows"
-    },
-    {
-      "name": "downwards arrow leftwards of upwards arrow",
-      "symbol": "⇵",
-      "cat": "arrows"
-    },
-    {
-      "name": "three rightwards arrows",
-      "symbol": "⇶",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards arrow with vertical stroke",
-      "symbol": "⇷",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards arrow with vertical stroke",
-      "symbol": "⇸",
-      "cat": "arrows"
-    },
-    {
-      "name": "left right arrow with vertical stroke",
-      "symbol": "⇹",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards arrow with double vertical stroke",
-      "symbol": "⇺",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards arrow with double vertical stroke",
-      "symbol": "⇻",
-      "cat": "arrows"
-    },
-    {
-      "name": "left right arrow with double vertical stroke",
-      "symbol": "⇼",
-      "cat": "arrows"
-    },
-    {
-      "name": "leftwards open-headed arrow",
-      "symbol": "⇽",
-      "cat": "arrows"
-    },
-    {
-      "name": "rightwards open-headed arrow",
-      "symbol": "⇾",
-      "cat": "arrows"
-    },
-    {
-      "name": "left right open-headed arrow",
-      "symbol": "⇿",
-      "cat": "arrows"
-    },
-    {
-   "name": "Exclamation mark",
-   "symbol": "!",
-   "cat": "ASCII"
-   },
-   {
-     "name": "Quotation mark",
-     "symbol": "\"",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Sharp",
-     "symbol": "#",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Dollar sign",
-     "symbol": "$",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Percent sign",
-     "symbol": "%",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Ampersand",
-     "symbol": "&",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Apostrophe",
-     "symbol": "'",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Left parenthesis",
-     "symbol": "(",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Right parenthesis",
-     "symbol": ")",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Asterisk",
-     "symbol": "*",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Plus sign",
-     "symbol": "+",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Comma",
-     "symbol": ",",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Hyphen-minus",
-     "symbol": "-",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Full stop",
-     "symbol": ".",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Slash (Solidus)",
-     "symbol": "/",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Colon",
-     "symbol": ":",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Semicolon",
-     "symbol": ";",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Less-than sign",
-     "symbol": "<",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Equal sign",
-     "symbol": "=",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Greater-than sign",
-     "symbol": ">",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Question mark",
-     "symbol": "?",
-     "cat": "ASCII"
-   },
-   {
-     "name": "At sign",
-     "symbol": "@",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Left Square Bracket",
-     "symbol": "[",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Backslash",
-     "symbol": "\\",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Right Square Bracket",
-     "symbol": "]",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Circumflex accent",
-     "symbol": "^",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Low line",
-     "symbol": "_",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Grave accent",
-     "symbol": "`",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Left Curly Bracket",
-     "symbol": "{",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Vertical bar",
-     "symbol": "|",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Right Curly Bracket",
-     "symbol": "}",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Tilde",
-     "symbol": "~",
-     "cat": "ASCII"
-   },
-   {
-     "name": "Inverted Exclamation Mark",
-     "symbol": "¡",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Cent sign",
-     "symbol": "¢",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Pound sign",
-     "symbol": "£",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Currency sign",
-     "symbol": "¤",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Yen sign",
-     "symbol": "¥",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Broken bar",
-     "symbol": "¦",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Section sign",
-     "symbol": "§",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Diaeresis (Umlaut)",
-     "symbol": "¨",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Copyright sign",
-     "symbol": "©",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Feminine Ordinal Indicator",
-     "symbol": "ª",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Left-pointing double angle quotation mark",
-     "symbol": "«",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Not sign",
-     "symbol": "¬",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Soft hyphen",
-     "symbol": "",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Registered sign",
-     "symbol": "®",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Macron",
-     "symbol": "¯",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Degree symbol",
-     "symbol": "°",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Plus-minus sign",
-     "symbol": "±",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Superscript two",
-     "symbol": "²",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Superscript three",
-     "symbol": "³",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Acute accent",
-     "symbol": "´",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Micro sign",
-     "symbol": "µ",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Pilcrow sign",
-     "symbol": "¶",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Middle dot",
-     "symbol": "·",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Cedilla",
-     "symbol": "¸",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Superscript one",
-     "symbol": "¹",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Masculine ordinal indicator",
-     "symbol": "º",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Right-pointing double angle quotation mark",
-     "symbol": "»",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Fraction one quarter",
-     "symbol": "¼",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Fraction one half",
-     "symbol": "½",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Fraction three quarters",
-     "symbol": "¾",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Inverted Question Mark",
-     "symbol": "¿",
-     "cat": "Latin-1"
-   },
-   {
-     "name": "Multiplication sign",
-     "symbol": "×",
-     "cat": "Math"
-   },
-   {
-     "name": "Division sign",
-     "symbol": "÷",
-     "cat": "Math"
-   },
-   {
-     "name": "Latin Capital Letter A with grave",
-     "symbol": "À",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter A with acute",
-     "symbol": "Á",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter A with circumflex",
-     "symbol": "Â",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter A with tilde",
-     "symbol": "Ã",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter A with diaeresis",
-     "symbol": "Ä",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter A with ring above",
-     "symbol": "Å",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter Æ",
-     "symbol": "Æ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter C with cedilla",
-     "symbol": "Ç",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter E with grave",
-     "symbol": "È",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter E with acute",
-     "symbol": "É",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter E with circumflex",
-     "symbol": "Ê",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter E with diaeresis",
-     "symbol": "Ë",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter I with grave",
-     "symbol": "Ì",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter I with acute",
-     "symbol": "Í",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter I with circumflex",
-     "symbol": "Î",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter I with diaeresis",
-     "symbol": "Ï",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter Eth",
-     "symbol": "Ð",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter N with tilde",
-     "symbol": "Ñ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter O with grave",
-     "symbol": "Ò",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter O with acute",
-     "symbol": "Ó",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter O with circumflex",
-     "symbol": "Ô",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter O with tilde",
-     "symbol": "Õ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter O with diaeresis",
-     "symbol": "Ö",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter O with stroke",
-     "symbol": "Ø",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter U with grave",
-     "symbol": "Ù",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital letter U with acute",
-     "symbol": "Ú",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter U with circumflex",
-     "symbol": "Û",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter U with diaeresis",
-     "symbol": "Ü",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter Y with acute",
-     "symbol": "Ý",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter Thorn",
-     "symbol": "Þ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter sharp S",
-     "symbol": "ß",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter A with grave",
-     "symbol": "à",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter A with acute",
-     "symbol": "á",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter A with circumflex",
-     "symbol": "â",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter A with tilde",
-     "symbol": "ã",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter A with diaeresis",
-     "symbol": "ä",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter A with ring above",
-     "symbol": "å",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter Æ",
-     "symbol": "æ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter C with cedilla",
-     "symbol": "ç",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter E with grave",
-     "symbol": "è",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter E with acute",
-     "symbol": "é",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter E with circumflex",
-     "symbol": "ê",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter E with diaeresis",
-     "symbol": "ë",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter I with grave",
-     "symbol": "ì",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter I with acute",
-     "symbol": "í",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter I with circumflex",
-     "symbol": "î",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter I with diaeresis",
-     "symbol": "ï",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter Eth",
-     "symbol": "ð",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter N with tilde",
-     "symbol": "ñ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter O with grave",
-     "symbol": "ò",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter O with acute",
-     "symbol": "ó",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter O with circumflex",
-     "symbol": "ô",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter O with tilde",
-     "symbol": "õ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter O with diaeresis",
-     "symbol": "ö",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter O with stroke",
-     "symbol": "ø",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter U with grave",
-     "symbol": "ù",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter U with acute",
-     "symbol": "ú",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter U with circumflex",
-     "symbol": "û",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter U with diaeresis",
-     "symbol": "ü",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter Y with acute",
-     "symbol": "ý",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter Thorn",
-     "symbol": "þ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter Y with diaeresis",
-     "symbol": "ÿ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter A with macron",
-     "symbol": "Ā",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter A with macron",
-     "symbol": "ā",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter A with breve",
-     "symbol": "Ă",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter A with breve",
-     "symbol": "ă",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter A with ogonek",
-     "symbol": "Ą",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter A with ogonek",
-     "symbol": "ą",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter C with acute",
-     "symbol": "Ć",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter C with acute",
-     "symbol": "ć",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter C with circumflex",
-     "symbol": "Ĉ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter C with circumflex",
-     "symbol": "ĉ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter C with dot above",
-     "symbol": "Ċ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter C with dot above",
-     "symbol": "ċ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter C with caron",
-     "symbol": "Č",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter C with caron",
-     "symbol": "č",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter D with caron",
-     "symbol": "Ď",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter D with caron",
-     "symbol": "ď",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter D with stroke",
-     "symbol": "Đ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter D with stroke",
-     "symbol": "đ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter E with macron",
-     "symbol": "Ē",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter E with macron",
-     "symbol": "ē",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter E with breve",
-     "symbol": "Ĕ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter E with breve",
-     "symbol": "ĕ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter E with dot above",
-     "symbol": "Ė",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter E with dot above",
-     "symbol": "ė",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter E with ogonek",
-     "symbol": "Ę",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter E with ogonek",
-     "symbol": "ę",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter E with caron",
-     "symbol": "Ě",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter E with caron",
-     "symbol": "ě",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter G with circumflex",
-     "symbol": "Ĝ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter G with circumflex",
-     "symbol": "ĝ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter G with breve",
-     "symbol": "Ğ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter G with breve",
-     "symbol": "ğ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter G with dot above",
-     "symbol": "Ġ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter G with dot above",
-     "symbol": "ġ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter G with cedilla",
-     "symbol": "Ģ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter G with cedilla",
-     "symbol": "ģ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter H with circumflex",
-     "symbol": "Ĥ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter H with circumflex",
-     "symbol": "ĥ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter H with stroke",
-     "symbol": "Ħ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter H with stroke",
-     "symbol": "ħ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter I with tilde",
-     "symbol": "Ĩ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter I with tilde",
-     "symbol": "ĩ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter I with macron",
-     "symbol": "Ī",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter I with macron",
-     "symbol": "ī",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter I with breve",
-     "symbol": "Ĭ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter I with breve",
-     "symbol": "ĭ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter I with ogonek",
-     "symbol": "Į",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter I with ogonek",
-     "symbol": "į",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter I with dot above",
-     "symbol": "İ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter dotless I",
-     "symbol": "ı",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Ligature IJ",
-     "symbol": "Ĳ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Ligature IJ",
-     "symbol": "ĳ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter J with circumflex",
-     "symbol": "Ĵ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter J with circumflex",
-     "symbol": "ĵ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter K with cedilla",
-     "symbol": "Ķ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter K with cedilla",
-     "symbol": "ķ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter Kra",
-     "symbol": "ĸ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter L with acute",
-     "symbol": "Ĺ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter L with acute",
-     "symbol": "ĺ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter L with cedilla",
-     "symbol": "Ļ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter L with cedilla",
-     "symbol": "ļ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter L with caron",
-     "symbol": "Ľ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter L with caron",
-     "symbol": "ľ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter L with middle dot",
-     "symbol": "Ŀ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter L with middle dot",
-     "symbol": "ŀ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter L with stroke",
-     "symbol": "Ł",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter L with stroke",
-     "symbol": "ł",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter N with acute",
-     "symbol": "Ń",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter N with acute",
-     "symbol": "ń",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter N with cedilla",
-     "symbol": "Ņ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter N with cedilla",
-     "symbol": "ņ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter N with caron",
-     "symbol": "Ň",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter N with caron",
-     "symbol": "ň",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter N preceded by apostrophe",
-     "symbol": "ŉ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter Eng",
-     "symbol": "Ŋ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter Eng",
-     "symbol": "ŋ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter O with macron",
-     "symbol": "Ō",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter O with macron",
-     "symbol": "ō",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter O with breve",
-     "symbol": "Ŏ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter O with breve",
-     "symbol": "ŏ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter O with double acute",
-     "symbol": "Ő",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter O with double acute",
-     "symbol": "ő",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Ligature OE",
-     "symbol": "Œ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Ligature OE",
-     "symbol": "œ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter R with acute",
-     "symbol": "Ŕ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter R with acute",
-     "symbol": "ŕ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter R with cedilla",
-     "symbol": "Ŗ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter R with cedilla",
-     "symbol": "ŗ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter R with caron",
-     "symbol": "Ř",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter R with caron",
-     "symbol": "ř",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter S with acute",
-     "symbol": "Ś",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter S with acute",
-     "symbol": "ś",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter S with circumflex",
-     "symbol": "Ŝ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter S with circumflex",
-     "symbol": "ŝ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter S with cedilla",
-     "symbol": "Ş",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter S with cedilla",
-     "symbol": "ş",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter S with caron",
-     "symbol": "Š",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter S with caron",
-     "symbol": "š",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter T with cedilla",
-     "symbol": "Ţ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter T with cedilla",
-     "symbol": "ţ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter T with caron",
-     "symbol": "Ť",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter T with caron",
-     "symbol": "ť",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter T with stroke",
-     "symbol": "Ŧ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter T with stroke",
-     "symbol": "ŧ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter U with tilde",
-     "symbol": "Ũ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter U with tilde",
-     "symbol": "ũ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter U with macron",
-     "symbol": "Ū",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter U with macron",
-     "symbol": "ū",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter U with breve",
-     "symbol": "Ŭ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter U with breve",
-     "symbol": "ŭ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter U with ring above",
-     "symbol": "Ů",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter U with ring above",
-     "symbol": "ů",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter U with double acute",
-     "symbol": "Ű",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter U with double acute",
-     "symbol": "ű",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter U with ogonek",
-     "symbol": "Ų",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter U with ogonek",
-     "symbol": "ų",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter W with circumflex",
-     "symbol": "Ŵ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter W with circumflex",
-     "symbol": "ŵ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter Y with circumflex",
-     "symbol": "Ŷ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter Y with circumflex",
-     "symbol": "ŷ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter Y with diaeresis",
-     "symbol": "Ÿ",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter Z with acute",
-     "symbol": "Ź",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter Z with acute",
-     "symbol": "ź",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter Z with dot above",
-     "symbol": "Ż",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter Z with dot above",
-     "symbol": "ż",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Capital Letter Z with caron",
-     "symbol": "Ž",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter Z with caron",
-     "symbol": "ž",
-     "cat": "Letters+"
-   },
-   {
-     "name": "Latin Small Letter long S",
-     "symbol": "ſ",
-     "cat": "Letters+"
-   }
-  ]
-}
+[
+["Alpha","Α","greek"],
+["alpha","α","greek"],
+["Beta","Β","greek"],
+["beta","β","greek"],
+["Gamma","Γ","greek"],
+["gamma","γ","greek"],
+["Delta","Ν","greek"],
+["delta","δ","greek"],
+["Epsilon","Ε","greek"],
+["epsilon","ε","greek"],
+["Zeta","Ζ","greek"],
+["zeta","ζ","greek"],
+["Eta","Η","greek"],
+["eta","η","greek"],
+["Theta","Θ","greek"],
+["theta","θ","greek"],
+["Iota","Ι","greek"],
+["iota","ι","greek"],
+["Kappa","Κ","greek"],
+["kappa","κ","greek"],
+["Lambda","Λ","greek"],
+["lamda","λ","greek"],
+["My","Μ","greek"],
+["my","µ","greek"],
+["Ny","Ν","greek"],
+["ny","ν","greek"],
+["Xi","Ξ","greek"],
+["xi","ξ","greek"],
+["Omikron","Ο","greek"],
+["omikron","ο","greek"],
+["Pi","Π","greek"],
+["pi","π","greek"],
+["Rho","Ρ","greek"],
+["rho","ρ","greek"],
+["Sigma","Σ","greek"],
+["sigma","σ","greek"],
+["Tau","Τ","greek"],
+["tau","τ","greek"],
+["Ypsilon","Υ","greek"],
+["ypsilon","υ","greek"],
+["Phi","Φ","greek"],
+["phi","φ","greek"],
+["Chi","Χ","greek"],
+["chi","χ","greek"],
+["Psi","Ψ","greek"],
+["psi","ψ","greek"],
+["Omega","Ω","greek"],
+["omega","ω","greek"],
+["leftwards arrow","←","arrows"],
+["upwards arrow","↑","arrows"],
+["rightwards arrow","→","arrows"],
+["downwards arrow","↓","arrows"],
+["left right arrow","↔","arrows"],
+["up down arrow","↕","arrows"],
+["north west arrow","↖","arrows"],
+["north east arrow","↗","arrows"],
+["south east arrow","↘","arrows"],
+["south west arrow","↙","arrows"],
+["leftwards arrow with stroke","↚","arrows"],
+["rightwards arrow with stroke","↛","arrows"],
+["leftwards wave arrow","↜","arrows"],
+["rightwards wave arrow","↝","arrows"],
+["leftwards two headed arrow","↞","arrows"],
+["upwards two headed arrow","↟","arrows"],
+["rightwards two headed arrow","↠","arrows"],
+["downwards two headed arrow","↡","arrows"],
+["leftwards arrow with tail","↢","arrows"],
+["rightwards arrow with tail","↣","arrows"],
+["leftwards arrow from bar","↤","arrows"],
+["upwards arrow from bar","↥","arrows"],
+["rightwards arrow from bar","↦","arrows"],
+["downwards arrow from bar","↧","arrows"],
+["up down arrow with base","↨","arrows"],
+["leftwards arrow with hook","↩","arrows"],
+["rightwards arrow with hook","↪","arrows"],
+["leftwards arrow with loop","↫","arrows"],
+["rightwards arrow with loop","↬","arrows"],
+["left right wave arrow","↭","arrows"],
+["left right arrow with stroke","↮","arrows"],
+["downwards zigzag arrow","↯","arrows"],
+["upwards arrow with tip leftwards","↰","arrows"],
+["upwards arrow with tip rightwards","↱","arrows"],
+["downwards arrow with tip leftwards","↲","arrows"],
+["downwards arrow with tip rightwards","↳","arrows"],
+["rightwards arrow with corner downwards","↴","arrows"],
+["downwards arrow with corner leftwards","↵","arrows"],
+["anticlockwise top semicircle arrow","↶","arrows"],
+["clockwise top semicircle arrow","↷","arrows"],
+["north west arrow to long bar","↸","arrows"],
+["leftwards arrow to bar over rightwards arrow to bar","↹","arrows"],
+["anticlockwise open circle arrow","↺","arrows"],
+["clockwise open circle arrow","↻","arrows"],
+["leftwards harpoon with barb upwards","↼","arrows"],
+["leftwards harpoon with barb downwards","↽","arrows"],
+["upwards harpoon with barb rightwards","↾","arrows"],
+["upwards harpoon with barb leftwards","↿","arrows"],
+["rightwards harpoon with barb upwards","⇀","arrows"],
+["rightwards harpoon with barb downwards","⇁","arrows"],
+["downwards harpoon with barb rightwards","⇂","arrows"],
+["downwards harpoon with barb leftwards","⇃","arrows"],
+["rightwards arrow over leftwards arrow","⇄","arrows"],
+["upwards arrow leftwards of downwards arrow","⇅","arrows"],
+["leftwards arrow over rightwards arrow","⇆","arrows"],
+["leftwards paired arrows","⇇","arrows"],
+["upwards paired arrows","⇈","arrows"],
+["rightwards paired arrows","⇉","arrows"],
+["downwards paired arrows","⇊","arrows"],
+["leftwards harpoon over rightwards harpoon","⇋","arrows"],
+["rightwards harpoon over leftwards harpoon","⇌","arrows"],
+["leftwards double arrow with stroke","⇍","arrows"],
+["left right double arrow with stroke","⇎","arrows"],
+["rightwards double arrow with stroke","⇏","arrows"],
+["leftwards double arrow","⇐","arrows"],
+["upwards double arrow","⇑","arrows"],
+["rightwards double arrow","⇒","arrows"],
+["downwards double arrow","⇓","arrows"],
+["left right double arrow","⇔","arrows"],
+["up down double arrow","⇕","arrows"],
+["north west double arrow","⇖","arrows"],
+["north east double arrow","⇗","arrows"],
+["south east double arrow","⇘","arrows"],
+["south west double arrow","⇙","arrows"],
+["leftwards triple arrow","⇚","arrows"],
+["rightwards triple arrow","⇛","arrows"],
+["leftwards squiggle arrow","⇜","arrows"],
+["rightwards squiggle arrow","⇝","arrows"],
+["upwards arrow with double stroke","⇞","arrows"],
+["downwards arrow with double stroke","⇟","arrows"],
+["leftwards dashed arrow","⇠","arrows"],
+["upwards dashed arrow","⇡","arrows"],
+["rightwards dashed arrow","⇢","arrows"],
+["downwards dashed arrow","⇣","arrows"],
+["leftwards arrow to bar","⇤","arrows"],
+["rightwards arrow to bar","⇥","arrows"],
+["leftwards white arrow","⇦","arrows"],
+["upwards white arrow","⇧","arrows"],
+["rightwards white arrow","⇨","arrows"],
+["downwards white arrow","⇩","arrows"],
+["upwards white arrow from bar","⇪","arrows"],
+["upwards white arrow on pedestal","⇫","arrows"],
+["upwards white arrow on pedestal with horizontal bar","⇬","arrows"],
+["upwards white arrow on pedestal with vertical bar","⇭","arrows"],
+["upwards white double arrow","⇮","arrows"],
+["upwards white double arrow on pedestal","⇯","arrows"],
+["rightwards white arrow from wall","⇰","arrows"],
+["north west arrow to corner","⇱","arrows"],
+["south east arrow to corner","⇲","arrows"],
+["up down white arrow","⇳","arrows"],
+["right arrow with small circle","⇴","arrows"],
+["downwards arrow leftwards of upwards arrow","⇵","arrows"],
+["three rightwards arrows","⇶","arrows"],
+["leftwards arrow with vertical stroke","⇷","arrows"],
+["rightwards arrow with vertical stroke","⇸","arrows"],
+["left right arrow with vertical stroke","⇹","arrows"],
+["leftwards arrow with double vertical stroke","⇺","arrows"],
+["rightwards arrow with double vertical stroke","⇻","arrows"],
+["left right arrow with double vertical stroke","⇼","arrows"],
+["leftwards open-headed arrow","⇽","arrows"],
+["rightwards open-headed arrow","⇾","arrows"],
+["left right open-headed arrow","⇿","arrows"],
+["Exclamation mark","!","ASCII"],
+["Quotation mark","\"","ASCII"],
+["Sharp","#","ASCII"],
+["Dollar sign","$","ASCII"],
+["Percent sign","%","ASCII"],
+["Ampersand","&","ASCII"],
+["Apostrophe","'","ASCII"],
+["Left parenthesis","(","ASCII"],
+["Right parenthesis",")","ASCII"],
+["Asterisk","*","ASCII"],
+["Plus sign","+","ASCII"],
+["Comma",",","ASCII"],
+["Hyphen-minus","-","ASCII"],
+["Full stop",".","ASCII"],
+["Slash (Solidus)","/","ASCII"],
+["Colon",":","ASCII"],
+["Semicolon",";","ASCII"],
+["Less-than sign","<","ASCII"],
+["Equal sign","=","ASCII"],
+["Greater-than sign",">","ASCII"],
+["Question mark","?","ASCII"],
+["At sign","@","ASCII"],
+["Left Square Bracket","[","ASCII"],
+["Backslash","\\","ASCII"],
+["Right Square Bracket","]","ASCII"],
+["Circumflex accent","^","ASCII"],
+["Low line","_","ASCII"],
+["Grave accent","`","ASCII"],
+["Left Curly Bracket","{","ASCII"],
+["Vertical bar","|","ASCII"],
+["Right Curly Bracket","}","ASCII"],
+["Tilde","~","ASCII"],
+["Inverted Exclamation Mark","¡","Latin-1"],
+["Cent sign","¢","Latin-1"],
+["Pound sign","£","Latin-1"],
+["Currency sign","¤","Latin-1"],
+["Yen sign","¥","Latin-1"],
+["Broken bar","¦","Latin-1"],
+["Section sign","§","Latin-1"],
+["Diaeresis (Umlaut)","¨","Latin-1"],
+["Copyright sign","©","Latin-1"],
+["Feminine Ordinal Indicator","ª","Latin-1"],
+["Left-pointing double angle quotation mark","«","Latin-1"],
+["Not sign","¬","Latin-1"],
+["Soft hyphen","","Latin-1"],
+["Registered sign","®","Latin-1"],
+["Macron","¯","Latin-1"],
+["Degree symbol","°","Latin-1"],
+["Plus-minus sign","±","Latin-1"],
+["Superscript two","²","Latin-1"],
+["Superscript three","³","Latin-1"],
+["Acute accent","´","Latin-1"],
+["Micro sign","µ","Latin-1"],
+["Pilcrow sign","¶","Latin-1"],
+["Middle dot","·","Latin-1"],
+["Cedilla","¸","Latin-1"],
+["Superscript one","¹","Latin-1"],
+["Masculine ordinal indicator","º","Latin-1"],
+["Right-pointing double angle quotation mark","»","Latin-1"],
+["Fraction one quarter","¼","Latin-1"],
+["Fraction one half","½","Latin-1"],
+["Fraction three quarters","¾","Latin-1"],
+["Inverted Question Mark","¿","Latin-1"],
+["Multiplication sign","×","Math"],
+["Division sign","÷","Math"],
+["Latin Capital Letter A with grave","À","Letters+"],
+["Latin Capital letter A with acute","Á","Letters+"],
+["Latin Capital letter A with circumflex","Â","Letters+"],
+["Latin Capital letter A with tilde","Ã","Letters+"],
+["Latin Capital letter A with diaeresis","Ä","Letters+"],
+["Latin Capital letter A with ring above","Å","Letters+"],
+["Latin Capital letter Æ","Æ","Letters+"],
+["Latin Capital letter C with cedilla","Ç","Letters+"],
+["Latin Capital letter E with grave","È","Letters+"],
+["Latin Capital letter E with acute","É","Letters+"],
+["Latin Capital letter E with circumflex","Ê","Letters+"],
+["Latin Capital letter E with diaeresis","Ë","Letters+"],
+["Latin Capital letter I with grave","Ì","Letters+"],
+["Latin Capital letter I with acute","Í","Letters+"],
+["Latin Capital letter I with circumflex","Î","Letters+"],
+["Latin Capital letter I with diaeresis","Ï","Letters+"],
+["Latin Capital letter Eth","Ð","Letters+"],
+["Latin Capital letter N with tilde","Ñ","Letters+"],
+["Latin Capital letter O with grave","Ò","Letters+"],
+["Latin Capital letter O with acute","Ó","Letters+"],
+["Latin Capital letter O with circumflex","Ô","Letters+"],
+["Latin Capital letter O with tilde","Õ","Letters+"],
+["Latin Capital letter O with diaeresis","Ö","Letters+"],
+["Latin Capital letter O with stroke","Ø","Letters+"],
+["Latin Capital letter U with grave","Ù","Letters+"],
+["Latin Capital letter U with acute","Ú","Letters+"],
+["Latin Capital Letter U with circumflex","Û","Letters+"],
+["Latin Capital Letter U with diaeresis","Ü","Letters+"],
+["Latin Capital Letter Y with acute","Ý","Letters+"],
+["Latin Capital Letter Thorn","Þ","Letters+"],
+["Latin Small Letter sharp S","ß","Letters+"],
+["Latin Small Letter A with grave","à","Letters+"],
+["Latin Small Letter A with acute","á","Letters+"],
+["Latin Small Letter A with circumflex","â","Letters+"],
+["Latin Small Letter A with tilde","ã","Letters+"],
+["Latin Small Letter A with diaeresis","ä","Letters+"],
+["Latin Small Letter A with ring above","å","Letters+"],
+["Latin Small Letter Æ","æ","Letters+"],
+["Latin Small Letter C with cedilla","ç","Letters+"],
+["Latin Small Letter E with grave","è","Letters+"],
+["Latin Small Letter E with acute","é","Letters+"],
+["Latin Small Letter E with circumflex","ê","Letters+"],
+["Latin Small Letter E with diaeresis","ë","Letters+"],
+["Latin Small Letter I with grave","ì","Letters+"],
+["Latin Small Letter I with acute","í","Letters+"],
+["Latin Small Letter I with circumflex","î","Letters+"],
+["Latin Small Letter I with diaeresis","ï","Letters+"],
+["Latin Small Letter Eth","ð","Letters+"],
+["Latin Small Letter N with tilde","ñ","Letters+"],
+["Latin Small Letter O with grave","ò","Letters+"],
+["Latin Small Letter O with acute","ó","Letters+"],
+["Latin Small Letter O with circumflex","ô","Letters+"],
+["Latin Small Letter O with tilde","õ","Letters+"],
+["Latin Small Letter O with diaeresis","ö","Letters+"],
+["Latin Small Letter O with stroke","ø","Letters+"],
+["Latin Small Letter U with grave","ù","Letters+"],
+["Latin Small Letter U with acute","ú","Letters+"],
+["Latin Small Letter U with circumflex","û","Letters+"],
+["Latin Small Letter U with diaeresis","ü","Letters+"],
+["Latin Small Letter Y with acute","ý","Letters+"],
+["Latin Small Letter Thorn","þ","Letters+"],
+["Latin Small Letter Y with diaeresis","ÿ","Letters+"],
+["Latin Capital Letter A with macron","Ā","Letters+"],
+["Latin Small Letter A with macron","ā","Letters+"],
+["Latin Capital Letter A with breve","Ă","Letters+"],
+["Latin Small Letter A with breve","ă","Letters+"],
+["Latin Capital Letter A with ogonek","Ą","Letters+"],
+["Latin Small Letter A with ogonek","ą","Letters+"],
+["Latin Capital Letter C with acute","Ć","Letters+"],
+["Latin Small Letter C with acute","ć","Letters+"],
+["Latin Capital Letter C with circumflex","Ĉ","Letters+"],
+["Latin Small Letter C with circumflex","ĉ","Letters+"],
+["Latin Capital Letter C with dot above","Ċ","Letters+"],
+["Latin Small Letter C with dot above","ċ","Letters+"],
+["Latin Capital Letter C with caron","Č","Letters+"],
+["Latin Small Letter C with caron","č","Letters+"],
+["Latin Capital Letter D with caron","Ď","Letters+"],
+["Latin Small Letter D with caron","ď","Letters+"],
+["Latin Capital Letter D with stroke","Đ","Letters+"],
+["Latin Small Letter D with stroke","đ","Letters+"],
+["Latin Capital Letter E with macron","Ē","Letters+"],
+["Latin Small Letter E with macron","ē","Letters+"],
+["Latin Capital Letter E with breve","Ĕ","Letters+"],
+["Latin Small Letter E with breve","ĕ","Letters+"],
+["Latin Capital Letter E with dot above","Ė","Letters+"],
+["Latin Small Letter E with dot above","ė","Letters+"],
+["Latin Capital Letter E with ogonek","Ę","Letters+"],
+["Latin Small Letter E with ogonek","ę","Letters+"],
+["Latin Capital Letter E with caron","Ě","Letters+"],
+["Latin Small Letter E with caron","ě","Letters+"],
+["Latin Capital Letter G with circumflex","Ĝ","Letters+"],
+["Latin Small Letter G with circumflex","ĝ","Letters+"],
+["Latin Capital Letter G with breve","Ğ","Letters+"],
+["Latin Small Letter G with breve","ğ","Letters+"],
+["Latin Capital Letter G with dot above","Ġ","Letters+"],
+["Latin Small Letter G with dot above","ġ","Letters+"],
+["Latin Capital Letter G with cedilla","Ģ","Letters+"],
+["Latin Small Letter G with cedilla","ģ","Letters+"],
+["Latin Capital Letter H with circumflex","Ĥ","Letters+"],
+["Latin Small Letter H with circumflex","ĥ","Letters+"],
+["Latin Capital Letter H with stroke","Ħ","Letters+"],
+["Latin Small Letter H with stroke","ħ","Letters+"],
+["Latin Capital Letter I with tilde","Ĩ","Letters+"],
+["Latin Small Letter I with tilde","ĩ","Letters+"],
+["Latin Capital Letter I with macron","Ī","Letters+"],
+["Latin Small Letter I with macron","ī","Letters+"],
+["Latin Capital Letter I with breve","Ĭ","Letters+"],
+["Latin Small Letter I with breve","ĭ","Letters+"],
+["Latin Capital Letter I with ogonek","Į","Letters+"],
+["Latin Small Letter I with ogonek","į","Letters+"],
+["Latin Capital Letter I with dot above","İ","Letters+"],
+["Latin Small Letter dotless I","ı","Letters+"],
+["Latin Capital Ligature IJ","Ĳ","Letters+"],
+["Latin Small Ligature IJ","ĳ","Letters+"],
+["Latin Capital Letter J with circumflex","Ĵ","Letters+"],
+["Latin Small Letter J with circumflex","ĵ","Letters+"],
+["Latin Capital Letter K with cedilla","Ķ","Letters+"],
+["Latin Small Letter K with cedilla","ķ","Letters+"],
+["Latin Small Letter Kra","ĸ","Letters+"],
+["Latin Capital Letter L with acute","Ĺ","Letters+"],
+["Latin Small Letter L with acute","ĺ","Letters+"],
+["Latin Capital Letter L with cedilla","Ļ","Letters+"],
+["Latin Small Letter L with cedilla","ļ","Letters+"],
+["Latin Capital Letter L with caron","Ľ","Letters+"],
+["Latin Small Letter L with caron","ľ","Letters+"],
+["Latin Capital Letter L with middle dot","Ŀ","Letters+"],
+["Latin Small Letter L with middle dot","ŀ","Letters+"],
+["Latin Capital Letter L with stroke","Ł","Letters+"],
+["Latin Small Letter L with stroke","ł","Letters+"],
+["Latin Capital Letter N with acute","Ń","Letters+"],
+["Latin Small Letter N with acute","ń","Letters+"],
+["Latin Capital Letter N with cedilla","Ņ","Letters+"],
+["Latin Small Letter N with cedilla","ņ","Letters+"],
+["Latin Capital Letter N with caron","Ň","Letters+"],
+["Latin Small Letter N with caron","ň","Letters+"],
+["Latin Small Letter N preceded by apostrophe","ŉ","Letters+"],
+["Latin Capital Letter Eng","Ŋ","Letters+"],
+["Latin Small Letter Eng","ŋ","Letters+"],
+["Latin Capital Letter O with macron","Ō","Letters+"],
+["Latin Small Letter O with macron","ō","Letters+"],
+["Latin Capital Letter O with breve","Ŏ","Letters+"],
+["Latin Small Letter O with breve","ŏ","Letters+"],
+["Latin Capital Letter O with double acute","Ő","Letters+"],
+["Latin Small Letter O with double acute","ő","Letters+"],
+["Latin Capital Ligature OE","Œ","Letters+"],
+["Latin Small Ligature OE","œ","Letters+"],
+["Latin Capital Letter R with acute","Ŕ","Letters+"],
+["Latin Small Letter R with acute","ŕ","Letters+"],
+["Latin Capital Letter R with cedilla","Ŗ","Letters+"],
+["Latin Small Letter R with cedilla","ŗ","Letters+"],
+["Latin Capital Letter R with caron","Ř","Letters+"],
+["Latin Small Letter R with caron","ř","Letters+"],
+["Latin Capital Letter S with acute","Ś","Letters+"],
+["Latin Small Letter S with acute","ś","Letters+"],
+["Latin Capital Letter S with circumflex","Ŝ","Letters+"],
+["Latin Small Letter S with circumflex","ŝ","Letters+"],
+["Latin Capital Letter S with cedilla","Ş","Letters+"],
+["Latin Small Letter S with cedilla","ş","Letters+"],
+["Latin Capital Letter S with caron","Š","Letters+"],
+["Latin Small Letter S with caron","š","Letters+"],
+["Latin Capital Letter T with cedilla","Ţ","Letters+"],
+["Latin Small Letter T with cedilla","ţ","Letters+"],
+["Latin Capital Letter T with caron","Ť","Letters+"],
+["Latin Small Letter T with caron","ť","Letters+"],
+["Latin Capital Letter T with stroke","Ŧ","Letters+"],
+["Latin Small Letter T with stroke","ŧ","Letters+"],
+["Latin Capital Letter U with tilde","Ũ","Letters+"],
+["Latin Small Letter U with tilde","ũ","Letters+"],
+["Latin Capital Letter U with macron","Ū","Letters+"],
+["Latin Small Letter U with macron","ū","Letters+"],
+["Latin Capital Letter U with breve","Ŭ","Letters+"],
+["Latin Small Letter U with breve","ŭ","Letters+"],
+["Latin Capital Letter U with ring above","Ů","Letters+"],
+["Latin Small Letter U with ring above","ů","Letters+"],
+["Latin Capital Letter U with double acute","Ű","Letters+"],
+["Latin Small Letter U with double acute","ű","Letters+"],
+["Latin Capital Letter U with ogonek","Ų","Letters+"],
+["Latin Small Letter U with ogonek","ų","Letters+"],
+["Latin Capital Letter W with circumflex","Ŵ","Letters+"],
+["Latin Small Letter W with circumflex","ŵ","Letters+"],
+["Latin Capital Letter Y with circumflex","Ŷ","Letters+"],
+["Latin Small Letter Y with circumflex","ŷ","Letters+"],
+["Latin Capital Letter Y with diaeresis","Ÿ","Letters+"],
+["Latin Capital Letter Z with acute","Ź","Letters+"],
+["Latin Small Letter Z with acute","ź","Letters+"],
+["Latin Capital Letter Z with dot above","Ż","Letters+"],
+["Latin Small Letter Z with dot above","ż","Letters+"],
+["Latin Capital Letter Z with caron","Ž","Letters+"],
+["Latin Small Letter Z with caron","ž","Letters+"],
+["Latin Small Letter long S","ſ","Letters+"]
+]
