@@ -799,6 +799,166 @@
       "name": "left right open-headed arrow",
       "symbol": "⇿",
       "cat": "arrows"
-    }
+    },
+    {
+   "name": "Exclamation mark",
+   "symbol": "!",
+   "cat": "ASCII"
+   },
+   {
+     "name": "Quotation mark",
+     "symbol": "\"",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Sharp",
+     "symbol": "#",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Dollar sign",
+     "symbol": "$",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Percent sign",
+     "symbol": "%",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Ampersand",
+     "symbol": "&",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Apostrophe",
+     "symbol": "'",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Left parenthesis",
+     "symbol": "(",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Right parenthesis",
+     "symbol": ")",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Asterisk",
+     "symbol": "*",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Plus sign",
+     "symbol": "+",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Comma",
+     "symbol": ",",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Hyphen-minus",
+     "symbol": "-",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Full stop",
+     "symbol": ".",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Slash (Solidus)",
+     "symbol": "/",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Colon",
+     "symbol": ":",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Semicolon",
+     "symbol": ";",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Less-than sign",
+     "symbol": "<",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Equal sign",
+     "symbol": "=",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Greater-than sign",
+     "symbol": ">",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Question mark",
+     "symbol": "?",
+     "cat": "ASCII"
+   },
+   {
+     "name": "At sign",
+     "symbol": "@",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Left Square Bracket",
+     "symbol": "[",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Backslash",
+     "symbol": "\\",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Right Square Bracket",
+     "symbol": "]",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Circumflex accent",
+     "symbol": "^",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Low line",
+     "symbol": "_",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Grave accent",
+     "symbol": "`",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Left Curly Bracket",
+     "symbol": "{",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Vertical bar",
+     "symbol": "|",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Right Curly Bracket",
+     "symbol": "}",
+     "cat": "ASCII"
+   },
+   {
+     "name": "Tilde",
+     "symbol": "~",
+     "cat": "ASCII"
+   }
   ]
 }
