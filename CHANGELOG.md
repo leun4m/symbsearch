@@ -1,6 +1,6 @@
 # Change Log
 
-## NEW
+## [0.3.6] - 2017-01-28
 ### Added
 - Database: symbols.json
   - ASCII symbols
@@ -39,5 +39,6 @@
 - Licence (MIT)
 
 [Unreleased]: https://github.com/Leun4m/symbsearch/compare/v0.3.2...HEAD
+[0.3.6]: https://github.com/Leun4m/symbsearch/tree/v0.3.6
 [0.3.2]: https://github.com/Leun4m/symbsearch/tree/v0.3.2
 [0.3.0]: https://github.com/Leun4m/symbsearch/tree/v0.3.0
