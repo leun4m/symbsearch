@@ -55,6 +55,11 @@ div.download div a{
 }
 div.download div {
   margin: 1em 0;
+  transition: all 1s ease;
+}
+div.download div :hover {
+  background-color: #0aa; 
+  transition: all 1s ease;
 }
 #fork-me {
   position: absolute;
@@ -62,4 +67,17 @@ div.download div {
   top:0;
   margin: 1em 0;
   background: transparent;
+}
+nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  margin: 1em;
+  border: 1px solid white;
+  padding: 0.3em;
+  transition: all 1s ease;
+}
+nav ul li a:hover {
+  color: #088;
+  border-color: #088;
+  transition: all 1s ease;
 }
