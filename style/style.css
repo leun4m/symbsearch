@@ -28,8 +28,8 @@ ul li {
   height: 3em;
   float: none;
 }
-ul li, input {
-  max-width: 200px;
+li {
+  width: 270px;
 }
 h3.symbol {
   font-family: serif;
@@ -81,6 +81,7 @@ input#searchbox {
   position: fixed;
   top: 10px;
   left: 10px;
+  width: 230px;
   border: none;
   background-color: rgba(0,0,0,0.5);
 }
