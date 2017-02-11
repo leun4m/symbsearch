@@ -19,7 +19,7 @@ let options = {
 };
 let symbollist = new List('symbollist', options, symbols);
 
-createCatFilter()
+createCatFilter();
 
 function createCatFilter() {
   let cats = getCategories();
@@ -49,7 +49,7 @@ function getCategories() {
   for (let i=0; i<symbols.length; i++) {
     cats.push(symbols[i].cat);
   }
-  cats = uniq_fast(cats)
+  cats = uniq_fast(cats);
   return cats;
 }
 
@@ -73,9 +73,9 @@ $('input[name="cats"]').on('change', catChange);
 
 function catChange() {
   let c = $('input[name="cats"]:checked').val();
-  symbollist.remove()
-  symbollist.add(symbols)
-  let cats = getCategories()
+  symbollist.remove();
+  symbollist.add(symbols);
+  let cats = getCategories();
   if (c != 'all') {
     for (let i=0; i<cats.length; i++) {
       if (cats[i] != c) {
