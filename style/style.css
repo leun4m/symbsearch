@@ -57,12 +57,12 @@ li.selected p.name {
   overflow : hidden;
   text-overflow: ellipsis;
 }
-form#cat-filter {
+#cat-filter {
   position: fixed;
   top: 70px;
   overflow-x: scroll;
 }
-button#quit {
+#quit {
   height: 2em;
   width: 2em;
   padding: 0;
@@ -73,11 +73,11 @@ button#quit {
   border: none;
   background-color: rgba(0,0,0,0.5);
 }
-button#quit:hover {
+#quit:hover {
   background-color: rgba(0,0,0,0.8);
   transition: background 0.5s;
 }
-input#searchbox {
+#searchbox {
   position: fixed;
   top: 10px;
   left: 10px;
