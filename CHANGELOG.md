@@ -1,5 +1,15 @@
 # Change Log
 
+## [Unreleased]
+### Added
+- ignore parameters to `dist` script in `package.json`
+
+### Changed
+- Optimized design
+  - The searchbox no longer moves to the top...
+  - some minor changes
+- Using `select` instead of `radio` for the categories
+
 ## [0.3.6] - 2017-01-28
 ### Added
 - Database: symbols.json
@@ -38,7 +48,7 @@
 - Changelog
 - Licence (MIT)
 
-[Unreleased]: https://github.com/Leun4m/symbsearch/compare/v0.3.2...HEAD
+[Unreleased]: https://github.com/Leun4m/symbsearch/compare/v0.3.6...HEAD
 [0.3.6]: https://github.com/Leun4m/symbsearch/tree/v0.3.6
 [0.3.2]: https://github.com/Leun4m/symbsearch/tree/v0.3.2
 [0.3.0]: https://github.com/Leun4m/symbsearch/tree/v0.3.0
