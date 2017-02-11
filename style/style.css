@@ -40,22 +40,25 @@ h3.symbol {
   width: 1em;
 }
 p.name {
-  margin-top: 0.2em;
+  margin-top: 0.6em;
   background-color: transparent;
   float: right;
-  width: 140px;
+  width: 215px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 li.selected {
   background-color:rgba(255,255,255,0.3);
-  height: 4.5em; /* 1.5 x default */
+  height: 4em; /* 1.5 x default */
 }
 li.selected p.name {
   white-space: normal;
   overflow : hidden;
   text-overflow: ellipsis;
+}
+li.selected h3.symbol {
+  font-size: 2.5em;
 }
 #cat-filter {
   position: fixed;
