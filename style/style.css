@@ -60,9 +60,11 @@ li.selected p.name {
 li.selected h3.symbol {
   font-size: 2.5em;
 }
-#cat-filter {
+#lbl-cat-filter {
+  font-size: 0.8em;
   position: fixed;
   top: 70px;
+  left: 0;
   overflow-x: scroll;
 }
 #quit {
