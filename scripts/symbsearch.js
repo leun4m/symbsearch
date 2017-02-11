@@ -36,7 +36,7 @@ function createCatFilter() {
     }
     r.setAttribute('id', 'cat-' + cats[i]);
     form.addEventListener('change', function() {
-      catChange(form.value);
+      catChange();
     });
     form.appendChild(r);
   }
@@ -71,7 +71,8 @@ function setFocus() {
 
 $('input[name="cats"]').on('change', catChange);
 
-function catChange(c) {
+function catChange() {
+  c = document.getElementById('cat-filter').value;
   symbollist.remove();
   symbollist.add(symbols);
   let cats = getCategories();
@@ -85,7 +86,7 @@ function catChange(c) {
   setFocus();
 }
 //http://jsfiddle.net/Vtn5Y/
-var tab = $('#cat-filter input');
+var tab = $('#cat-filter option');
 var catSelected;
 let liSelected;
 $(window).keydown(function(e){
@@ -132,20 +133,23 @@ $(window).keydown(function(e){
         //MESSAGE
         ipcRenderer.send('asynchronous-message', 'hide');
         break;
-      /*case 18: //alt
+      case 18: //alt
         if(catSelected != undefined){
             next = catSelected.next();
             if(next.length > 0){
-                catSelected = next.prop('checked', true);
+                catSelected = next.prop('selected', true);
             }else{
-                catSelected = tab.first().prop('checked', true);
+                catSelected = tab.first().prop('selected', true);
             }
         }else{
-            catSelected = tab.first().prop('checked', true);
+            catSelected = tab.first();
+            next = catSelected.next();
+            catSelected = next;
+            catSelected.prop('selected', true);
         }
         catChange();
         liSelected = null;
-        break;*/
+        break;
       default:
         return;
     }
