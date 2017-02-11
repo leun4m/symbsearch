@@ -25,5 +25,5 @@ http://nvie.com/posts/a-successful-git-branching-model/
 ## And now?
 Happy coding :)
 
-## Questions?
-You can use the issue-tracker or write an email to <leun4m@mail.de>
+## Yet another Questions?!
+You can use the issue-tracker or write an email to <mailto:leun4m@mail.de>
