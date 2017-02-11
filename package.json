@@ -6,7 +6,7 @@
   "main": "main.js",
   "scripts": {
     "start": "node_modules/.bin/electron .",
-    "dist": "node_modules/.bin/electron-packager . --all --out=dist/ --overwrite --app-copyright=\"Copyright (c) 2017 Leun4m\" --icon=assets/icon --win32metadata.CompanyName=Leun4m --win32metadata.ProductName=SymbSearch --win32metadata.FileDescription=\"Background tool for searching symbols and special letters\" --win32metadata.OriginalFilename=symbsearch.exe",
+    "dist": "node_modules/.bin/electron-packager . --all --out=dist/ --overwrite --app-copyright=\"Copyright (c) 2017 leun4m\" --icon=assets/icon --ignore=assets --ignore=dist --ignore=docs --ignore=.gitignore --ignore=ignore --win32metadata.CompanyName=leun4m --win32metadata.ProductName=SymbSearch --win32metadata.FileDescription=\"Background tool for searching symbols and special letters\" --win32metadata.OriginalFilename=symbsearch.exe",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
