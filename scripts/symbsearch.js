@@ -28,13 +28,14 @@ function createCatFilter() {
   let form = document.getElementById('cat-filter');
   for (let i=0; i<cats.length; i++) {
     r = document.createElement('option');
-    r.setAttribute('value', cats[i]);
+    catValid = setValidName(cats[i]);
+    r.setAttribute('value', catValid);
     r.setAttribute('tabindex', '-1');
     r.innerHTML = cats[i];
     if (i === 0) {
       r.setAttribute('selected', 'true');
     }
-    r.setAttribute('id', 'cat-' + cats[i]);
+    r.setAttribute('id', 'cat-' + catValid);
     form.addEventListener('change', function() {
       catChange();
     });
@@ -42,6 +43,12 @@ function createCatFilter() {
   }
 }
 
+function setValidName(word) {
+  return word.replace(/ /g,"_");
+}
+function setNormalName(word) {
+  return word.replace("_",/ /g);
+}
 function getCategories() {
   let cats = [];
   for (let i=0; i<symbols.length; i++) {
@@ -72,7 +79,7 @@ function setFocus() {
 $('input[name="cats"]').on('change', catChange);
 
 function catChange() {
-  c = document.getElementById('cat-filter').value;
+  c = setNormalName(document.getElementById('cat-filter').value);
   symbollist.remove();
   symbollist.add(symbols);
   let cats = getCategories();
