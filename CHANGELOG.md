@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 ### Added
+- Database: symbols.json
+  - Special
+  - Box Drawing
+  - Block Elements
 - ignore parameters to `dist` script in `package.json`
 
 ### Changed
