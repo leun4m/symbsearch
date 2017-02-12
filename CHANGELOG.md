@@ -3,12 +3,18 @@
 ## [Unreleased]
 ### Added
 - Database: symbols.json
+  - Latin-B
   - Special
   - Box Drawing
   - Block Elements
 - ignore parameters to `dist` script in `package.json`
 
 ### Changed
+- Database: symbols.json
+  - Latin+ => Latin-A
+  - greek => Greek
+  - arrows => Arrows
+  - ASCII => Latin Basic
 - Optimized design
   - The searchbox no longer moves to the top...
   - some minor changes
