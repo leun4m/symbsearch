@@ -7,6 +7,7 @@
   - Special
   - Box Drawing
   - Block Elements
+  - Mathematics (Intergrated Multiplication and Division Sign there from Latin-1)
 - ignore parameters to `dist` script in `package.json`
 
 ### Changed
