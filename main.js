@@ -7,7 +7,7 @@ let win
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({width: config.width, height: config.height, icon: __dirname + '/style/icon32.png', frame: false, resizable: false})
+  win = new BrowserWindow({width: 320, height: 400, icon: __dirname + '/style/icon32.png', frame: false, resizable: false})
   // and load the index.html of the app.
   win.loadURL(`file://${__dirname}/index.html`)
   win.hide()
