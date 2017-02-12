@@ -1,6 +1,6 @@
 # Change Log
 
-## [Unreleased]
+## [0.4.0] - 2017-02-12
 ### Added
 - Database: symbols.json
   - Latin-B
@@ -60,6 +60,7 @@
 - Licence (MIT)
 
 [Unreleased]: https://github.com/Leun4m/symbsearch/compare/v0.3.6...HEAD
+[0.4.0]: https://github.com/Leun4m/symbsearch/tree/v0.4.0
 [0.3.6]: https://github.com/Leun4m/symbsearch/tree/v0.3.6
 [0.3.2]: https://github.com/Leun4m/symbsearch/tree/v0.3.2
 [0.3.0]: https://github.com/Leun4m/symbsearch/tree/v0.3.0
