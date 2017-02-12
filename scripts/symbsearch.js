@@ -47,7 +47,7 @@ function setValidName(word) {
   return word.replace(/ /g,"_");
 }
 function setNormalName(word) {
-  return word.replace("_",/ /g);
+  return word.replace("_"," ");
 }
 function getCategories() {
   let cats = [];
@@ -80,6 +80,7 @@ $('input[name="cats"]').on('change', catChange);
 
 function catChange() {
   c = setNormalName(document.getElementById('cat-filter').value);
+  console.log(c)
   symbollist.remove();
   symbollist.add(symbols);
   let cats = getCategories();
