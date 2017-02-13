@@ -5,8 +5,8 @@ let symbolarray = require('./data/symbols.json');
 let symbols = [];
 let symbollist;
 
-var tab;
-var catSelected;
+let tab;
+let catSelected;
 let liSelected;
 init();
 
@@ -59,11 +59,11 @@ function getCategories() {
   for (let i=0; i<symbols.length; i++) {
     cats.push(symbols[i].cat);
   }
-  cats = uniq_fast(cats);
+  cats = removeDoubles(cats);
   return cats;
 }
 
-function uniq_fast(a) {
+function removeDoubles(a) {
   var seen = {};
   var out = [];
   var len = a.length;
@@ -77,6 +77,7 @@ function uniq_fast(a) {
   }
   return out;
 }
+
 function setFocus() {
   document.getElementById('searchbox').focus();
 }
@@ -102,70 +103,83 @@ function catChange() {
 $('input[name="cats"]').on('change', catChange);
 
 $(window).keydown(function(e){
-  let li = $('li');
   if ($('.selected') == null) {
     liSelected = false;
   }
   switch (e.which) {
-    case 40:
-      if (liSelected){
-        liSelected.removeClass('selected');
-        next = liSelected.next();
-        if (next.length > 0){
-          liSelected = next.addClass('selected');
-        } else {
-          liSelected = li.first().addClass('selected');
-        }
-      } else {
-        console.log("Versuch1")
-        liSelected = li.first().addClass('selected');
-      }
-      $('.selected')[0].scrollIntoView(true);
+    case 40: // arrow down
+      selectNextSymbol();
       break;
-    case 38:
-      if (liSelected){
-        liSelected.removeClass('selected');
-        next = liSelected.prev();
-        if (next.length > 0){
-          liSelected = next.addClass('selected');
-        } else {
-          liSelected = li.last().addClass('selected');
-        }
-      } else {
-        console.log("Versuch2")
-        liSelected = li.last().addClass('selected');
-      }
-      $('.selected')[0].scrollIntoView(true);
+    case 38: // arrow up
+      selectPrevSymbol();
       break;
-    case 13: //enter
-      var d = $('.selected h3').text()
-      clipboard.writeText(d)
-      console.log(clipboard.readText())
-      $('#searchbox').select();
-      //MESSAGE
-      ipcRenderer.send('asynchronous-message', 'hide');
+    case 13: // enter
+      copySymbol();
       break;
-    case 18: //alt
-      if (catSelected != undefined) {
-        next = catSelected.next();
-        if (next.length > 0) {
-          catSelected = next.prop('selected', true);
-        } else {
-          catSelected = tab.first().prop('selected', true);
-        }
-      } else {
-        catSelected = tab.first();
-        next = catSelected.next();
-        catSelected = next;
-        catSelected.prop('selected', true);
-      }
-      catChange();
-      liSelected = null;
+    case 18: // alt
+      selectNextCat();
       break;
     default:
       return;
   }
 });
+
+function selectNextSymbol() {
+  let li = $('li');
+  if (liSelected){
+    liSelected.removeClass('selected');
+    next = liSelected.next();
+    if (next.length > 0){
+      liSelected = next.addClass('selected');
+    } else {
+      liSelected = li.first().addClass('selected');
+    }
+  } else {
+    liSelected = li.first().addClass('selected');
+  }
+  $('.selected')[0].scrollIntoView(true);
+  break;
+}
+function selectPrevSymbol() {
+  let li = $('li');
+  if (liSelected){
+    liSelected.removeClass('selected');
+    next = liSelected.prev();
+    if (next.length > 0){
+      liSelected = next.addClass('selected');
+    } else {
+      liSelected = li.last().addClass('selected');
+    }
+  } else {
+    liSelected = li.last().addClass('selected');
+  }
+  $('.selected')[0].scrollIntoView(true);
+}
+function copySymbol() {
+  var d = $('.selected h3').text()
+  clipboard.writeText(d)
+  console.log(clipboard.readText())
+  $('#searchbox').select();
+  //MESSAGE
+  ipcRenderer.send('asynchronous-message', 'hide');
+}
+function selectNextCat() {
+  if (catSelected != undefined) {
+    next = catSelected.next();
+    if (next.length > 0) {
+      catSelected = next.prop('selected', true);
+    } else {
+      catSelected = tab.first().prop('selected', true);
+    }
+  } else {
+    catSelected = tab.first();
+    next = catSelected.next();
+    catSelected = next;
+    catSelected.prop('selected', true);
+  }
+  catChange();
+  liSelected = null;
+}
 
 function symbol() {
   this.name;
