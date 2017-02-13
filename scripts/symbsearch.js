@@ -1,18 +1,23 @@
+/*
+  General information:
+  Symb  => "Symbol"
+  Cat   => "Category"
+*/
 const listjs = require('list.js');
 const $ = require('jquery'); //would like to remove it
 const {clipboard, ipcRenderer} = require('electron');
 let symbarray = require('./data/symbols.json');
-let symbols = [];
-let symbollist;
+let symbs = [];
+let symblist;
 
 let tab;
 let catSelected;
-let liSelected;
+let symbSelected;
 
 class Symb {
-  constructor(name,symbol,cat) {
+  constructor(name,symb,cat) {
     this.name = name;
-    this.symbol = symbol;
+    this.symb = symb;
     this.cat = cat;
   }
 }
@@ -21,13 +26,13 @@ init();
 
 function init() {
   for (let i=0; i<symbarray.length; i++) {
-    symbols[i] = new Symb(symbarray[i][0],symbarray[i][1],symbarray[i][2]);
+    symbs[i] = new Symb(symbarray[i][0],symbarray[i][1],symbarray[i][2]);
   }
   const options = {
-    valueNames: [ 'symbol', 'name' ],
-    item: '<li><h3 class="symbol"></h3><p class="name"></p></li>'
+    valueNames: [ 'symb', 'name' ],
+    item: '<li><h3 class="symb"></h3><p class="name"></p></li>'
   };
-  symbollist = new List('symbollist', options, symbols);
+  symblist = new List('symblist', options, symbs);
   createCatFilter();
 }
 
@@ -62,8 +67,8 @@ function setNormalName(word) {
 }
 function getCategories() {
   let cats = [];
-  for (let i=0; i<symbols.length; i++) {
-    cats.push(symbols[i].cat);
+  for (let i=0; i<symbs.length; i++) {
+    cats.push(symbs[i].cat);
   }
   cats = removeDoubles(cats);
   return cats;
@@ -91,13 +96,13 @@ function setFocus() {
 function catChange() {
   c = setNormalName(document.getElementById('cat-filter').value);
   console.log(c)
-  symbollist.remove();
-  symbollist.add(symbols);
+  symblist.remove();
+  symblist.add(symbs);
   let cats = getCategories();
   if (c != 'all') {
     for (let i=0; i<cats.length; i++) {
       if (cats[i] != c) {
-        symbollist.remove('cat', cats[i])
+        symblist.remove('cat', cats[i])
       }
     }
   }
@@ -110,17 +115,17 @@ $('input[name="cats"]').on('change', catChange);
 
 $(window).keydown(function(e){
   if ($('.selected') == null) {
-    liSelected = false;
+    symbSelected = false;
   }
   switch (e.which) {
     case 40: // arrow down
-      selectNextSymbol();
+      selectNextSymb();
       break;
     case 38: // arrow up
-      selectPrevSymbol();
+      selectPrevSymb();
       break;
     case 13: // enter
-      copySymbol();
+      copySymb();
       break;
     case 18: // alt
       selectNextCat();
@@ -130,38 +135,37 @@ $(window).keydown(function(e){
   }
 });
 
-function selectNextSymbol() {
+function selectNextSymb() {
   let li = $('li');
-  if (liSelected){
-    liSelected.removeClass('selected');
-    next = liSelected.next();
+  if (symbSelected){
+    symbSelected.removeClass('selected');
+    next = symbSelected.next();
     if (next.length > 0){
-      liSelected = next.addClass('selected');
+      symbSelected = next.addClass('selected');
     } else {
-      liSelected = li.first().addClass('selected');
+      symbSelected = li.first().addClass('selected');
     }
   } else {
-    liSelected = li.first().addClass('selected');
-  }
-  $('.selected')[0].scrollIntoView(true);
-  break;
-}
-function selectPrevSymbol() {
-  let li = $('li');
-  if (liSelected){
-    liSelected.removeClass('selected');
-    next = liSelected.prev();
-    if (next.length > 0){
-      liSelected = next.addClass('selected');
-    } else {
-      liSelected = li.last().addClass('selected');
-    }
-  } else {
-    liSelected = li.last().addClass('selected');
+    symbSelected = li.first().addClass('selected');
   }
   $('.selected')[0].scrollIntoView(true);
 }
-function copySymbol() {
+function selectPrevSymb() {
+  let li = $('li');
+  if (symbSelected){
+    symbSelected.removeClass('selected');
+    next = symbSelected.prev();
+    if (next.length > 0){
+      symbSelected = next.addClass('selected');
+    } else {
+      symbSelected = li.last().addClass('selected');
+    }
+  } else {
+    symbSelected = li.last().addClass('selected');
+  }
+  $('.selected')[0].scrollIntoView(true);
+}
+function copySymb() {
   var d = $('.selected h3').text()
   clipboard.writeText(d)
   console.log(clipboard.readText())
@@ -184,7 +188,7 @@ function selectNextCat() {
     catSelected.prop('selected', true);
   }
   catChange();
-  liSelected = null;
+  symbSelected = null;
 }
 
 function quit() {

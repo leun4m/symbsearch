@@ -31,7 +31,7 @@ ul li {
 li {
   width: 270px;
 }
-h3.symbol {
+h3.symb {
   font-family: serif;
   font-size: 2em;
   font-weight: normal;
@@ -57,7 +57,7 @@ li.selected p.name {
   overflow : hidden;
   text-overflow: ellipsis;
 }
-li.selected h3.symbol {
+li.selected h3.symb {
   font-size: 2.5em;
 }
 #lbl-cat-filter {
