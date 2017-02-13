@@ -1,21 +1,27 @@
 const listjs = require('list.js');
 const $ = require('jquery'); //would like to remove it
 const {clipboard, ipcRenderer} = require('electron');
-let symbolarray = require('./data/symbols.json');
+let symbarray = require('./data/symbols.json');
 let symbols = [];
 let symbollist;
 
 let tab;
 let catSelected;
 let liSelected;
+
+class Symb {
+  constructor(name,symbol,cat) {
+    this.name = name;
+    this.symbol = symbol;
+    this.cat = cat;
+  }
+}
+
 init();
 
 function init() {
-  for (let i=0; i<symbolarray.length; i++) {
-    symbols[i] = new symbol();
-    symbols[i].name = symbolarray[i][0];
-    symbols[i].symbol = symbolarray[i][1];
-    symbols[i].cat = symbolarray[i][2];
+  for (let i=0; i<symbarray.length; i++) {
+    symbols[i] = new Symb(symbarray[i][0],symbarray[i][1],symbarray[i][2]);
   }
   const options = {
     valueNames: [ 'symbol', 'name' ],
@@ -179,12 +185,6 @@ function selectNextCat() {
   }
   catChange();
   liSelected = null;
-}
-
-function symbol() {
-  this.name;
-  this.symbol;
-  this.cat;
 }
 
 function quit() {
