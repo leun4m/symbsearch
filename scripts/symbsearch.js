@@ -9,8 +9,7 @@ const {clipboard, ipcRenderer} = require('electron');
 let symbarray = require('./data/symbols.json');
 let symbs = [];
 let symblist;
-
-let tab;
+let catlist;
 let catSelected;
 let symbSelected;
 
@@ -37,7 +36,7 @@ function init() {
 }
 
 function createCatFilter() {
-  let cats = getCategories();
+  let cats = getCats();
   cats.unshift('all');
   let r;
   let form = document.getElementById('cat-filter');
@@ -52,20 +51,19 @@ function createCatFilter() {
     }
     r.setAttribute('id', 'cat-' + catValid);
     form.addEventListener('change', function() {
-      catChange();
+      changeCat();
     });
     form.appendChild(r);
   }
-  tab = $('#cat-filter option');
+  catlist = $('#cat-filter option');
 }
-
 function setValidName(word) {
   return word.replace(/ /g,"_");
 }
 function setNormalName(word) {
   return word.replace("_"," ");
 }
-function getCategories() {
+function getCats() {
   let cats = [];
   for (let i=0; i<symbs.length; i++) {
     cats.push(symbs[i].cat);
@@ -73,7 +71,6 @@ function getCategories() {
   cats = removeDoubles(cats);
   return cats;
 }
-
 function removeDoubles(a) {
   var seen = {};
   var out = [];
@@ -88,17 +85,15 @@ function removeDoubles(a) {
   }
   return out;
 }
-
 function setFocus() {
   document.getElementById('searchbox').focus();
 }
-
-function catChange() {
+function changeCat() {
   c = setNormalName(document.getElementById('cat-filter').value);
   console.log(c)
   symblist.remove();
   symblist.add(symbs);
-  let cats = getCategories();
+  let cats = getCats();
   if (c != 'all') {
     for (let i=0; i<cats.length; i++) {
       if (cats[i] != c) {
@@ -111,7 +106,7 @@ function catChange() {
 
 //Eventlistener
 
-$('input[name="cats"]').on('change', catChange);
+$('input[name="cats"]').on('change', changeCat);
 
 $(window).keydown(function(e){
   if ($('.selected') == null) {
@@ -134,7 +129,6 @@ $(window).keydown(function(e){
       return;
   }
 });
-
 function selectNextSymb() {
   let li = $('li');
   if (symbSelected){
@@ -179,18 +173,17 @@ function selectNextCat() {
     if (next.length > 0) {
       catSelected = next.prop('selected', true);
     } else {
-      catSelected = tab.first().prop('selected', true);
+      catSelected = catlist.first().prop('selected', true);
     }
   } else {
-    catSelected = tab.first();
+    catSelected = catlist.first();
     next = catSelected.next();
     catSelected = next;
     catSelected.prop('selected', true);
   }
-  catChange();
+  changeCat();
   symbSelected = null;
 }
-
 function quit() {
   ipcRenderer.send('asynchronous-message', 'quit');
 }
