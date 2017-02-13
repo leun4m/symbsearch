@@ -5,6 +5,9 @@ let symbolarray = require('./data/symbols.json');
 let symbols = [];
 let symbollist;
 
+var tab;
+var catSelected;
+let liSelected;
 init();
 
 function init() {
@@ -42,6 +45,7 @@ function createCatFilter() {
     });
     form.appendChild(r);
   }
+  tab = $('#cat-filter option');
 }
 
 function setValidName(word) {
@@ -77,8 +81,6 @@ function setFocus() {
   document.getElementById('searchbox').focus();
 }
 
-$('input[name="cats"]').on('change', catChange);
-
 function catChange() {
   c = setNormalName(document.getElementById('cat-filter').value);
   console.log(c)
@@ -94,10 +96,11 @@ function catChange() {
   }
   setFocus();
 }
-//http://jsfiddle.net/Vtn5Y/
-var tab = $('#cat-filter option');
-var catSelected;
-let liSelected;
+
+//Eventlistener
+
+$('input[name="cats"]').on('change', catChange);
+
 $(window).keydown(function(e){
   let li = $('li');
   if ($('.selected') == null) {
