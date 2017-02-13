@@ -38,22 +38,22 @@ function init() {
 function createCatFilter() {
   let cats = getCats();
   cats.unshift('all');
-  let r;
+  let a;
   let form = document.getElementById('cat-filter');
   for (let i=0; i<cats.length; i++) {
-    r = document.createElement('option');
+    a = document.createElement('option');
     catValid = setValidName(cats[i]);
-    r.setAttribute('value', catValid);
-    r.setAttribute('tabindex', '-1');
-    r.innerHTML = cats[i];
+    a.setAttribute('value', catValid);
+    a.setAttribute('tabindex', '-1');
+    a.innerHTML = cats[i];
     if (i === 0) {
-      r.setAttribute('selected', 'true');
+      a.setAttribute('selected', 'true');
     }
-    r.setAttribute('id', 'cat-' + catValid);
+    a.setAttribute('id', 'cat-' + catValid);
     form.addEventListener('change', function() {
       changeCat();
     });
-    form.appendChild(r);
+    form.appendChild(a);
   }
   catlist = $('#cat-filter option');
 }
@@ -74,9 +74,8 @@ function getCats() {
 function removeDoubles(a) {
   var seen = {};
   var out = [];
-  var len = a.length;
   var j = 0;
-  for (let i = 0; i < len; i++) {
+  for (let i = 0; i < a.length; i++) {
     let item = a[i];
     if (seen[item] !== 1) {
       seen[item] = 1;
@@ -160,8 +159,7 @@ function selectPrevSymb() {
   $('.selected')[0].scrollIntoView(true);
 }
 function copySymb() {
-  var d = $('.selected h3').text()
-  clipboard.writeText(d)
+  clipboard.writeText($('.selected h3').text())
   console.log(clipboard.readText())
   $('#searchbox').select();
   //MESSAGE
