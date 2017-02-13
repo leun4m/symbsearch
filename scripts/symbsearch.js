@@ -2,24 +2,25 @@ const listjs = require('list.js');
 const $ = require('jquery'); //would like to remove it
 const {clipboard, ipcRenderer} = require('electron');
 let symbolarray = require('./data/symbols.json');
-
 let symbols = [];
-for (let i=0; i<symbolarray.length; i++) {
-  symbols[i] = new symbol();
-  symbols[i].name = symbolarray[i][0];
-  symbols[i].symbol = symbolarray[i][1];
-  symbols[i].cat = symbolarray[i][2];
+let symbollist;
+
+init();
+
+function init() {
+  for (let i=0; i<symbolarray.length; i++) {
+    symbols[i] = new symbol();
+    symbols[i].name = symbolarray[i][0];
+    symbols[i].symbol = symbolarray[i][1];
+    symbols[i].cat = symbolarray[i][2];
+  }
+  const options = {
+    valueNames: [ 'symbol', 'name' ],
+    item: '<li><h3 class="symbol"></h3><p class="name"></p></li>'
+  };
+  symbollist = new List('symbollist', options, symbols);
+  createCatFilter();
 }
-
-console.log(symbols);
-
-let options = {
-  valueNames: [ 'symbol', 'name' ],
-  item: '<li><h3 class="symbol"></h3><p class="name"></p></li>'
-};
-let symbollist = new List('symbollist', options, symbols);
-
-createCatFilter();
 
 function createCatFilter() {
   let cats = getCategories();
