@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.5.0] - 2017-02-17
+- **Translated tool in Visual C#**
+
 ## [0.4.0] - 2017-02-12
 ### Added
 - Database: symbols.json
