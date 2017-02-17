@@ -1,6 +1,13 @@
 # SymbSearch ![logo][logo]
 
+## No longer Electron-App
+
+The most critical point was the huge storage and the huge amount of RAM which SymbSearch needed as Electron-app. I think, this objection was right. It is just a char table. So I rewrote the application in **Visual C#** – of course, it is no longer possible to build it for the other platforms like Linux and Mac, but who needs an app which is just so big to be platform independent.
+If you want to see the Electron-app just look at [dde7f02] (Version 4.2). I will indeed no longer work on that.
+I hope, you agree on that decision.
 With SymbSearch you can easily get the special unicode letter or symbol you need.
+
+[dde7f02]: https://github.com/leun4m/symbsearch/tree/v0.4.2
 
 ## How it works
 

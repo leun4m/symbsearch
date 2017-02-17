@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<symbols>
+  <symb name="Alpha" sign="Α" cat="Greek"></symb>
+  <symb name="alpha" sign="α" cat="Greek"></symb>
+  <symb name="Beta" sign="Β" cat="Greek"></symb>
+  <symb name="beta" sign="β" cat="Greek"></symb>
+  <symb name="Gamma" sign="Γ" cat="Greek"></symb>
+  <symb name="gamma" sign="γ" cat="Greek"></symb>
+  <symb name="Delta" sign="Δ" cat="Greek"></symb>
+  <symb name="delta" sign="δ" cat="Greek"></symb>
+  <symb name="Epsilon" sign="Ε" cat="Greek"></symb>
+  <symb name="epsilon" sign="ε" cat="Greek"></symb>
+  <symb name="Zeta" sign="Ζ" cat="Greek"></symb>
+  <symb name="zeta" sign="ζ" cat="Greek"></symb>
+  <symb name="Eta" sign="Η" cat="Greek"></symb>
+  <symb name="eta" sign="η" cat="Greek"></symb>
+  <symb name="Theta" sign="Θ" cat="Greek"></symb>
+  <symb name="theta" sign="θ" cat="Greek"></symb>
+  <symb name="Iota" sign="Ι" cat="Greek"></symb>
+  <symb name="iota" sign="ι" cat="Greek"></symb>
+  <symb name="Kappa" sign="Κ" cat="Greek"></symb>
+  <symb name="kappa" sign="κ" cat="Greek"></symb>
+  <symb name="Lambda" sign="Λ" cat="Greek"></symb>
+  <symb name="lamda" sign="λ" cat="Greek"></symb>
+  <symb name="My" sign="Μ" cat="Greek"></symb>
+  <symb name="my" sign="µ" cat="Greek"></symb>
+  <symb name="Ny" sign="Ν" cat="Greek"></symb>
+  <symb name="ny" sign="ν" cat="Greek"></symb>
+  <symb name="Xi" sign="Ξ" cat="Greek"></symb>
+  <symb name="xi" sign="ξ" cat="Greek"></symb>
+  <symb name="Omikron" sign="Ο" cat="Greek"></symb>
+  <symb name="omikron" sign="ο" cat="Greek"></symb>
+  <symb name="Pi" sign="Π" cat="Greek"></symb>
+  <symb name="pi" sign="π" cat="Greek"></symb>
+  <symb name="Rho" sign="Ρ" cat="Greek"></symb>
+  <symb name="rho" sign="ρ" cat="Greek"></symb>
+  <symb name="Sigma" sign="Σ" cat="Greek"></symb>
+  <symb name="sigma" sign="σ" cat="Greek"></symb>
+  <symb name="Tau" sign="Τ" cat="Greek"></symb>
+  <symb name="tau" sign="τ" cat="Greek"></symb>
+  <symb name="Ypsilon" sign="Υ" cat="Greek"></symb>
+  <symb name="ypsilon" sign="υ" cat="Greek"></symb>
+  <symb name="Phi" sign="Φ" cat="Greek"></symb>
+  <symb name="phi" sign="φ" cat="Greek"></symb>
+  <symb name="Chi" sign="Χ" cat="Greek"></symb>
+  <symb name="chi" sign="χ" cat="Greek"></symb>
+  <symb name="Psi" sign="Ψ" cat="Greek"></symb>
+  <symb name="psi" sign="ψ" cat="Greek"></symb>
+  <symb name="Omega" sign="Ω" cat="Greek"></symb>
+  <symb name="omega" sign="ω" cat="Greek"></symb>
+  <symb name="Leftwards Arrow" sign="←" cat="Arrows"></symb>
+  <symb name="Upwards Arrow" sign="↑" cat="Arrows"></symb>
+  <symb name="Rightwards Arrow" sign="→" cat="Arrows"></symb>
+  <symb name="Downwards Arrow" sign="↓" cat="Arrows"></symb>
+  <symb name="Left Right Arrow" sign="↔" cat="Arrows"></symb>
+  <symb name="Up Down Arrow" sign="↕" cat="Arrows"></symb>
+  <symb name="North West Arrow" sign="↖" cat="Arrows"></symb>
+  <symb name="North East Arrow" sign="↗" cat="Arrows"></symb>
+  <symb name="South East Arrow" sign="↘" cat="Arrows"></symb>
+  <symb name="South West Arrow" sign="↙" cat="Arrows"></symb>
+  <symb name="Leftwards Arrow With Stroke" sign="↚" cat="Arrows"></symb>
+  <symb name="Rightwards Arrow With Stroke" sign="↛" cat="Arrows"></symb>
+  <symb name="Leftwards Wave Arrow" sign="↜" cat="Arrows"></symb>
+  <symb name="Rightwards Wave Arrow" sign="↝" cat="Arrows"></symb>
+  <symb name="Leftwards Two Headed Arrow" sign="↞" cat="Arrows"></symb>
+  <symb name="Upwards Two Headed Arrow" sign="↟" cat="Arrows"></symb>
+  <symb name="Rightwards Two Headed Arrow" sign="↠" cat="Arrows"></symb>
+  <symb name="Downwards Two Headed Arrow" sign="↡" cat="Arrows"></symb>
+  <symb name="Leftwards Arrow With Tail" sign="↢" cat="Arrows"></symb>
+  <symb name="Rightwards Arrow With Tail" sign="↣" cat="Arrows"></symb>
+  <symb name="Leftwards Arrow From Bar" sign="↤" cat="Arrows"></symb>
+  <symb name="Upwards Arrow From Bar" sign="↥" cat="Arrows"></symb>
+  <symb name="Rightwards Arrow From Bar" sign="↦" cat="Arrows"></symb>
+  <symb name="Downwards Arrow From Bar" sign="↧" cat="Arrows"></symb>
+  <symb name="Up Down Arrow With Base" sign="↨" cat="Arrows"></symb>
+  <symb name="Leftwards Arrow With Hook" sign="↩" cat="Arrows"></symb>
+  <symb name="Rightwards Arrow With Hook" sign="↪" cat="Arrows"></symb>
+  <symb name="Leftwards Arrow With Loop" sign="↫" cat="Arrows"></symb>
+  <symb name="Rightwards Arrow With Loop" sign="↬" cat="Arrows"></symb>
+  <symb name="Left Right Wave Arrow" sign="↭" cat="Arrows"></symb>
+  <symb name="Left Right Arrow With Stroke" sign="↮" cat="Arrows"></symb>
+  <symb name="Downwards Zigzag Arrow" sign="↯" cat="Arrows"></symb>
+  <symb name="Upwards Arrow With Tip Leftwards" sign="↰" cat="Arrows"></symb>
+  <symb name="Upwards Arrow With Tip Rightwards" sign="↱" cat="Arrows"></symb>
+  <symb name="Downwards Arrow With Tip Leftwards" sign="↲" cat="Arrows"></symb>
+  <symb name="Downwards Arrow With Tip Rightwards" sign="↳" cat="Arrows"></symb>
+  <symb name="Rightwards Arrow With Corner Downwards" sign="↴" cat="Arrows"></symb>
+  <symb name="Downwards Arrow With Corner Leftwards" sign="↵" cat="Arrows"></symb>
+  <symb name="Anticlockwise Top Semicircle Arrow" sign="↶" cat="Arrows"></symb>
+  <symb name="Clockwise Top Semicircle Arrow" sign="↷" cat="Arrows"></symb>
+  <symb name="North West Arrow To Long Bar" sign="↸" cat="Arrows"></symb>
+  <symb name="Leftwards Arrow To Bar Over Rightwards Arrow To Bar" sign="↹" cat="Arrows"></symb>
+  <symb name="Anticlockwise Open Circle Arrow" sign="↺" cat="Arrows"></symb>
+  <symb name="Clockwise Open Circle Arrow" sign="↻" cat="Arrows"></symb>
+  <symb name="Leftwards Harpoon With Barb Upwards" sign="↼" cat="Arrows"></symb>
+  <symb name="Leftwards Harpoon With Barb Downwards" sign="↽" cat="Arrows"></symb>
+  <symb name="Upwards Harpoon With Barb Rightwards" sign="↾" cat="Arrows"></symb>
+  <symb name="Upwards Harpoon With Barb Leftwards" sign="↿" cat="Arrows"></symb>
+  <symb name="Rightwards Harpoon With Barb Upwards" sign="⇀" cat="Arrows"></symb>
+  <symb name="Rightwards Harpoon With Barb Downwards" sign="⇁" cat="Arrows"></symb>
+  <symb name="Downwards Harpoon With Barb Rightwards" sign="⇂" cat="Arrows"></symb>
+  <symb name="Downwards Harpoon With Barb Leftwards" sign="⇃" cat="Arrows"></symb>
+  <symb name="Rightwards Arrow Over Leftwards Arrow" sign="⇄" cat="Arrows"></symb>
+  <symb name="Upwards Arrow Leftwards Of Downwards Arrow" sign="⇅" cat="Arrows"></symb>
+  <symb name="Leftwards Arrow Over Rightwards Arrow" sign="⇆" cat="Arrows"></symb>
+  <symb name="Leftwards Paired Arrows" sign="⇇" cat="Arrows"></symb>
+  <symb name="Upwards Paired Arrows" sign="⇈" cat="Arrows"></symb>
+  <symb name="Rightwards Paired Arrows" sign="⇉" cat="Arrows"></symb>
+  <symb name="Downwards Paired Arrows" sign="⇊" cat="Arrows"></symb>
+  <symb name="Leftwards Harpoon Over Rightwards Harpoon" sign="⇋" cat="Arrows"></symb>
+  <symb name="Rightwards Harpoon Over Leftwards Harpoon" sign="⇌" cat="Arrows"></symb>
+  <symb name="Leftwards Double Arrow With Stroke" sign="⇍" cat="Arrows"></symb>
+  <symb name="Left Right Double Arrow With Stroke" sign="⇎" cat="Arrows"></symb>
+  <symb name="Rightwards Double Arrow With Stroke" sign="⇏" cat="Arrows"></symb>
+  <symb name="Leftwards Double Arrow" sign="⇐" cat="Arrows"></symb>
+  <symb name="Upwards Double Arrow" sign="⇑" cat="Arrows"></symb>
+  <symb name="Rightwards Double Arrow" sign="⇒" cat="Arrows"></symb>
+  <symb name="Downwards Double Arrow" sign="⇓" cat="Arrows"></symb>
+  <symb name="Left Right Double Arrow" sign="⇔" cat="Arrows"></symb>
+  <symb name="Up Down Double Arrow" sign="⇕" cat="Arrows"></symb>
+  <symb name="North West Double Arrow" sign="⇖" cat="Arrows"></symb>
+  <symb name="North East Double Arrow" sign="⇗" cat="Arrows"></symb>
+  <symb name="South East Double Arrow" sign="⇘" cat="Arrows"></symb>
+  <symb name="South West Double Arrow" sign="⇙" cat="Arrows"></symb>
+  <symb name="Leftwards Triple Arrow" sign="⇚" cat="Arrows"></symb>
+  <symb name="Rightwards Triple Arrow" sign="⇛" cat="Arrows"></symb>
+  <symb name="Leftwards Squiggle Arrow" sign="⇜" cat="Arrows"></symb>
+  <symb name="Rightwards Squiggle Arrow" sign="⇝" cat="Arrows"></symb>
+  <symb name="Upwards Arrow With Double Stroke" sign="⇞" cat="Arrows"></symb>
+  <symb name="Downwards Arrow With Double Stroke" sign="⇟" cat="Arrows"></symb>
+  <symb name="Leftwards Dashed Arrow" sign="⇠" cat="Arrows"></symb>
+  <symb name="Upwards Dashed Arrow" sign="⇡" cat="Arrows"></symb>
+  <symb name="Rightwards Dashed Arrow" sign="⇢" cat="Arrows"></symb>
+  <symb name="Downwards Dashed Arrow" sign="⇣" cat="Arrows"></symb>
+  <symb name="Leftwards Arrow To Bar" sign="⇤" cat="Arrows"></symb>
+  <symb name="Rightwards Arrow To Bar" sign="⇥" cat="Arrows"></symb>
+  <symb name="Leftwards White Arrow" sign="⇦" cat="Arrows"></symb>
+  <symb name="Upwards White Arrow" sign="⇧" cat="Arrows"></symb>
+  <symb name="Rightwards White Arrow" sign="⇨" cat="Arrows"></symb>
+  <symb name="Downwards White Arrow" sign="⇩" cat="Arrows"></symb>
+  <symb name="Upwards White Arrow From Bar" sign="⇪" cat="Arrows"></symb>
+  <symb name="Upwards White Arrow On Pedestal" sign="⇫" cat="Arrows"></symb>
+  <symb name="Upwards White Arrow On Pedestal With Horizontal Bar" sign="⇬" cat="Arrows"></symb>
+  <symb name="Upwards White Arrow On Pedestal With Vertical Bar" sign="⇭" cat="Arrows"></symb>
+  <symb name="Upwards White Double Arrow" sign="⇮" cat="Arrows"></symb>
+  <symb name="Upwards White Double Arrow On Pedestal" sign="⇯" cat="Arrows"></symb>
+  <symb name="Rightwards White Arrow From Wall" sign="⇰" cat="Arrows"></symb>
+  <symb name="North West Arrow To Corner" sign="⇱" cat="Arrows"></symb>
+  <symb name="South East Arrow To Corner" sign="⇲" cat="Arrows"></symb>
+  <symb name="Up Down White Arrow" sign="⇳" cat="Arrows"></symb>
+  <symb name="Right Arrow With Small Circle" sign="⇴" cat="Arrows"></symb>
+  <symb name="Downwards Arrow Leftwards Of Upwards Arrow" sign="⇵" cat="Arrows"></symb>
+  <symb name="Three Rightwards Arrows" sign="⇶" cat="Arrows"></symb>
+  <symb name="Leftwards Arrow With Vertical Stroke" sign="⇷" cat="Arrows"></symb>
+  <symb name="Rightwards Arrow With Vertical Stroke" sign="⇸" cat="Arrows"></symb>
+  <symb name="Left Right Arrow With Vertical Stroke" sign="⇹" cat="Arrows"></symb>
+  <symb name="Leftwards Arrow With Double Vertical Stroke" sign="⇺" cat="Arrows"></symb>
+  <symb name="Rightwards Arrow With Double Vertical Stroke" sign="⇻" cat="Arrows"></symb>
+  <symb name="Left Right Arrow With Double Vertical Stroke" sign="⇼" cat="Arrows"></symb>
+  <symb name="Leftwards Open-headed Arrow" sign="⇽" cat="Arrows"></symb>
+  <symb name="Rightwards Open-headed Arrow" sign="⇾" cat="Arrows"></symb>
+  <symb name="Left Right Open-headed Arrow" sign="⇿" cat="Arrows"></symb>
+  <symb name="Space" sign=" " cat="Latin Basic"></symb>
+  <symb name="Exclamation Mark" sign="!" cat="Latin Basic"></symb>
+  <symb name="Comma" sign="," cat="Latin Basic"></symb>
+  <symb name="Hyphen-minus" sign="-" cat="Latin Basic"></symb>
+  <symb name="Full Stop" sign="." cat="Latin Basic"></symb>
+  <symb name="Slash / Solidus" sign="/" cat="Latin Basic"></symb>
+  <symb name="Digit Zero" sign="0" cat="Latin Basic"></symb>
+  <symb name="Digit One" sign="1" cat="Latin Basic"></symb>
+  <symb name="Digit Two" sign="2" cat="Latin Basic"></symb>
+  <symb name="Digit Three" sign="3" cat="Latin Basic"></symb>
+  <symb name="Digit Four" sign="4" cat="Latin Basic"></symb>
+  <symb name="Digit Five" sign="5" cat="Latin Basic"></symb>
+  <symb name="Digit Six" sign="6" cat="Latin Basic"></symb>
+  <symb name="Digit Seven" sign="7" cat="Latin Basic"></symb>
+  <symb name="Digit Eight" sign="8" cat="Latin Basic"></symb>
+  <symb name="Digit Nine" sign="9" cat="Latin Basic"></symb>
+  <symb name="Colon" sign=":" cat="Latin Basic"></symb>
+  <symb name="Semicolon" sign=";" cat="Latin Basic"></symb>
+  <symb name="Less-than Sign" sign="&lt;" cat="Latin Basic"></symb>
+  <symb name="Equals Sign" sign="=" cat="Latin Basic"></symb>
+  <symb name="Greater-than Sign" sign="&gt;" cat="Latin Basic"></symb>
+  <symb name="Question Mark" sign="?" cat="Latin Basic"></symb>
+  <symb name="Commercial At Sign" sign="@" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter A" sign="A" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter B" sign="B" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter C" sign="C" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter D" sign="D" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter E" sign="E" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter F" sign="F" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter G" sign="G" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter H" sign="H" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter I" sign="I" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter J" sign="J" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter K" sign="K" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter L" sign="L" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter M" sign="M" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter N" sign="N" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter O" sign="O" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter P" sign="P" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter Q" sign="Q" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter R" sign="R" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter S" sign="S" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter T" sign="T" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter U" sign="U" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter V" sign="V" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter W" sign="W" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter X" sign="X" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter Y" sign="Y" cat="Latin Basic"></symb>
+  <symb name="Latin Capital Letter Z" sign="Z" cat="Latin Basic"></symb>
+  <symb name="Left Square Bracket" sign="[" cat="Latin Basic"></symb>
+  <symb name="Reverse Solidus" sign="\" cat="Latin Basic"></symb>
+  <symb name="Right Square Bracket" sign="]" cat="Latin Basic"></symb>
+  <symb name="Circumflex Accent" sign="^" cat="Latin Basic"></symb>
+  <symb name="Low Line" sign="_" cat="Latin Basic"></symb>
+  <symb name="Grave Accent" sign="`" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter A" sign="a" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter B" sign="b" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter C" sign="c" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter D" sign="d" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter E" sign="e" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter F" sign="f" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter G" sign="g" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter H" sign="h" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter I" sign="i" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter J" sign="j" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter K" sign="k" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter L" sign="l" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter M" sign="m" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter N" sign="n" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter O" sign="o" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter P" sign="p" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter Q" sign="q" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter R" sign="r" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter S" sign="s" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter T" sign="t" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter U" sign="u" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter V" sign="v" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter W" sign="w" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter X" sign="x" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter Y" sign="y" cat="Latin Basic"></symb>
+  <symb name="Latin Small Letter Z" sign="z" cat="Latin Basic"></symb>
+  <symb name="Left Curly Bracket" sign="{" cat="Latin Basic"></symb>
+  <symb name="Vertical Line" sign="|" cat="Latin Basic"></symb>
+  <symb name="Right Curly Bracket" sign="}" cat="Latin Basic"></symb>
+  <symb name="Tilde" sign="~" cat="Latin Basic"></symb>
+  <symb name="Inverted Exclamation Mark" sign="¡" cat="Latin-1"></symb>
+  <symb name="Cent sign" sign="¢" cat="Latin-1"></symb>
+  <symb name="Pound sign" sign="£" cat="Latin-1"></symb>
+  <symb name="Currency sign" sign="¤" cat="Latin-1"></symb>
+  <symb name="Yen sign" sign="¥" cat="Latin-1"></symb>
+  <symb name="Broken bar" sign="¦" cat="Latin-1"></symb>
+  <symb name="Section sign" sign="§" cat="Latin-1"></symb>
+  <symb name="Diaeresis (Umlaut)" sign="¨" cat="Latin-1"></symb>
+  <symb name="Copyright sign" sign="©" cat="Latin-1"></symb>
+  <symb name="Feminine Ordinal Indicator" sign="ª" cat="Latin-1"></symb>
+  <symb name="Left-pointing double angle quotation mark" sign="«" cat="Latin-1"></symb>
+  <symb name="Not sign" sign="¬" cat="Latin-1"></symb>
+  <symb name="Registered sign" sign="®" cat="Latin-1"></symb>
+  <symb name="Macron" sign="¯" cat="Latin-1"></symb>
+  <symb name="Degree symbol" sign="°" cat="Latin-1"></symb>
+  <symb name="Plus-minus sign" sign="±" cat="Latin-1"></symb>
+  <symb name="Superscript one" sign="¹" cat="Latin-1"></symb>
+  <symb name="Superscript two" sign="²" cat="Latin-1"></symb>
+  <symb name="Superscript three" sign="³" cat="Latin-1"></symb>
+  <symb name="Acute accent" sign="´" cat="Latin-1"></symb>
+  <symb name="Micro sign" sign="µ" cat="Latin-1"></symb>
+  <symb name="Pilcrow sign" sign="¶" cat="Latin-1"></symb>
+  <symb name="Middle dot" sign="·" cat="Latin-1"></symb>
+  <symb name="Cedilla" sign="¸" cat="Latin-1"></symb>
+  <symb name="Masculine ordinal indicator" sign="º" cat="Latin-1"></symb>
+  <symb name="Right-pointing double angle quotation mark" sign="»" cat="Latin-1"></symb>
+  <symb name="Fraction one quarter" sign="¼" cat="Latin-1"></symb>
+  <symb name="Fraction one half" sign="½" cat="Latin-1"></symb>
+  <symb name="Fraction three quarters" sign="¾" cat="Latin-1"></symb>
+  <symb name="Inverted Question Mark" sign="¿" cat="Latin-1"></symb>
+  <symb name="Latin Capital Letter A with grave" sign="À" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter A with acute" sign="Á" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter A with circumflex" sign="Â" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter A with tilde" sign="Ã" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter A with diaeresis" sign="Ä" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter A with ring above" sign="Å" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter Æ" sign="Æ" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter C with cedilla" sign="Ç" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter E with grave" sign="È" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter E with acute" sign="É" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter E with circumflex" sign="Ê" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter E with diaeresis" sign="Ë" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter I with grave" sign="Ì" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter I with acute" sign="Í" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter I with circumflex" sign="Î" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter I with diaeresis" sign="Ï" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter Eth" sign="Ð" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter N with tilde" sign="Ñ" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter O with grave" sign="Ò" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter O with acute" sign="Ó" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter O with circumflex" sign="Ô" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter O with tilde" sign="Õ" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter O with diaeresis" sign="Ö" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter O with stroke" sign="Ø" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter U with grave" sign="Ù" cat="Latin-1"></symb>
+  <symb name="Latin Capital letter U with acute" sign="Ú" cat="Latin-1"></symb>
+  <symb name="Latin Capital Letter U with circumflex" sign="Û" cat="Latin-1"></symb>
+  <symb name="Latin Capital Letter U with diaeresis" sign="Ü" cat="Latin-1"></symb>
+  <symb name="Latin Capital Letter Y with acute" sign="Ý" cat="Latin-1"></symb>
+  <symb name="Latin Capital Letter Thorn" sign="Þ" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter sharp S" sign="ß" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter A with grave" sign="à" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter A with acute" sign="á" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter A with circumflex" sign="â" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter A with tilde" sign="ã" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter A with diaeresis" sign="ä" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter A with ring above" sign="å" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter Æ" sign="æ" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter C with cedilla" sign="ç" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter E with grave" sign="è" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter E with acute" sign="é" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter E with circumflex" sign="ê" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter E with diaeresis" sign="ë" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter I with grave" sign="ì" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter I with acute" sign="í" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter I with circumflex" sign="î" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter I with diaeresis" sign="ï" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter Eth" sign="ð" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter N with tilde" sign="ñ" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter O with grave" sign="ò" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter O with acute" sign="ó" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter O with circumflex" sign="ô" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter O with tilde" sign="õ" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter O with diaeresis" sign="ö" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter O with stroke" sign="ø" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter U with grave" sign="ù" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter U with acute" sign="ú" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter U with circumflex" sign="û" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter U with diaeresis" sign="ü" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter Y with acute" sign="ý" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter Thorn" sign="þ" cat="Latin-1"></symb>
+  <symb name="Latin Small Letter Y with diaeresis" sign="ÿ" cat="Latin-1"></symb>
+  <symb name="Latin Capital Letter A with macron" sign="Ā" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter A with macron" sign="ā" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter A with breve" sign="Ă" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter A with breve" sign="ă" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter A with ogonek" sign="Ą" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter A with ogonek" sign="ą" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter C with acute" sign="Ć" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter C with acute" sign="ć" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter C with circumflex" sign="Ĉ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter C with circumflex" sign="ĉ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter C with dot above" sign="Ċ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter C with dot above" sign="ċ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter C with caron" sign="Č" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter C with caron" sign="č" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter D with caron" sign="Ď" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter D with caron" sign="ď" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter D with stroke" sign="Đ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter D with stroke" sign="đ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter E with macron" sign="Ē" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter E with macron" sign="ē" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter E with breve" sign="Ĕ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter E with breve" sign="ĕ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter E with dot above" sign="Ė" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter E with dot above" sign="ė" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter E with ogonek" sign="Ę" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter E with ogonek" sign="ę" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter E with caron" sign="Ě" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter E with caron" sign="ě" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter G with circumflex" sign="Ĝ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter G with circumflex" sign="ĝ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter G with breve" sign="Ğ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter G with breve" sign="ğ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter G with dot above" sign="Ġ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter G with dot above" sign="ġ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter G with cedilla" sign="Ģ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter G with cedilla" sign="ģ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter H with circumflex" sign="Ĥ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter H with circumflex" sign="ĥ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter H with stroke" sign="Ħ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter H with stroke" sign="ħ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter I with tilde" sign="Ĩ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter I with tilde" sign="ĩ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter I with macron" sign="Ī" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter I with macron" sign="ī" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter I with breve" sign="Ĭ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter I with breve" sign="ĭ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter I with ogonek" sign="Į" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter I with ogonek" sign="į" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter I with dot above" sign="İ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter dotless I" sign="ı" cat="Latin-A"></symb>
+  <symb name="Latin Capital Ligature IJ" sign="Ĳ" cat="Latin-A"></symb>
+  <symb name="Latin Small Ligature IJ" sign="ĳ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter J with circumflex" sign="Ĵ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter J with circumflex" sign="ĵ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter K with cedilla" sign="Ķ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter K with cedilla" sign="ķ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter Kra" sign="ĸ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter L with acute" sign="Ĺ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter L with acute" sign="ĺ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter L with cedilla" sign="Ļ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter L with cedilla" sign="ļ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter L with caron" sign="Ľ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter L with caron" sign="ľ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter L with middle dot" sign="Ŀ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter L with middle dot" sign="ŀ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter L with stroke" sign="Ł" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter L with stroke" sign="ł" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter N with acute" sign="Ń" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter N with acute" sign="ń" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter N with cedilla" sign="Ņ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter N with cedilla" sign="ņ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter N with caron" sign="Ň" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter N with caron" sign="ň" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter N preceded by apostrophe" sign="ŉ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter Eng" sign="Ŋ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter Eng" sign="ŋ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter O with macron" sign="Ō" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter O with macron" sign="ō" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter O with breve" sign="Ŏ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter O with breve" sign="ŏ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter O with double acute" sign="Ő" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter O with double acute" sign="ő" cat="Latin-A"></symb>
+  <symb name="Latin Capital Ligature OE" sign="Œ" cat="Latin-A"></symb>
+  <symb name="Latin Small Ligature OE" sign="œ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter R with acute" sign="Ŕ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter R with acute" sign="ŕ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter R with cedilla" sign="Ŗ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter R with cedilla" sign="ŗ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter R with caron" sign="Ř" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter R with caron" sign="ř" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter S with acute" sign="Ś" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter S with acute" sign="ś" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter S with circumflex" sign="Ŝ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter S with circumflex" sign="ŝ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter S with cedilla" sign="Ş" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter S with cedilla" sign="ş" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter S with caron" sign="Š" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter S with caron" sign="š" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter T with cedilla" sign="Ţ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter T with cedilla" sign="ţ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter T with caron" sign="Ť" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter T with caron" sign="ť" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter T with stroke" sign="Ŧ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter T with stroke" sign="ŧ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter U with tilde" sign="Ũ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter U with tilde" sign="ũ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter U with macron" sign="Ū" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter U with macron" sign="ū" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter U with breve" sign="Ŭ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter U with breve" sign="ŭ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter U with ring above" sign="Ů" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter U with ring above" sign="ů" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter U with double acute" sign="Ű" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter U with double acute" sign="ű" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter U with ogonek" sign="Ų" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter U with ogonek" sign="ų" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter W with circumflex" sign="Ŵ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter W with circumflex" sign="ŵ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter Y with circumflex" sign="Ŷ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter Y with circumflex" sign="ŷ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter Y with diaeresis" sign="Ÿ" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter Z with acute" sign="Ź" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter Z with acute" sign="ź" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter Z with dot above" sign="Ż" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter Z with dot above" sign="ż" cat="Latin-A"></symb>
+  <symb name="Latin Capital Letter Z with caron" sign="Ž" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter Z with caron" sign="ž" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter long S" sign="ſ" cat="Latin-A"></symb>
+  <symb name="Latin Small Letter B With Stroke" sign="ƀ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter B With Hook" sign="Ɓ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter B With Topbar" sign="Ƃ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter B With Topbar" sign="ƃ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Tone Six" sign="Ƅ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Tone Six" sign="ƅ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Open O" sign="Ɔ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter C With Hook" sign="Ƈ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter C With Hook" sign="ƈ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter African D" sign="Ɖ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter D With Hook" sign="Ɗ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter D With Topbar" sign="Ƌ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter D With Topbar" sign="ƌ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Turned Delta" sign="ƍ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Reversed E" sign="Ǝ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Schwa" sign="Ə" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Open E" sign="Ɛ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter F With Hook" sign="Ƒ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter F With Hook" sign="ƒ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter G With Hook" sign="Ɠ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Gamma" sign="Ɣ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Hv" sign="ƕ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Iota" sign="Ɩ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter I With Stroke" sign="Ɨ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter K With Hook" sign="Ƙ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter K With Hook" sign="ƙ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter L With Bar" sign="ƚ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Lambda With Stroke" sign="ƛ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Turned M" sign="Ɯ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter N With Left Hook" sign="Ɲ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter N With Long Right Leg" sign="ƞ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Middle Tilde" sign="Ɵ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Horn" sign="Ơ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter O With Horn" sign="ơ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Oi" sign="Ƣ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Oi" sign="ƣ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter P With Hook" sign="Ƥ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter P With Hook" sign="ƥ" cat="Latin-B"></symb>
+  <symb name="Latin Letter Yr" sign="Ʀ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Tone Two" sign="Ƨ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Tone Two" sign="ƨ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Esh" sign="Ʃ" cat="Latin-B"></symb>
+  <symb name="Latin Letter Reversed Esh Loop" sign="ƪ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter T With Palatal Hook" sign="ƫ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter T With Hook" sign="Ƭ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter T With Hook" sign="ƭ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter T With Retroflex Hook" sign="Ʈ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter U With Horn" sign="Ư" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter U With Horn" sign="ư" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Upsilon" sign="Ʊ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter V With Hook" sign="Ʋ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Y With Hook" sign="Ƴ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Y With Hook" sign="ƴ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Z With Stroke" sign="Ƶ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Z With Stroke" sign="ƶ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Ezh" sign="Ʒ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Ezh Reversed" sign="Ƹ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Ezh Reversed" sign="ƹ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Ezh With Tail" sign="ƺ" cat="Latin-B"></symb>
+  <symb name="Latin Letter Two With Stroke" sign="ƻ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Tone Five" sign="Ƽ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Tone Five" sign="ƽ" cat="Latin-B"></symb>
+  <symb name="Latin Letter Inverted Glottal Stop With Stroke" sign="ƾ" cat="Latin-B"></symb>
+  <symb name="Latin Letter Wynn" sign="ƿ" cat="Latin-B"></symb>
+  <symb name="Latin Letter Dental Click" sign="ǀ" cat="Latin-B"></symb>
+  <symb name="Latin Letter Lateral Click" sign="ǁ" cat="Latin-B"></symb>
+  <symb name="Latin Letter Alveolar Click" sign="ǂ" cat="Latin-B"></symb>
+  <symb name="Latin Letter Retroflex Click" sign="ǃ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Dz With Caron" sign="Ǆ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter D With Small Letter Z With Caron" sign="ǅ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Dz With Caron" sign="ǆ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Lj" sign="Ǉ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter L With Small Letter J" sign="ǈ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Lj" sign="ǉ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Nj" sign="Ǌ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter N With Small Letter J" sign="ǋ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Nj" sign="ǌ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter A With Caron" sign="Ǎ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter A With Caron" sign="ǎ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter I With Caron" sign="Ǐ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter I With Caron" sign="ǐ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Caron" sign="Ǒ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter O With Caron" sign="ǒ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter U With Caron" sign="Ǔ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter U With Caron" sign="ǔ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter U With Diaeresis And Macron" sign="Ǖ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter U With Diaeresis And Macron" sign="ǖ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter U With Diaeresis And Acute" sign="Ǘ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter U With Diaeresis And Acute" sign="ǘ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter U With Diaeresis And Caron" sign="Ǚ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter U With Diaeresis And Caron" sign="ǚ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter U With Diaeresis And Grave" sign="Ǜ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter U With Diaeresis And Grave" sign="ǜ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Turned E" sign="ǝ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter A With Diaeresis And Macron" sign="Ǟ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter A With Diaeresis And Macron" sign="ǟ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter A With Dot Above And Macron" sign="Ǡ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter A With Dot Above And Macron" sign="ǡ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Ae With Macron" sign="Ǣ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Ae With Macron" sign="ǣ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter G With Stroke" sign="Ǥ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter G With Stroke" sign="ǥ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter G With Caron" sign="Ǧ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter G With Caron" sign="ǧ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter K With Caron" sign="Ǩ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter K With Caron" sign="ǩ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Ogonek" sign="Ǫ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter O With Ogonek" sign="ǫ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Ogonek And Macron" sign="Ǭ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter O With Ogonek And Macron" sign="ǭ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Ezh With Caron" sign="Ǯ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Ezh With Caron" sign="ǯ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter J With Caron" sign="ǰ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Dz" sign="Ǳ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter D With Small Letter Z" sign="ǲ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Dz" sign="ǳ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter G With Acute" sign="Ǵ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter G With Acute" sign="ǵ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Hwair" sign="Ƕ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Wynn" sign="Ƿ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter N With Grave" sign="Ǹ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter N With Grave" sign="ǹ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter A With Ring Above And Acute" sign="Ǻ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter A With Ring Above And Acute" sign="ǻ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Ae With Acute" sign="Ǽ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Ae With Acute" sign="ǽ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Stroke And Acute" sign="Ǿ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter O With Stroke And Acute" sign="ǿ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter A With Double Grave" sign="Ȁ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter A With Double Grave" sign="ȁ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter A With Inverted Breve" sign="Ȃ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter A With Inverted Breve" sign="ȃ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter E With Double Grave" sign="Ȅ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter E With Double Grave" sign="ȅ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter E With Inverted Breve" sign="Ȇ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter E With Inverted Breve" sign="ȇ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter I With Double Grave" sign="Ȉ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter I With Double Grave" sign="ȉ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter I With Inverted Breve" sign="Ȋ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter I With Inverted Breve" sign="ȋ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Double Grave" sign="Ȍ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter O With Double Grave" sign="ȍ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Inverted Breve" sign="Ȏ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter O With Inverted Breve" sign="ȏ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter R With Double Grave" sign="Ȑ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter R With Double Grave" sign="ȑ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter R With Inverted Breve" sign="Ȓ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter R With Inverted Breve" sign="ȓ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter U With Double Grave" sign="Ȕ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter U With Double Grave" sign="ȕ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter U With Inverted Breve" sign="Ȗ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter U With Inverted Breve" sign="ȗ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter S With Comma Below" sign="Ș" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter S With Comma Below" sign="ș" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter T With Comma Below" sign="Ț" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter T With Comma Below" sign="ț" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Yogh" sign="Ȝ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Yogh" sign="ȝ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter H With Caron" sign="Ȟ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter H With Caron" sign="ȟ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter N With Long Right Leg" sign="Ƞ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter D With Curl" sign="ȡ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Ou" sign="Ȣ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Ou" sign="ȣ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Z With Hook" sign="Ȥ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Z With Hook" sign="ȥ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter A With Dot Above" sign="Ȧ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter A With Dot Above" sign="ȧ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter E With Cedilla" sign="Ȩ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter E With Cedilla" sign="ȩ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Diaeresis And Macron" sign="Ȫ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter O With Diaeresis And Macron" sign="ȫ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Tilde And Macron" sign="Ȭ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter O With Tilde And Macron" sign="ȭ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Dot Above" sign="Ȯ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter O With Dot Above" sign="ȯ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter O With Dot Above And Macron" sign="Ȱ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter O With Dot Above And Macron" sign="ȱ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Y With Macron" sign="Ȳ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Y With Macron" sign="ȳ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter L With Curl" sign="ȴ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter N With Curl" sign="ȵ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter T With Curl" sign="ȶ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Dotless J" sign="ȷ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Db Digraph" sign="ȸ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Qp Digraph" sign="ȹ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter A With Stroke" sign="Ⱥ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter C With Stroke" sign="Ȼ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter C With Stroke" sign="ȼ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter L With Bar" sign="Ƚ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter T With Diagonal Stroke" sign="Ⱦ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter S With Swash Tail" sign="ȿ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Z With Swash Tail" sign="ɀ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Glottal Stop" sign="Ɂ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Glottal Stop" sign="ɂ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter B With Stroke" sign="Ƀ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter U Bar" sign="Ʉ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Turned V" sign="Ʌ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter E With Stroke" sign="Ɇ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter E With Stroke" sign="ɇ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter J With Stroke" sign="Ɉ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter J With Stroke" sign="ɉ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Small Q With Hook Tail" sign="Ɋ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Q With Hook Tail" sign="ɋ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter R With Stroke" sign="Ɍ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter R With Stroke" sign="ɍ" cat="Latin-B"></symb>
+  <symb name="Latin Capital Letter Y With Stroke" sign="Ɏ" cat="Latin-B"></symb>
+  <symb name="Latin Small Letter Y With Stroke" sign="ɏ" cat="Latin-B"></symb>
+  <symb name="For All" sign="∀" cat="Mathematics"></symb>
+  <symb name="Complement" sign="∁" cat="Mathematics"></symb>
+  <symb name="Partial Differential" sign="∂" cat="Mathematics"></symb>
+  <symb name="There Exists" sign="∃" cat="Mathematics"></symb>
+  <symb name="There Does Not Exist" sign="∄" cat="Mathematics"></symb>
+  <symb name="Empty Set" sign="∅" cat="Mathematics"></symb>
+  <symb name="Increment" sign="∆" cat="Mathematics"></symb>
+  <symb name="Nabla" sign="∇" cat="Mathematics"></symb>
+  <symb name="Element Of" sign="∈" cat="Mathematics"></symb>
+  <symb name="Not An Element Of" sign="∉" cat="Mathematics"></symb>
+  <symb name="Small Element Of" sign="∊" cat="Mathematics"></symb>
+  <symb name="Contains As Member" sign="∋" cat="Mathematics"></symb>
+  <symb name="Does Not Contain As Member" sign="∌" cat="Mathematics"></symb>
+  <symb name="Small Contains As Member" sign="∍" cat="Mathematics"></symb>
+  <symb name="End Of Proof" sign="∎" cat="Mathematics"></symb>
+  <symb name="N-ary Product" sign="∏" cat="Mathematics"></symb>
+  <symb name="N-ary Coproduct" sign="∐" cat="Mathematics"></symb>
+  <symb name="N-ary Summation" sign="∑" cat="Mathematics"></symb>
+  <symb name="Minus Sign" sign="−" cat="Mathematics"></symb>
+  <symb name="Minus-or-plus Sign" sign="∓" cat="Mathematics"></symb>
+  <symb name="Dot Plus" sign="∔" cat="Mathematics"></symb>
+  <symb name="Division Slash" sign="∕" cat="Mathematics"></symb>
+  <symb name="Set Minus" sign="∖" cat="Mathematics"></symb>
+  <symb name="Multiplication Sign" sign="×" cat="Mathematics"></symb>
+  <symb name="Division Sign" sign="÷" cat="Mathematics"></symb>
+  <symb name="Asterisk Operator" sign="∗" cat="Mathematics"></symb>
+  <symb name="Ring Operator" sign="∘" cat="Mathematics"></symb>
+  <symb name="Bullet Operator" sign="∙" cat="Mathematics"></symb>
+  <symb name="Square Root" sign="√" cat="Mathematics"></symb>
+  <symb name="Cube Root" sign="∛" cat="Mathematics"></symb>
+  <symb name="Fourth Root" sign="∜" cat="Mathematics"></symb>
+  <symb name="Proportional To" sign="∝" cat="Mathematics"></symb>
+  <symb name="Infinity" sign="∞" cat="Mathematics"></symb>
+  <symb name="Right Angle" sign="∟" cat="Mathematics"></symb>
+  <symb name="Angle" sign="∠" cat="Mathematics"></symb>
+  <symb name="Measured Angle" sign="∡" cat="Mathematics"></symb>
+  <symb name="Spherical Angle" sign="∢" cat="Mathematics"></symb>
+  <symb name="Divides" sign="∣" cat="Mathematics"></symb>
+  <symb name="Does Not Divide" sign="∤" cat="Mathematics"></symb>
+  <symb name="Parallel To" sign="∥" cat="Mathematics"></symb>
+  <symb name="Not Parallel To" sign="∦" cat="Mathematics"></symb>
+  <symb name="Logical And" sign="∧" cat="Mathematics"></symb>
+  <symb name="Logical Or" sign="∨" cat="Mathematics"></symb>
+  <symb name="Intersection" sign="∩" cat="Mathematics"></symb>
+  <symb name="Union" sign="∪" cat="Mathematics"></symb>
+  <symb name="Integral" sign="∫" cat="Mathematics"></symb>
+  <symb name="Double Integral" sign="∬" cat="Mathematics"></symb>
+  <symb name="Triple Integral" sign="∭" cat="Mathematics"></symb>
+  <symb name="Contour Integral" sign="∮" cat="Mathematics"></symb>
+  <symb name="Surface Integral" sign="∯" cat="Mathematics"></symb>
+  <symb name="Volume Integral" sign="∰" cat="Mathematics"></symb>
+  <symb name="Clockwise Integral" sign="∱" cat="Mathematics"></symb>
+  <symb name="Clockwise Contour Integral" sign="∲" cat="Mathematics"></symb>
+  <symb name="Anticlockwise Contour Integral" sign="∳" cat="Mathematics"></symb>
+  <symb name="Therefore" sign="∴" cat="Mathematics"></symb>
+  <symb name="Because" sign="∵" cat="Mathematics"></symb>
+  <symb name="Ratio" sign="∶" cat="Mathematics"></symb>
+  <symb name="Proportion" sign="∷" cat="Mathematics"></symb>
+  <symb name="Dot Minus" sign="∸" cat="Mathematics"></symb>
+  <symb name="Excess" sign="∹" cat="Mathematics"></symb>
+  <symb name="Geometric Proportion" sign="∺" cat="Mathematics"></symb>
+  <symb name="Homothetic" sign="∻" cat="Mathematics"></symb>
+  <symb name="Tilde Operator" sign="∼" cat="Mathematics"></symb>
+  <symb name="Reversed Tilde" sign="∽" cat="Mathematics"></symb>
+  <symb name="Smiley Happy Light" sign="☺" cat="Special"></symb>
+  <symb name="Smiley Happy Dark" sign="☻" cat="Special"></symb>
+  <symb name="Heart" sign="♥" cat="Special"></symb>
+  <symb name="Diamonds" sign="♦" cat="Special"></symb>
+  <symb name="Club" sign="♣" cat="Special"></symb>
+  <symb name="Spade" sign="♠" cat="Special"></symb>
+  <symb name="Bullet" sign="•" cat="Special"></symb>
+  <symb name="Bullet Inverted" sign="◘" cat="Special"></symb>
+  <symb name="Circle" sign="○" cat="Special"></symb>
+  <symb name="Circle Inverted" sign="◙" cat="Special"></symb>
+  <symb name="Male sign / Mars symbol" sign="♂" cat="Special"></symb>
+  <symb name="Female sign / Venus symbol" sign="♀" cat="Special"></symb>
+  <symb name="Single note" sign="♪" cat="Special"></symb>
+  <symb name="Double note" sign="♫" cat="Special"></symb>
+  <symb name="Sun" sign="☼" cat="Special"></symb>
+  <symb name="Trade Mark Sign" sign="™" cat="Special"></symb>
+  <symb name="Black Right-pointing Pointer" sign="►" cat="Special"></symb>
+  <symb name="Black Left-pointing Pointer" sign="◄" cat="Special"></symb>
+  <symb name="Black Up-pointing Pointer" sign="▲" cat="Special"></symb>
+  <symb name="Black Down-pointing Pointer" sign="▼" cat="Special"></symb>
+  <symb name="Double Exclamation Mark" sign="‼" cat="Special"></symb>
+  <symb name="Black Rectangle" sign="▬" cat="Special"></symb>
+  <symb name="Right Angle" sign="∟" cat="Special"></symb>
+  <symb name="House" sign="⌂" cat="Special"></symb>
+  <symb name="Peseta Sign" sign="₧" cat="Currency"></symb>
+  <symb name="Not Sign" sign="¬" cat="Special"></symb>
+  <symb name="Reversed Not Sign" sign="⌐" cat="Special"></symb>
+  <symb name="Box Drawings Light Horizontal" sign="─" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Horizontal" sign="━" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Vertical" sign="│" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Vertical" sign="┃" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Triple Dash Horizontal" sign="┄" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Triple Dash Horizontal" sign="┅" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Triple Dash Vertical" sign="┆" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Triple Dash Vertical" sign="┇" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Quadruple Dash Horizontal" sign="┈" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Quadruple Dash Horizontal" sign="┉" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Quadruple Dash Vertical" sign="┊" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Quadruple Dash Vertical" sign="┋" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Down And Right" sign="┌" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Light And Right Heavy" sign="┍" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Heavy And Right Light" sign="┎" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Down And Right" sign="┏" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Down And Left" sign="┐" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Light And Left Heavy" sign="┑" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Heavy And Left Light" sign="┒" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Down And Left" sign="┓" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Up And Right" sign="└" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Light And Right Heavy" sign="┕" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Heavy And Right Light" sign="┖" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Up And Right" sign="┗" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Up And Left" sign="┘" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Light And Left Heavy" sign="┙" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Heavy And Left Light" sign="┚" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Up And Left" sign="┛" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Vertical And Right" sign="├" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Light And Right Heavy" sign="┝" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Heavy And Right Down Light" sign="┞" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Heavy And Right Up Light" sign="┟" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Heavy And Right Light" sign="┠" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Light And Right Up Heavy" sign="┡" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Light And Right Down Heavy" sign="┢" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Vertical And Right" sign="┣" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Vertical And Left" sign="┤" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Light And Left Heavy" sign="┥" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Heavy And Left Down Light" sign="┦" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Heavy And Left Up Light" sign="┧" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Heavy And Left Light" sign="┨" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Light And Left Up Heavy" sign="┩" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Light And Left Down Heavy" sign="┪" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Vertical And Left" sign="┫" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Down And Horizontal" sign="┬" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Left Heavy And Right Down Light" sign="┭" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Right Heavy And Left Down Light" sign="┮" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Light And Horizontal Heavy" sign="┯" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Heavy And Horizontal Light" sign="┰" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Right Light And Left Down Heavy" sign="┱" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Left Light And Right Down Heavy" sign="┲" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Down And Horizontal" sign="┳" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Up And Horizontal" sign="┴" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Left Heavy And Right Up Light" sign="┵" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Right Heavy And Left Up Light" sign="┶" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Light And Horizontal Heavy" sign="┷" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Heavy And Horizontal Light" sign="┸" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Right Light And Left Up Heavy" sign="┹" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Left Light And Right Up Heavy" sign="┺" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Up And Horizontal" sign="┻" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Vertical And Horizontal" sign="┼" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Left Heavy And Right Vertical Light" sign="┽" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Right Heavy And Left Vertical Light" sign="┾" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Light And Horizontal Heavy" sign="┿" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Heavy And Down Horizontal Light" sign="╀" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Heavy And Up Horizontal Light" sign="╁" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Heavy And Horizontal Light" sign="╂" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Left Up Heavy And Right Down Light" sign="╃" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Right Up Heavy And Left Down Light" sign="╄" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Left Down Heavy And Right Up Light" sign="╅" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Right Down Heavy And Left Up Light" sign="╆" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Light And Up Horizontal Heavy" sign="╇" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Light And Down Horizontal Heavy" sign="╈" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Right Light And Left Vertical Heavy" sign="╉" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Left Light And Right Vertical Heavy" sign="╊" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Vertical And Horizontal" sign="╋" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Double Dash Horizontal" sign="╌" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Double Dash Horizontal" sign="╍" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Double Dash Vertical" sign="╎" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Double Dash Vertical" sign="╏" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Double Horizontal" sign="═" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Double Vertical" sign="║" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Single And Right Double" sign="╒" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Double And Right Single" sign="╓" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Double Down And Right" sign="╔" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Single And Left Double" sign="╕" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Double And Left Single" sign="╖" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Double Down And Left" sign="╗" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Single And Right Double" sign="╘" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Double And Right Single" sign="╙" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Double Up And Right" sign="╚" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Single And Left Double" sign="╛" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Double And Left Single" sign="╜" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Double Up And Left" sign="╝" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Single And Right Double" sign="╞" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Double And Right Single" sign="╟" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Double Vertical And Right" sign="╠" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Single And Left Double" sign="╡" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Double And Left Single" sign="╢" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Double Vertical And Left" sign="╣" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Single And Horizontal Double" sign="╤" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Down Double And Horizontal Single" sign="╥" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Double Down And Horizontal" sign="╦" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Single And Horizontal Double" sign="╧" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Up Double And Horizontal Single" sign="╨" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Double Up And Horizontal" sign="╩" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Single And Horizontal Double" sign="╪" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Vertical Double And Horizontal Single" sign="╫" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Double Vertical And Horizontal" sign="╬" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Arc Down And Right" sign="╭" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Arc Down And Left" sign="╮" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Arc Up And Left" sign="╯" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Arc Up And Right" sign="╰" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Diagonal Upper Right To Lower Left" sign="╱" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Diagonal Upper Left To Lower Right" sign="╲" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Diagonal Cross" sign="╳" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Left" sign="╴" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Up" sign="╵" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Right" sign="╶" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Down" sign="╷" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Left" sign="╸" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Up" sign="╹" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Right" sign="╺" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Down" sign="╻" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Left And Heavy Right" sign="╼" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Light Up And Heavy Down" sign="╽" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Left And Light Right" sign="╾" cat="Box Drawing"></symb>
+  <symb name="Box Drawings Heavy Up And Light Down" sign="╿" cat="Box Drawing"></symb>
+  <symb name="Upper Half Block" sign="▀" cat="Block Elements"></symb>
+  <symb name="Lower One Eighth Block" sign="▁" cat="Block Elements"></symb>
+  <symb name="Lower One Quarter Block" sign="▂" cat="Block Elements"></symb>
+  <symb name="Lower Three Eighths Block" sign="▃" cat="Block Elements"></symb>
+  <symb name="Lower Half Block" sign="▄" cat="Block Elements"></symb>
+  <symb name="Lower Five Eighths Block" sign="▅" cat="Block Elements"></symb>
+  <symb name="Lower Three Quarters Block" sign="▆" cat="Block Elements"></symb>
+  <symb name="Lower Seven Eighths Block" sign="▇" cat="Block Elements"></symb>
+  <symb name="Full Block" sign="█" cat="Block Elements"></symb>
+  <symb name="Left Seven Eighths Block" sign="▉" cat="Block Elements"></symb>
+  <symb name="Left Three Quarters Block" sign="▊" cat="Block Elements"></symb>
+  <symb name="Left Five Eighths Block" sign="▋" cat="Block Elements"></symb>
+  <symb name="Left Half Block" sign="▌" cat="Block Elements"></symb>
+  <symb name="Left Three Eighths Block" sign="▍" cat="Block Elements"></symb>
+  <symb name="Left One Quarter Block" sign="▎" cat="Block Elements"></symb>
+  <symb name="Left One Eighth Block" sign="▏" cat="Block Elements"></symb>
+  <symb name="Right Half Block" sign="▐" cat="Block Elements"></symb>
+  <symb name="Light Shade" sign="░" cat="Block Elements"></symb>
+  <symb name="Medium Shade" sign="▒" cat="Block Elements"></symb>
+  <symb name="Dark Shade" sign="▓" cat="Block Elements"></symb>
+  <symb name="Upper One Eighth Block" sign="▔" cat="Block Elements"></symb>
+  <symb name="Right One Eighth Block" sign="▕" cat="Block Elements"></symb>
+  <symb name="Quadrant Lower Left" sign="▖" cat="Block Elements"></symb>
+  <symb name="Quadrant Lower Right" sign="▗" cat="Block Elements"></symb>
+  <symb name="Quadrant Upper Left" sign="▘" cat="Block Elements"></symb>
+  <symb name="Quadrant Upper Left And Lower Left And Lower Right" sign="▙" cat="Block Elements"></symb>
+  <symb name="Quadrant Upper Left And Lower Right" sign="▚" cat="Block Elements"></symb>
+  <symb name="Quadrant Upper Left And Upper Right And Lower Left" sign="▛" cat="Block Elements"></symb>
+  <symb name="Quadrant Upper Left And Upper Right And Lower Right" sign="▜" cat="Block Elements"></symb>
+  <symb name="Quadrant Upper Right" sign="▝" cat="Block Elements"></symb>
+  <symb name="Quadrant Upper Right And Lower Left" sign="▞" cat="Block Elements"></symb>
+  <symb name="Quadrant Upper Right And Lower Left And Lower Right" sign="▟" cat="Block Elements"></symb>
+</symbols>
