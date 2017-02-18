@@ -61,7 +61,7 @@
             this.listBox.Location = new System.Drawing.Point(15, 98);
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(318, 256);
-            this.listBox.TabIndex = 1;
+            this.listBox.TabIndex = 2;
             this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             this.listBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listBox_KeyDown);
             // 
@@ -74,7 +74,7 @@
             this.cbCategory.Location = new System.Drawing.Point(82, 49);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(186, 24);
-            this.cbCategory.TabIndex = 2;
+            this.cbCategory.TabIndex = 1;
             this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
             // lblCategory
