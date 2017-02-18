@@ -10,9 +10,7 @@ namespace SymbSearch
     public partial class FormMain : System.Windows.Forms.Form
     {
         [DllImport("user32.dll")]
-        private static extern bool RegisterHotKey(IntPtr hWnd, int id,
-
-int fsModifiers, int vk);
+        private static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vk);
 
         [DllImport("user32.dll")]
         private static extern bool UnregisterHotKey(IntPtr hWnd, int id);
@@ -117,19 +115,24 @@ int fsModifiers, int vk);
 
         private void listBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblSign.Text = symbols[listBox.SelectedIndex].sign.ToString();
+            lblSign.Text = listBox.SelectedItem.ToString().Substring(0,1);
         }
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
+            FilterList();
+        }
+        private void searchbox_TextChanged(object sender, EventArgs e)
+        {
+            FilterList();
+        }
+        private void FilterList()
+        {
             List<Symb> newList = new List<Symb>();
-            if (cbCategory.SelectedItem.ToString() == "all")
+            for (int i = 0; i < symbols.Count; i++)
             {
-                newList = symbols;
-            }
-            else {
-                for (int i = 0; i < symbols.Count; i++)
+                if (symbols[i].name.ToLower().Contains(searchbox.Text.ToLower()))
                 {
-                    if (symbols[i].cat == cbCategory.SelectedItem.ToString())
+                    if (cbCategory.SelectedItem.ToString() == "all" || cbCategory.SelectedItem.ToString() == symbols[i].cat)
                     {
                         newList.Add(symbols[i]);
                     }
@@ -138,20 +141,6 @@ int fsModifiers, int vk);
             DeleteList();
             ShowList(newList);
         }
-        private void searchbox_TextChanged(object sender, EventArgs e)
-        {
-            List<Symb> newList = new List<Symb>();
-            for (int i = 0; i < symbols.Count; i++)
-            {
-                if (symbols[i].name.ToLower().Contains(searchbox.Text.ToLower()))
-                {
-                    newList.Add(symbols[i]);
-                }
-            }
-            DeleteList();
-            ShowList(newList);
-        }
-
         protected override void WndProc(ref Message m)
         {
             if (m.Msg == WM_HOTKEY && (int)m.WParam == 1)
