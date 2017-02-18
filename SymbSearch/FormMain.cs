@@ -173,28 +173,62 @@ namespace SymbSearch
 
         private void listBox_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-                ChooseSymb();
+            e.Handled = true;
+            KeyControl(e);
         }
 
         private void searchbox_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Down)
+            KeyControl(e);
+        }
+        private void KeyControl(KeyEventArgs e)
+        {
+            switch (e.KeyCode)
             {
-                if (listBox.SelectedIndex < listBox.Items.Count - 1)
-                    listBox.SelectedIndex = listBox.SelectedIndex + 1;
-                else
-                    listBox.SelectedIndex = 0;
+                case Keys.Down:
+                    NextElement(listBox);
+                    break;
+                case Keys.Up:
+                    PrevElement(listBox);
+                    break;
+                case Keys.PageDown:
+                    NextElement(cbCategory);
+                    break;
+                case Keys.PageUp:
+                    PrevElement(cbCategory);
+                    break;
+                case Keys.Enter:
+                    ChooseSymb();
+                    break;
             }
-            else if (e.KeyCode == Keys.Up)
-            {
-                if (listBox.SelectedIndex > 0)
-                    listBox.SelectedIndex = listBox.SelectedIndex - 1;
-                else
-                    listBox.SelectedIndex = listBox.Items.Count - 1;
-            }
-            else if (e.KeyCode == Keys.Enter)
-                ChooseSymb();
+        }
+        private static void NextElement(ListBox a)
+        {
+            if (a.SelectedIndex < a.Items.Count - 1)
+                a.SelectedIndex = a.SelectedIndex + 1;
+            else
+                a.SelectedIndex = 0;
+        }
+        private static void NextElement(ComboBox a)
+        {
+            if (a.SelectedIndex < a.Items.Count - 1)
+                a.SelectedIndex = a.SelectedIndex + 1;
+            else
+                a.SelectedIndex = 0;
+        }
+        private static void PrevElement(ListBox a)
+        {
+            if (a.SelectedIndex > 0)
+                a.SelectedIndex = a.SelectedIndex - 1;
+            else
+                a.SelectedIndex = a.Items.Count - 1;
+        }
+        private static void PrevElement(ComboBox a)
+        {
+            if (a.SelectedIndex > 0)
+                a.SelectedIndex = a.SelectedIndex - 1;
+            else
+                a.SelectedIndex = a.Items.Count - 1;
         }
     }
 }
