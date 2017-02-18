@@ -42,6 +42,9 @@ footer small {
 #gif {
   float: left;
 }
+#screenshot {
+  border: 20px solid white;
+}
 h2 {
   margin-bottom: 0.5em;
 }
@@ -58,7 +61,7 @@ div.download div {
   transition: all 1s ease;
 }
 div.download div :hover {
-  background-color: #0aa; 
+  background-color: #0aa;
   transition: all 1s ease;
 }
 #fork-me {
