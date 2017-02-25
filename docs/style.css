@@ -71,6 +71,9 @@ div.download div :hover {
   margin: 1em 0;
   background: transparent;
 }
+nav ul li {
+    list-style: none;
+}
 nav ul li a {
   font-weight: bold;
   text-decoration: none;
@@ -83,4 +86,10 @@ nav ul li a:hover {
   color: #088;
   border-color: #088;
   transition: all 1s ease;
+}
+.description {
+  max-width: 600px;
+}
+.lang {
+  float: right;
 }
