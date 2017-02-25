@@ -1,0 +1,95 @@
+@import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700';
+
+html,body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  color: white;
+  background: #035;
+}
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+header {
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 0;
+}
+#content {
+  padding-bottom: 3em; /* must be >= footer */
+}
+footer {
+  background: #111;
+  width: 100%;
+  height: 2em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer small {
+  margin: 1em;
+}
+a {
+  color: white;
+}
+main, article {
+  line-height: 1.5;
+  padding: 1em;
+}
+main {
+  max-width: 40em;
+}
+/* Nav */
+
+nav a {
+  color: #111;
+  background: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 1em;
+  border: 1px solid black;
+  padding: 0.3em;
+  transition: all 1s ease;
+}
+nav a:hover {
+  color: #088;
+  background: #111;
+  border-color: #088;
+  transition: all 1s ease;
+}
+.lang {
+  text-align: right;
+}
+/* Download buttons */
+div.download div {
+  margin: 1em 0;
+  transition: all 1s ease;
+}
+div.download div a{
+  background: #088;
+  color: #111;
+  padding: 0.5em;
+  text-decoration: none;
+}
+div.download div :hover {
+  background: #111;
+  color: #088;
+  transition: all 1s ease;
+}
+
+#fork-me {
+  position: absolute;
+  right:0;
+  top:0;
+  margin: 0 0;
+  background: transparent;
+}
+#screenshot {
+  border: 20px solid white;
+  margin-top: 3em;
+}
