@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace SymbSearch
 {
-    public partial class FormMain : System.Windows.Forms.Form
+    public partial class FormMain : Form
     {
         [DllImport("user32.dll")]
         private static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vk);
@@ -21,6 +21,7 @@ namespace SymbSearch
         const int WM_HOTKEY = 0x0312;
 
         private List<Symb> symbols = new List<Symb>();
+
         public FormMain()
         {
             InitializeComponent();
@@ -28,6 +29,30 @@ namespace SymbSearch
             ShowList(symbols);
             ShowCats(GetCats());
         }
+        /// <summary>
+        /// Filters symbols by category and search
+        /// </summary>
+        private void FilterList()
+        {
+            List<Symb> newList = new List<Symb>();
+            for (int i = 0; i < symbols.Count; i++)
+            {
+                if (symbols[i].name.ToLower().Contains(searchbox.Text.ToLower()))
+                {
+                    if (cbCategory.SelectedItem.ToString() == "all" || cbCategory.SelectedItem.ToString() == symbols[i].cat)
+                    {
+                        newList.Add(symbols[i]);
+                    }
+                }
+            }
+            DeleteList();
+            ShowList(newList);
+        }
+        #region List of Symb
+        /// <summary>
+        /// Reads and parses symbols.xml
+        /// </summary>
+        /// <returns>Returns list of Symb by symbols.xml</returns>
         private List<Symb> MakeList()
         {
             XmlReader reader = XmlReader.Create(@"symbols.xml");
@@ -61,6 +86,10 @@ namespace SymbSearch
             }
             return list;
         }
+        /// <summary>
+        /// Adds the given list to listBox
+        /// </summary>
+        /// <param name="list"></param>
         private void ShowList(List<Symb> list)
         {
             foreach (Symb temp in list)
@@ -68,18 +97,19 @@ namespace SymbSearch
                 listBox.Items.Add(temp.sign + "\t" + temp.name);
             }
         }
+        /// <summary>
+        /// Clears the listBox
+        /// </summary>
         private void DeleteList()
         {
             listBox.Items.Clear();
         }
-        static void GetList(List<Symb> list)
-        {
-            foreach (Symb temp in list)
-            {
-                Console.WriteLine("Name: {0}\nSign: {1}\nCat: {2}",
-                        temp.name, temp.sign, temp.cat);
-            }
-        }
+        #endregion
+        #region Cats of Symb
+        /// <summary>
+        /// Returns the categories of symbols
+        /// </summary>
+        /// <returns></returns>
         private List<string> GetCats()
         {
             List<string> cats = new List<string>();
@@ -88,12 +118,11 @@ namespace SymbSearch
             {
                 cats.Add(temp.cat);
             }
-            return RemoveCatDoubles(cats);
+            return RemoveDoubles(cats);
         }
-        private List<string> RemoveCatDoubles(List<string> cats)
-        {
-            return cats.Distinct().ToList();
-        }
+        /// <summary>
+        /// Adds the given categories to list
+        /// </summary>
         private void ShowCats(List<string> cats)
         {
             cbCategory.Items.Clear();
@@ -103,44 +132,15 @@ namespace SymbSearch
             }
             cbCategory.Text = "all";
         }
-        private void ChooseSymb()
+        /// <summary>
+        /// Removes doubles of the given list
+        /// </summary>
+        private List<string> RemoveDoubles(List<string> l)
         {
-            Clipboard.SetText(listBox.SelectedItem.ToString().Substring(0, 1));
-            MiniForm();
+            return l.Distinct().ToList();
         }
-        private void btnQuit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void listBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            lblSign.Text = listBox.SelectedItem.ToString().Substring(0,1);
-        }
-        private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            FilterList();
-        }
-        private void searchbox_TextChanged(object sender, EventArgs e)
-        {
-            FilterList();
-        }
-        private void FilterList()
-        {
-            List<Symb> newList = new List<Symb>();
-            for (int i = 0; i < symbols.Count; i++)
-            {
-                if (symbols[i].name.ToLower().Contains(searchbox.Text.ToLower()))
-                {
-                    if (cbCategory.SelectedItem.ToString() == "all" || cbCategory.SelectedItem.ToString() == symbols[i].cat)
-                    {
-                        newList.Add(symbols[i]);
-                    }
-                }
-            }
-            DeleteList();
-            ShowList(newList);
-        }
+        #endregion
+        #region Show and Hide
         protected override void WndProc(ref Message m)
         {
             if (m.Msg == WM_HOTKEY && (int)m.WParam == 1)
@@ -161,26 +161,8 @@ namespace SymbSearch
             WindowState = FormWindowState.Normal;
             searchbox.Select();
         }
-        private void Form_Load(object sender, EventArgs e)
-        {
-            RegisterHotKey(this.Handle, 1, MOD_CONTROL + MOD_ALT, (int)Keys.W);
-        }
-
-        private void Form_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            UnregisterHotKey(this.Handle, 1);
-        }
-
-        private void listBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            e.Handled = true;
-            KeyControl(e);
-        }
-
-        private void searchbox_KeyDown(object sender, KeyEventArgs e)
-        {
-            KeyControl(e);
-        }
+        #endregion
+        #region Keys and Actions
         private void KeyControl(KeyEventArgs e)
         {
             switch (e.KeyCode)
@@ -230,5 +212,49 @@ namespace SymbSearch
             else
                 a.SelectedIndex = a.Items.Count - 1;
         }
+        private void ChooseSymb()
+        {
+            Clipboard.SetText(listBox.SelectedItem.ToString().Substring(0, 1));
+            MiniForm();
+        }
+        #endregion 
+        #region Events on Form
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void listBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblSign.Text = listBox.SelectedItem.ToString().Substring(0, 1);
+        }
+        private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FilterList();
+        }
+        private void searchbox_TextChanged(object sender, EventArgs e)
+        {
+            FilterList();
+        }
+        private void Form_Load(object sender, EventArgs e)
+        {
+            RegisterHotKey(this.Handle, 1, MOD_CONTROL + MOD_ALT, (int)Keys.W);
+        }
+
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            UnregisterHotKey(this.Handle, 1);
+        }
+
+        private void listBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
+            KeyControl(e);
+        }
+
+        private void searchbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            KeyControl(e);
+        }
+        #endregion
     }
 }
