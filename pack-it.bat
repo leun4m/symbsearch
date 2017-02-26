@@ -8,6 +8,7 @@ cd TEMP
 "C:\Program Files\7-Zip\7z.exe" a -r ..\RELEASE\SymbSearch-%version%-win32.zip *
 del /Q *
 REM 64bit
+cd ..
 copy SymbSearch\bin\x64\Release\ TEMP
 copy LICENCE TEMP
 cd TEMP
