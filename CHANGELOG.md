@@ -1,5 +1,13 @@
 # Change Log
 
+## [0.5.2] - 2017-02-26
+### Added
+- Enhancement experience while using keyboard
+
+### Changed
+- Code structure
+- Filter & search
+
 ## [0.5.0] - 2017-02-17
 - **Translated tool in Visual C#**
 
@@ -62,7 +70,8 @@
 - Changelog
 - Licence (MIT)
 
-[Unreleased]: https://github.com/Leun4m/symbsearch/compare/v0.3.6...HEAD
+[Unreleased]: https://github.com/Leun4m/symbsearch/compare/v0.5.2...HEAD
+[0.5.2]: https://github.com/Leun4m/symbsearch/tree/v0.5.2
 [0.5.0]: https://github.com/Leun4m/symbsearch/tree/v0.5.0
 [0.4.0]: https://github.com/Leun4m/symbsearch/tree/v0.4.0
 [0.3.6]: https://github.com/Leun4m/symbsearch/tree/v0.3.6
