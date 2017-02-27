@@ -253,6 +253,8 @@ namespace SymbSearch
 
         private void searchbox_KeyDown(object sender, KeyEventArgs e)
         {
+            e.Handled = true;
+            e.SuppressKeyPress = true;
             KeyControl(e);
         }
         #endregion
