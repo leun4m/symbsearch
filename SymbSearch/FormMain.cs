@@ -21,7 +21,7 @@ namespace SymbSearch
         const int WM_HOTKEY = 0x0312;
 
         private List<Symb> symbols = new List<Symb>();
-
+        private short databaseVersion;
         public FormMain()
         {
             InitializeComponent();
@@ -36,18 +36,27 @@ namespace SymbSearch
         private void FilterList()
         {
             List<Symb> newList = new List<Symb>();
-            for (int i = 0; i < symbols.Count; i++)
+            if (searchbox.Text == "//v")
             {
-                if (symbols[i].name.ToLower().Contains(searchbox.Text.ToLower()))
+                DeleteList();
+                listBox.Items.Add("Version Database: " + databaseVersion);
+            }
+            else
+            {
+                for (int i = 0; i < symbols.Count; i++)
                 {
-                    if (cbCategory.SelectedItem.ToString() == "all" || cbCategory.SelectedItem.ToString() == symbols[i].cat)
+
+                    if (symbols[i].name.ToLower().Contains(searchbox.Text.ToLower()))
                     {
-                        newList.Add(symbols[i]);
+                        if (cbCategory.SelectedItem.ToString() == "all" || cbCategory.SelectedItem.ToString() == symbols[i].cat)
+                        {
+                            newList.Add(symbols[i]);
+                        }
                     }
                 }
+                DeleteList();
+                ShowList(newList);
             }
-            DeleteList();
-            ShowList(newList);
         }
         /// <summary>
         /// Enables Ctrl-Backspace to remove whole word
@@ -90,6 +99,14 @@ namespace SymbSearch
                                     break;
                             }
                         }   
+                    }
+                }
+                else if (reader.Name == "symbols" && reader.HasAttributes)
+                {
+                    reader.MoveToNextAttribute();
+                    if (reader.Name == "version")
+                    {
+                        databaseVersion = Convert.ToInt16(reader.Value);
                     }
                 }
             }
@@ -174,7 +191,7 @@ namespace SymbSearch
         #region Keys and Actions
         private void KeyControl(KeyEventArgs e)
         {
-            if (listBox.SelectedIndex != -1)
+            if (listBox.Items.Count != 0)
             {
                 switch (e.KeyCode)
                 {
