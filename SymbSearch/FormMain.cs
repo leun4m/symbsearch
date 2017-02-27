@@ -214,7 +214,10 @@ namespace SymbSearch
         }
         private void ChooseSymb()
         {
-            Clipboard.SetText(listBox.SelectedItem.ToString().Substring(0, 1));
+            if (listBox.SelectedItem != null)
+            {
+                Clipboard.SetText(listBox.SelectedItem.ToString().Substring(0, 1));
+            }
             MiniForm();
         }
         #endregion 
@@ -254,7 +257,10 @@ namespace SymbSearch
         private void searchbox_KeyDown(object sender, KeyEventArgs e)
         {
             e.Handled = true;
-            e.SuppressKeyPress = true;
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
             KeyControl(e);
         }
         #endregion
