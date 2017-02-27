@@ -174,23 +174,26 @@ namespace SymbSearch
         #region Keys and Actions
         private void KeyControl(KeyEventArgs e)
         {
-            switch (e.KeyCode)
+            if (listBox.SelectedIndex != -1)
             {
-                case Keys.Down:
-                    NextElement(listBox);
-                    break;
-                case Keys.Up:
-                    PrevElement(listBox);
-                    break;
-                case Keys.PageDown:
-                    NextElement(cbCategory);
-                    break;
-                case Keys.PageUp:
-                    PrevElement(cbCategory);
-                    break;
-                case Keys.Enter:
-                    ChooseSymb();
-                    break;
+                switch (e.KeyCode)
+                {
+                    case Keys.Down:
+                        NextElement(listBox);
+                        break;
+                    case Keys.Up:
+                        PrevElement(listBox);
+                        break;
+                    case Keys.PageDown:
+                        NextElement(cbCategory);
+                        break;
+                    case Keys.PageUp:
+                        PrevElement(cbCategory);
+                        break;
+                    case Keys.Enter:
+                        ChooseSymb();
+                        break;
+                }
             }
         }
         private static void NextElement(ListBox a)
@@ -223,12 +226,9 @@ namespace SymbSearch
         }
         private void ChooseSymb()
         {
-            if (listBox.SelectedItem != null)
-            {
-                Clipboard.SetText(listBox.SelectedItem.ToString().Substring(0, 1));
-                searchbox.SelectionStart = 0;
-                searchbox.SelectionLength = searchbox.Text.Length;
-            }
+            Clipboard.SetText(listBox.SelectedItem.ToString().Substring(0, 1));
+            searchbox.SelectionStart = 0;
+            searchbox.SelectionLength = searchbox.Text.Length;
             MiniForm();
         }
         #endregion 
