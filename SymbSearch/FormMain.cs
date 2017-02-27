@@ -25,6 +25,7 @@ namespace SymbSearch
         public FormMain()
         {
             InitializeComponent();
+            SetAutoCompletion();
             symbols = MakeList();
             ShowList(symbols);
             ShowCats(GetCats());
@@ -47,6 +48,14 @@ namespace SymbSearch
             }
             DeleteList();
             ShowList(newList);
+        }
+        /// <summary>
+        /// Enables Ctrl-Backspace to remove whole word
+        /// </summary>
+        private void SetAutoCompletion()
+        {
+            searchbox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            searchbox.AutoCompleteMode = AutoCompleteMode.Suggest;
         }
         #region List of Symb
         /// <summary>
