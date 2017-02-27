@@ -1,5 +1,15 @@
 # Change Log
 
+## [Unreleased]
+### Added
+- Ctrl-Backspace function to remove whole words
+- Highlight searchbox text on "recall"
+- Version number to database (via `//v` available)
+
+### Changed
+- Disabled beep
+- Fixed issues on selection if list is empty
+
 ## [0.5.2] - 2017-02-26
 ### Added
 - Enhancement experience while using keyboard
