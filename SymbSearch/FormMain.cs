@@ -226,6 +226,8 @@ namespace SymbSearch
             if (listBox.SelectedItem != null)
             {
                 Clipboard.SetText(listBox.SelectedItem.ToString().Substring(0, 1));
+                searchbox.SelectionStart = 0;
+                searchbox.SelectionLength = searchbox.Text.Length;
             }
             MiniForm();
         }
