@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<symbols>
+<symbols version="1">
   <symb name="Alpha" sign="Α" cat="Greek"></symb>
   <symb name="alpha" sign="α" cat="Greek"></symb>
   <symb name="Beta" sign="Β" cat="Greek"></symb>
