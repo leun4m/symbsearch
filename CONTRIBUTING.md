@@ -2,11 +2,8 @@
 
 ## Setup
 1. `git` installed ?
-2. `node.js` installed ?
+2. `Visual Studio` (or an alternative) installed ?
 3. `$ git clone https://github.com/leun4m/symbsearch`
-4. `cd symbsearch`
-5. `$ npm install`
-6. `$ atom .` or whatever you prefer :)
 
 ## How to use git
 *If you are indeed completely new to git, my suggestion:
