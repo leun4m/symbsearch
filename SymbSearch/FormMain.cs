@@ -98,7 +98,7 @@ namespace SymbSearch
                                     symb.cat = reader.Value;
                                     break;
                             }
-                        }   
+                        }
                     }
                 }
                 else if (reader.Name == "symbols" && reader.HasAttributes)
@@ -189,11 +189,11 @@ namespace SymbSearch
         }
         #endregion
         #region Keys and Actions
-        private void KeyControl(KeyEventArgs e)
+        private void KeyControl(Keys e)
         {
             if (listBox.Items.Count != 0)
             {
-                switch (e.KeyCode)
+                switch (e)
                 {
                     case Keys.Down:
                         NextElement(listBox);
@@ -243,12 +243,15 @@ namespace SymbSearch
         }
         private void ChooseSymb()
         {
-            Clipboard.SetText(listBox.SelectedItem.ToString().Substring(0, 1));
-            searchbox.SelectionStart = 0;
-            searchbox.SelectionLength = searchbox.Text.Length;
-            MiniForm();
+            if (listBox.SelectedItem != null)
+            {
+                Clipboard.SetText(listBox.SelectedItem.ToString().Substring(0, 1));
+                searchbox.SelectionStart = 0;
+                searchbox.SelectionLength = searchbox.Text.Length;
+                MiniForm();
+            }
         }
-        #endregion 
+        #endregion
         #region Events on Form
         private void btnQuit_Click(object sender, EventArgs e)
         {
@@ -279,7 +282,7 @@ namespace SymbSearch
         private void listBox_KeyDown(object sender, KeyEventArgs e)
         {
             e.Handled = true;
-            KeyControl(e);
+            KeyControl(e.KeyCode);
         }
 
         private void searchbox_KeyDown(object sender, KeyEventArgs e)
@@ -289,7 +292,7 @@ namespace SymbSearch
             {
                 e.SuppressKeyPress = true;
             }
-            KeyControl(e);
+            KeyControl(e.KeyCode);
         }
         #endregion
     }
