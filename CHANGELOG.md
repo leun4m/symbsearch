@@ -1,6 +1,6 @@
 # Change Log
 
-## [Unreleased]
+## [0.6.0] - 2017-06-19
 ### Added
 - Ctrl-Backspace function to remove whole words
 - Highlight searchbox text on "recall"
@@ -81,6 +81,7 @@
 - Licence (MIT)
 
 [Unreleased]: https://github.com/Leun4m/symbsearch/compare/v0.5.2...HEAD
+[0.6.0]: https://github.com/Leun4m/symbsearch/tree/v0.6.0
 [0.5.2]: https://github.com/Leun4m/symbsearch/tree/v0.5.2
 [0.5.0]: https://github.com/Leun4m/symbsearch/tree/v0.5.0
 [0.4.0]: https://github.com/Leun4m/symbsearch/tree/v0.4.0
