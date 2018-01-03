@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Windows.Forms;
+using Gtk;
 
 namespace SymbSearch
 {
-    static class Program
-    {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
-        }
-    }
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+			Application.Init ();
+			MainWindow win = new MainWindow ();
+			win.Show ();
+			Application.Run ();
+		}
+	}
 }
