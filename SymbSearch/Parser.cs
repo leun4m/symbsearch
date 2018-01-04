@@ -30,18 +30,32 @@ namespace SymbSearch
 		/// <summary>
 		/// Filters symbols by category and search
 		/// </summary>
-		public List<Symb> FilterList(String filtertext, String category)
+		public List<Symb> FilterList(String filtertext, String category, bool caseSensitive)
 		{
 			List<Symb> newList = new List<Symb>();
 
-			for (int i = 0; i < symbols.Count; i++)
+			foreach (Symb symbol in symbols)
 			{
-				if (symbols[i].name.ToLower().Contains(filtertext.ToLower()))
-				{
-					if (category == "all" || category == symbols[i].cat)
-					{
-						newList.Add(symbols[i]);
+				if (category != "all" && category != symbol.cat) {
+					continue;
+				}
+
+				string name = symbol.name;
+				if (!caseSensitive) {
+					name = name.ToLower();
+					filtertext = filtertext.ToLower();
+				}
+
+				bool valid = true;
+				string[] substrings = filtertext.Split(null);
+				foreach (string str in substrings) {
+					if (!name.Contains(str)) {
+						valid = false;
+						break;
 					}
+				}
+				if (valid) {
+					newList.Add(symbol);
 				}
 			}
 			return newList;
