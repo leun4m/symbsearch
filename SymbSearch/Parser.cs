@@ -34,6 +34,10 @@ namespace SymbSearch
 		{
 			List<Symb> newList = new List<Symb>();
 
+            if (!caseSensitive) {
+                filtertext = filtertext.ToLower();
+            }
+
 			foreach (Symb symbol in symbols)
 			{
 				if (category != "all" && category != symbol.cat) {
@@ -43,7 +47,6 @@ namespace SymbSearch
 				string name = symbol.name;
 				if (!caseSensitive) {
 					name = name.ToLower();
-					filtertext = filtertext.ToLower();
 				}
 
 				bool valid = true;

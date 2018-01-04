@@ -5,7 +5,8 @@ using SymbSearch;
 
 public partial class MainWindow: Gtk.Window
 {
-	private Parser parser = new Parser();
+	//private Parser parser = new Parser();
+    private JsonParser parser = new JsonParser();
 	private Gtk.ListStore tvListStore;
 	private Gtk.ListStore tvConversionListStore;
 	private bool caseSensitive = false;
@@ -31,7 +32,7 @@ public partial class MainWindow: Gtk.Window
 
 	private void UpdateCategories()
 	{
-		List<string> categories = parser.GetCategories();
+		HashSet<string> categories = parser.GetCategories();
 		CellRendererText cell = new CellRendererText();
 		cbCategory.AddAttribute(cell, "text", 0);
 		ListStore listStore = new ListStore(typeof(string));

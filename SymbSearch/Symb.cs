@@ -14,5 +14,12 @@
 		{
 
 		}
+
+        public Symb(string n, char s, string c)
+        {
+            name = n;
+            sign = s;
+            cat = c;
+        }
 	}
 }
