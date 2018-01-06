@@ -7,6 +7,7 @@ public partial class MainWindow: Gtk.Window
 {
 	//private Parser parser = new Parser();
     private JsonParser parser = new JsonParser();
+	private HashSet<string> unicodeClasses;
 	private Gtk.ListStore tvListStore;
 	private Gtk.ListStore tvConversionListStore;
 	private bool caseSensitive = false;
@@ -15,14 +16,26 @@ public partial class MainWindow: Gtk.Window
 	private SymbolPresentation symbPresentation = new SymbolPresentation();
 	private SymbolConversion conversion = new SymbolConversion();
 	private TreeIter tvIter;
+	private ListStore categoryListStore;
+	private ListStore listStoreExcluded;
+	private ListStore listStoreIncluded;
+	private TreeIter excludedClassIter;
+	private TreeIter includedClassIter;
+	private string selectedExcludedClass;
+	private string selectedIncludedClass;
+	private Dictionary<string, Category> categories = new Dictionary<string, Category>();
+	private Category currentCategory;
 
 	public MainWindow() : base(Gtk.WindowType.Toplevel)
 	{
 		Build();
 		UpdateFont();
-		UpdateCategories();
+		CreateClasses();
+		CreateCategories();
 		CreateTree();
 		CreateConversionTree();
+		CreateClassTrees();
+		UpdateClasses();
 		cbCategory.Active = 0;
 		cbPresentation.Active = 0;
 		cbConversionUnit.Active = 0;
@@ -30,23 +43,31 @@ public partial class MainWindow: Gtk.Window
 		eSearchBox.GrabFocus();
 	}
 
-	private void UpdateCategories()
+	private void CreateClasses()
 	{
-		HashSet<string> categories = parser.GetCategories();
+		unicodeClasses = parser.GetCategories();
 		CellRendererText cell = new CellRendererText();
 		cbCategory.AddAttribute(cell, "text", 0);
 		ListStore listStore = new ListStore(typeof(string));
 		cbCategory.Model = listStore;
-		foreach (string cat in categories) {
-			listStore.AppendValues(cat);
+		foreach (string s in unicodeClasses) {
+			listStore.AppendValues(s);
 		}
+	}
+
+	private void CreateCategories()
+	{
+		CellRendererText cell = new CellRendererText();
+		cbeCategorySelect.AddAttribute(cell, "text", 0);
+		categoryListStore = new ListStore(typeof(string));
+		cbeCategorySelect.Model = categoryListStore;
 	}
 
 	private void CreateTree()
 	{
 		CreateTreeColumn(ref tvResult, "Name", 0);
 		CreateTreeColumn(ref tvResult, "Symbol", 1);
-		CreateTreeColumn(ref tvResult, "Category", 2);
+		CreateTreeColumn(ref tvResult, "Class", 2);
 		tvListStore = new Gtk.ListStore(typeof(string), typeof(string), typeof(string));
 		tvResult.Model = tvListStore;
 	}
@@ -67,6 +88,33 @@ public partial class MainWindow: Gtk.Window
 		CellRendererText colCell = new Gtk.CellRendererText();
 		col.PackStart(colCell, true);
 		col.AddAttribute(colCell, "text", index);
+	}
+
+	private void CreateClassTrees()
+	{
+		CreateTreeColumn(ref nvClassesExcluded, "Class", 0);
+		listStoreExcluded = new Gtk.ListStore(typeof(string));
+		nvClassesExcluded.Model = listStoreExcluded;
+
+		CreateTreeColumn(ref nvClassesIncluded, "Class", 0);
+		listStoreIncluded = new Gtk.ListStore(typeof(string));
+		nvClassesIncluded.Model = listStoreIncluded;
+	}
+
+	private void UpdateClasses()
+	{
+		listStoreIncluded.Clear();
+		listStoreExcluded.Clear();
+
+		if (categories.TryGetValue(cbeCategorySelect.ActiveText, out currentCategory)) {
+			foreach (string s in unicodeClasses) {
+				if (currentCategory.Contains(s)) {
+					listStoreIncluded.AppendValues(s);
+				} else {
+					listStoreExcluded.AppendValues(s);
+				}
+			}
+		}
 	}
 
 	private void UpdateResult()
@@ -128,6 +176,12 @@ public partial class MainWindow: Gtk.Window
 		tvConversionListStore.AppendValues("Symbol", pres.GetSymbol());
 	}
 
+	private void UpdateClassLabels()
+	{
+		lClassesExcluded.Text = "Available: " + listStoreExcluded.IterNChildren().ToString();
+		lClassesIncluded.Text = "Included: " + listStoreIncluded.IterNChildren().ToString();
+	}
+
 	protected void OnDeleteEvent(object sender, DeleteEventArgs a)
 	{
 		Application.Quit();
@@ -185,6 +239,7 @@ public partial class MainWindow: Gtk.Window
 		} else {
 			symbPresentation.SetRepresentation(SymbolPresentation.SymbRep.Symbol);
 		}  
+		UpdateSymbol();
 	}
 
 	protected void OnFbSymbolFontFontSet(object sender, EventArgs e)
@@ -214,5 +269,118 @@ public partial class MainWindow: Gtk.Window
 	protected void OnTvResultKeyPressEvent(object o, KeyPressEventArgs args)
 	{
 		eSearchBox.GrabFocus();
+	}
+
+	protected void OnBCreateCategoryClicked(object sender, EventArgs e)
+	{
+		string categoryName = cbeCategorySelect.ActiveText.Trim();
+		if (!categories.ContainsKey(categoryName)) {
+			categories.Add(categoryName, new Category(categoryName));
+			cbeCategorySelect.AppendText(categoryName);
+            int idx = categoryListStore.IterNChildren();
+            cbeCategorySelect.Active = idx;
+            UpdateClassLabels();
+		}
+	}
+
+	protected void OnBRemoveCategoryClicked(object sender, EventArgs e)
+	{
+		string categoryName = cbeCategorySelect.ActiveText;
+		int idx = cbeCategorySelect.Active;
+		cbeCategorySelect.RemoveText(idx);
+		categories.Remove(categoryName);
+		cbeCategorySelect.Active = 0;
+        UpdateClassLabels();
+	}
+
+	protected void OnCbeCategorySelectChanged(object sender, EventArgs e)
+	{
+		UpdateClasses();
+	}
+
+	protected void OnNvClassesExcludedCursorChanged(object sender, EventArgs e)
+	{
+		TreeSelection selection = (sender as TreeView).Selection;
+		TreeModel model;
+		if (selection.GetSelected(out model, out excludedClassIter)) {
+			selectedExcludedClass = listStoreExcluded.GetValue(excludedClassIter, 0).ToString();
+		}
+	}
+
+	protected void OnNvClassesIncludedCursorChanged(object sender, EventArgs e)
+	{
+		TreeSelection selection = (sender as TreeView).Selection;
+		TreeModel model;
+		if (selection.GetSelected(out model, out includedClassIter)) {
+			selectedIncludedClass = listStoreIncluded.GetValue(includedClassIter, 0).ToString();
+		}
+	}
+
+	private void SelectNextClassIncluded()
+	{
+		/* The idea was to select the item after the removed one
+			   however this is no working, the iterator gets invalid after remove */
+		/*			
+		listStoreIncluded.IterNext(ref includedClassIter);*/
+		nvClassesIncluded.GrabFocus();
+		listStoreIncluded.GetIterFirst(out includedClassIter);
+		if (listStoreIncluded.IterIsValid(includedClassIter)) {
+			nvClassesIncluded.Selection.SelectIter(includedClassIter);
+			// update selected class
+			selectedIncludedClass = listStoreIncluded.GetValue(includedClassIter, 0).ToString();
+		}
+	}
+
+	private void SelectNextClassExcluded()
+	{
+		/* The idea was to select the item after the removed one
+			   however this is no working, the iterator gets invalid after remove */
+
+		/*listStoreExcluded.IterNext(ref excludedClassIter);*/
+		nvClassesExcluded.GrabFocus();
+		listStoreExcluded.GetIterFirst(out excludedClassIter);
+		if (listStoreExcluded.IterIsValid(excludedClassIter)) {
+			nvClassesExcluded.Selection.SelectIter(excludedClassIter);
+			// update selected class
+			selectedExcludedClass = listStoreExcluded.GetValue(excludedClassIter, 0).ToString();
+		}
+	}
+
+	protected void OnBExcludeSymbolClassClicked(object sender, EventArgs e)
+	{
+		if (String.IsNullOrWhiteSpace(selectedIncludedClass)
+			|| !listStoreIncluded.IterIsValid(includedClassIter)) {
+			return;
+		}
+
+		if (currentCategory.Contains(selectedIncludedClass)) {
+			// Append selected class from includedClass to excluded classes
+			listStoreExcluded.AppendValues(selectedIncludedClass);
+			currentCategory.RemoveClass(selectedIncludedClass);
+			// Remove selected class from includedClass
+			listStoreIncluded.Remove(ref includedClassIter);
+
+			SelectNextClassIncluded();
+			UpdateClassLabels();
+		}
+	}
+
+	protected void OnBIncludeSymbolClassClicked(object sender, EventArgs e)
+	{
+		if (String.IsNullOrWhiteSpace(selectedExcludedClass) 
+			|| !listStoreExcluded.IterIsValid(excludedClassIter)) {
+			return;
+		}
+
+		if (!currentCategory.Contains(selectedExcludedClass)) {
+			// Append selected class from excludedClass to included classes
+			listStoreIncluded.AppendValues(selectedExcludedClass);
+			currentCategory.AddClass(selectedExcludedClass);
+			// Remove selected class from excludedClass
+			listStoreExcluded.Remove(ref excludedClassIter);
+
+			SelectNextClassExcluded();
+			UpdateClassLabels();
+		}
 	}
 }

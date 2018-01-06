@@ -79,6 +79,7 @@
     <Compile Include="SymbolPresentation.cs" />
     <Compile Include="SymbolConversion.cs" />
     <Compile Include="JsonParser.cs" />
+    <Compile Include="Category.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

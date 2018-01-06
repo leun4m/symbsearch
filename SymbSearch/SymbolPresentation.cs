@@ -56,7 +56,7 @@ namespace SymbSearch
 
 		public string GetDecimal()
 		{
-			return String.Format("{0:D4}", (int)symbol);
+			return String.Format("{0:D5}", (int)symbol);
 		}
 
 		public string GetHexadecimal()
