@@ -6,7 +6,7 @@ Tested with Ubuntu 16.04
 ### Mono and GTK#
 1. Install mono: [http://www.mono-project.com/download/]
 2. Install GTK#: `sudo apt-get install gtk-sharp2`
-3. Test if everything is fine, e.g. compile an example: `mcs hello.cs -pkg:gtk-sharp-2.0`
+3. Test if everything is fine, e.g. build an example: [http://www.mono-project.com/docs/getting-started/mono-basics/#gtk-hello-world] 
 
 ### MonoDevelop
 #### Latest version (recommended)
@@ -18,3 +18,8 @@ Tested with Ubuntu 16.04
 
 #### Stable version (might also work)
 1. `sudo apt install monodevelop`
+
+***
+
+## Windows
+Coming soon ...
