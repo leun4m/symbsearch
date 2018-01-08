@@ -5,8 +5,8 @@ using SymbSearch;
 
 public partial class MainWindow: Gtk.Window
 {
-	//private Parser parser = new Parser();
     private JsonParser parser = new JsonParser();
+    private CategoryContainer catParser = new CategoryContainer();
 	private HashSet<string> unicodeClasses;
 	private Gtk.ListStore tvListStore;
 	private Gtk.ListStore tvConversionListStore;
@@ -23,8 +23,6 @@ public partial class MainWindow: Gtk.Window
 	private TreeIter includedClassIter;
 	private string selectedExcludedClass;
 	private string selectedIncludedClass;
-	private Dictionary<string, Category> categories = new Dictionary<string, Category>();
-	private Category currentCategory;
 
 	public MainWindow() : base(Gtk.WindowType.Toplevel)
 	{
@@ -61,6 +59,9 @@ public partial class MainWindow: Gtk.Window
 		cbeCategorySelect.AddAttribute(cell, "text", 0);
 		categoryListStore = new ListStore(typeof(string));
 		cbeCategorySelect.Model = categoryListStore;
+        foreach (string s in catParser.GetCategoryNames()) {
+            categoryListStore.AppendValues(s);
+        }
 	}
 
 	private void CreateTree()
@@ -106,13 +107,12 @@ public partial class MainWindow: Gtk.Window
 		listStoreIncluded.Clear();
 		listStoreExcluded.Clear();
 
-		if (categories.TryGetValue(cbeCategorySelect.ActiveText, out currentCategory)) {
-			foreach (string s in unicodeClasses) {
-				if (currentCategory.Contains(s)) {
-					listStoreIncluded.AppendValues(s);
-				} else {
-					listStoreExcluded.AppendValues(s);
-				}
+        catParser.UpdateCurrentCategory(cbeCategorySelect.ActiveText);
+		foreach (string s in unicodeClasses) {
+            if (catParser.CurrentContainsClass(s)) {
+				listStoreIncluded.AppendValues(s);
+			} else {
+				listStoreExcluded.AppendValues(s);
 			}
 		}
 	}
@@ -120,7 +120,7 @@ public partial class MainWindow: Gtk.Window
 	private void UpdateResult()
 	{
 		tvListStore.Clear();
-		List<Symb> list = parser.FilterList(eSearchBox.Text.ToString(), cbCategory.ActiveText, caseSensitive);
+		List<Symb> list = parser.FilterList(eSearchBox.Text, cbCategory.ActiveText, caseSensitive);
 		foreach (Symb symb in list) {
 			tvListStore.AppendValues(symb.name, symb.sign.ToString(), symb.cat);
 		}
@@ -184,6 +184,7 @@ public partial class MainWindow: Gtk.Window
 
 	protected void OnDeleteEvent(object sender, DeleteEventArgs a)
 	{
+        catParser.SaveCategories();
 		Application.Quit();
 		a.RetVal = true;
 	}
@@ -198,7 +199,7 @@ public partial class MainWindow: Gtk.Window
 		UpdateResult();
 	}
 
-	private void RowToClipboard(RowActivatedArgs args)
+	private void RowToClipboard()
 	{
 		Gtk.Clipboard clipboard = Gtk.Clipboard.Get(Gdk.Atom.Intern("CLIPBOARD", false));
 		clipboard.Text = symbPresentation.GetPresentation();
@@ -207,18 +208,18 @@ public partial class MainWindow: Gtk.Window
 	protected void OnTvResultCursorChanged(object sender, EventArgs e)
 	{
 		TreeSelection selection = (sender as TreeView).Selection;
-		TreeModel model;
-		if (selection.GetSelected(out model, out tvIter)) {
-			UpdateSymbol();
-			eConversionInput.Text = currentSymbol.ToString();
-			cbConversionUnit.Active = 3;
-			ConvertInput();
-		}
-	}
+        if (selection.GetSelected(out TreeModel model, out tvIter))
+        {
+            UpdateSymbol();
+            eConversionInput.Text = currentSymbol.ToString();
+            cbConversionUnit.Active = 3;
+            ConvertInput();
+        }
+    }
 
 	protected void OnTvResultRowActivated(object o, RowActivatedArgs args)
 	{
-		RowToClipboard(args);
+		RowToClipboard();
 	}
 
 	protected void OnCCaseSensitiveToggled(object sender, EventArgs e)
@@ -274,9 +275,9 @@ public partial class MainWindow: Gtk.Window
 	protected void OnBCreateCategoryClicked(object sender, EventArgs e)
 	{
 		string categoryName = cbeCategorySelect.ActiveText.Trim();
-		if (!categories.ContainsKey(categoryName)) {
-			categories.Add(categoryName, new Category(categoryName));
-			cbeCategorySelect.AppendText(categoryName);
+        if (catParser.AddCategory(categoryName)) {
+            categoryListStore.AppendValues(categoryName);
+            //cbeCategorySelect.AppendText(categoryName);
             int idx = categoryListStore.IterNChildren();
             cbeCategorySelect.Active = idx;
             UpdateClassLabels();
@@ -288,7 +289,7 @@ public partial class MainWindow: Gtk.Window
 		string categoryName = cbeCategorySelect.ActiveText;
 		int idx = cbeCategorySelect.Active;
 		cbeCategorySelect.RemoveText(idx);
-		categories.Remove(categoryName);
+        catParser.RemoveCategory(categoryName);
 		cbeCategorySelect.Active = 0;
         UpdateClassLabels();
 	}
@@ -301,20 +302,20 @@ public partial class MainWindow: Gtk.Window
 	protected void OnNvClassesExcludedCursorChanged(object sender, EventArgs e)
 	{
 		TreeSelection selection = (sender as TreeView).Selection;
-		TreeModel model;
-		if (selection.GetSelected(out model, out excludedClassIter)) {
-			selectedExcludedClass = listStoreExcluded.GetValue(excludedClassIter, 0).ToString();
-		}
-	}
+        if (selection.GetSelected(out TreeModel model, out excludedClassIter))
+        {
+            selectedExcludedClass = listStoreExcluded.GetValue(excludedClassIter, 0).ToString();
+        }
+    }
 
 	protected void OnNvClassesIncludedCursorChanged(object sender, EventArgs e)
 	{
 		TreeSelection selection = (sender as TreeView).Selection;
-		TreeModel model;
-		if (selection.GetSelected(out model, out includedClassIter)) {
-			selectedIncludedClass = listStoreIncluded.GetValue(includedClassIter, 0).ToString();
-		}
-	}
+        if (selection.GetSelected(out TreeModel model, out includedClassIter))
+        {
+            selectedIncludedClass = listStoreIncluded.GetValue(includedClassIter, 0).ToString();
+        }
+    }
 
 	private void SelectNextClassIncluded()
 	{
@@ -353,11 +354,10 @@ public partial class MainWindow: Gtk.Window
 			return;
 		}
 
-		if (currentCategory.Contains(selectedIncludedClass)) {
+        if (catParser.RemoveClassFromCurrent(selectedIncludedClass)) {
 			// Append selected class from includedClass to excluded classes
 			listStoreExcluded.AppendValues(selectedIncludedClass);
-			currentCategory.RemoveClass(selectedIncludedClass);
-			// Remove selected class from includedClass
+            // Remove selected class from includedClass
 			listStoreIncluded.Remove(ref includedClassIter);
 
 			SelectNextClassIncluded();
@@ -372,10 +372,9 @@ public partial class MainWindow: Gtk.Window
 			return;
 		}
 
-		if (!currentCategory.Contains(selectedExcludedClass)) {
+        if (catParser.AddClassToCurrent(selectedExcludedClass)) {
 			// Append selected class from excludedClass to included classes
 			listStoreIncluded.AppendValues(selectedExcludedClass);
-			currentCategory.AddClass(selectedExcludedClass);
 			// Remove selected class from excludedClass
 			listStoreExcluded.Remove(ref excludedClassIter);
 

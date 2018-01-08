@@ -2,7 +2,6 @@
 using System.IO;
 using System.Collections.Generic;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace SymbSearch
 {
@@ -20,17 +19,15 @@ namespace SymbSearch
             public List<Entry> symbols;
         }
 
-        //private Dictionary<string, Symb> dictionary = new Dictionary<string, Symb>();
-
         private DataStruct data;
         private HashSet<string> categories = new HashSet<string>();
 
         public JsonParser()
         {
-            LoadJson();
+            LoadSymbols();
         }
 
-        public void LoadJson()
+        public void LoadSymbols()
         {
             using (StreamReader reader = new StreamReader(@"symbols.json"))
             {
@@ -44,7 +41,6 @@ namespace SymbSearch
             //categories.Add("all");
             foreach (Entry entry in data.symbols)
             {
-                //dictionary.Add(entry.c + " " + entry.n, new Symb(entry.n, (char)Convert.ToInt32(entry.s, 16), entry.c));
                 categories.Add(entry.c);
             }
         }
@@ -52,6 +48,11 @@ namespace SymbSearch
         public HashSet<string> GetCategories()
         {
             return categories;
+        }
+
+        public Symb EntryToSymb(Entry entry) {
+            char s = (char)Convert.ToInt16(entry.s, 16);
+            return new Symb(entry.n, s, entry.c);
         }
 
         public List<Symb> FilterList(String filtertext, String categoryName, bool caseSensitive)
@@ -85,13 +86,10 @@ namespace SymbSearch
                         break;
                     }
                 }
+
                 if (valid)
                 {
-                    Symb symb = new Symb();
-                    symb.cat = entry.c;
-                    symb.name = entry.n;
-                    symb.sign = (char)Convert.ToInt32(entry.s, 16);
-                    newList.Add(symb);
+                    newList.Add(EntryToSymb(entry));
                 }
             }
             return newList;
