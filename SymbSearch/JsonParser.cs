@@ -55,7 +55,7 @@ namespace SymbSearch
             return new Symb(entry.n, s, entry.c);
         }
 
-        public List<Symb> FilterList(String filtertext, String categoryName, bool caseSensitive)
+        public List<Symb> FilterList(String filtertext, CategoryManager catManager, bool caseSensitive)
         {
             List<Symb> newList = new List<Symb>();
             if (!caseSensitive)
@@ -66,7 +66,8 @@ namespace SymbSearch
 
             foreach (Entry entry in data.symbols)
             {
-                if (categoryName != "all" && categoryName != entry.c)
+                // class is in current category
+                if (!catManager.CurrentContainsClass(entry.c))
                 {
                     continue;
                 }

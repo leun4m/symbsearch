@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using System.Collections.Generic;
 using Gtk;
 using SymbSearch;
@@ -6,7 +7,7 @@ using SymbSearch;
 public partial class MainWindow: Gtk.Window
 {
     private JsonParser parser = new JsonParser();
-    private CategoryContainer catParser = new CategoryContainer();
+    private CategoryManager catManager = new CategoryManager();
 	private HashSet<string> unicodeClasses;
 	private Gtk.ListStore tvListStore;
 	private Gtk.ListStore tvConversionListStore;
@@ -26,30 +27,32 @@ public partial class MainWindow: Gtk.Window
 
 	public MainWindow() : base(Gtk.WindowType.Toplevel)
 	{
-		Build();
-		UpdateFont();
-		CreateClasses();
-		CreateCategories();
+        Build();
+        this.Title = "SymbSearch " 
+            + Assembly.GetExecutingAssembly().GetName().Version.Major
+            + "." + Assembly.GetExecutingAssembly().GetName().Version.Minor;
+        CreateClasses();
+        CreateCategories();
 		CreateTree();
 		CreateConversionTree();
 		CreateClassTrees();
-		UpdateClasses();
 		cbCategory.Active = 0;
-		cbPresentation.Active = 0;
-		cbConversionUnit.Active = 0;
-		UpdateResult();
-		eSearchBox.GrabFocus();
+        cbPresentation.Active = 0;
+        cbConversionUnit.Active = 0;
+        UpdateCategory();
+        UpdateClasses();
+        UpdateResult();
+        UpdateFont();
+        eSearchBox.GrabFocus();
 	}
 
 	private void CreateClasses()
 	{
-		unicodeClasses = parser.GetCategories();
+        unicodeClasses = parser.GetCategories();
 		CellRendererText cell = new CellRendererText();
 		cbCategory.AddAttribute(cell, "text", 0);
-		ListStore listStore = new ListStore(typeof(string));
-		cbCategory.Model = listStore;
-		foreach (string s in unicodeClasses) {
-			listStore.AppendValues(s);
+        foreach (string s in catManager.GetCategoryNames()) {
+            cbCategory.AppendText(s);
 		}
 	}
 
@@ -59,7 +62,7 @@ public partial class MainWindow: Gtk.Window
 		cbeCategorySelect.AddAttribute(cell, "text", 0);
 		categoryListStore = new ListStore(typeof(string));
 		cbeCategorySelect.Model = categoryListStore;
-        foreach (string s in catParser.GetCategoryNames()) {
+        foreach (string s in catManager.GetCategoryNames()) {
             categoryListStore.AppendValues(s);
         }
 	}
@@ -102,25 +105,31 @@ public partial class MainWindow: Gtk.Window
 		nvClassesIncluded.Model = listStoreIncluded;
 	}
 
-	private void UpdateClasses()
+    private void UpdateCategory()
+    {
+        catManager.UpdateCurrentCategory(cbCategory.ActiveText);
+    }
+
+    private void UpdateClasses()
 	{
 		listStoreIncluded.Clear();
 		listStoreExcluded.Clear();
 
-        catParser.UpdateCurrentCategory(cbeCategorySelect.ActiveText);
+        catManager.UpdateCurrentCategory(cbeCategorySelect.ActiveText);
 		foreach (string s in unicodeClasses) {
-            if (catParser.CurrentContainsClass(s)) {
+            if (catManager.CurrentContainsClass(s)) {
 				listStoreIncluded.AppendValues(s);
 			} else {
 				listStoreExcluded.AppendValues(s);
 			}
 		}
+        UpdateClassLabels();
 	}
 
 	private void UpdateResult()
 	{
 		tvListStore.Clear();
-		List<Symb> list = parser.FilterList(eSearchBox.Text, cbCategory.ActiveText, caseSensitive);
+        List<Symb> list = parser.FilterList(eSearchBox.Text, catManager, caseSensitive);
 		foreach (Symb symb in list) {
 			tvListStore.AppendValues(symb.name, symb.sign.ToString(), symb.cat);
 		}
@@ -184,7 +193,7 @@ public partial class MainWindow: Gtk.Window
 
 	protected void OnDeleteEvent(object sender, DeleteEventArgs a)
 	{
-        catParser.SaveCategories();
+        catManager.SaveCategories();
 		Application.Quit();
 		a.RetVal = true;
 	}
@@ -196,6 +205,7 @@ public partial class MainWindow: Gtk.Window
 
 	protected void OnCbCategoryChanged(object sender, EventArgs e)
 	{
+        UpdateCategory();
 		UpdateResult();
 	}
 
@@ -229,18 +239,26 @@ public partial class MainWindow: Gtk.Window
 
 	protected void OnCbPresentationChanged(object sender, EventArgs e)
 	{
-		if (cbPresentation.ActiveText == "Symbol") {
-			symbPresentation.SetRepresentation(SymbolPresentation.SymbRep.Symbol);
-		} else if (cbPresentation.ActiveText == "Decimal") {
-			symbPresentation.SetRepresentation(SymbolPresentation.SymbRep.Decimal);
-		} else if (cbPresentation.ActiveText == "Hexadecimal") {
-			symbPresentation.SetRepresentation(SymbolPresentation.SymbRep.Hexadecimal);
-		} else if (cbPresentation.ActiveText == "HTML Code") {
-			symbPresentation.SetRepresentation(SymbolPresentation.SymbRep.HtmlCode);
-		} else {
-			symbPresentation.SetRepresentation(SymbolPresentation.SymbRep.Symbol);
-		}  
-		UpdateSymbol();
+        switch (cbPresentation.ActiveText)
+        {
+            case "Symbol":
+                symbPresentation.SetRepresentation(SymbolPresentation.SymbRep.Symbol);
+                break;
+            case "Decimal":
+                symbPresentation.SetRepresentation(SymbolPresentation.SymbRep.Decimal);
+                break;
+            case "Hexadecimal":
+                symbPresentation.SetRepresentation(SymbolPresentation.SymbRep.Hexadecimal);
+                break;
+            case "HTML Code":
+                symbPresentation.SetRepresentation(SymbolPresentation.SymbRep.HtmlCode);
+                break;
+            default:
+                symbPresentation.SetRepresentation(SymbolPresentation.SymbRep.Symbol);
+                break;
+        }
+
+        UpdateSymbol();
 	}
 
 	protected void OnFbSymbolFontFontSet(object sender, EventArgs e)
@@ -275,7 +293,7 @@ public partial class MainWindow: Gtk.Window
 	protected void OnBCreateCategoryClicked(object sender, EventArgs e)
 	{
 		string categoryName = cbeCategorySelect.ActiveText.Trim();
-        if (catParser.AddCategory(categoryName)) {
+        if (catManager.AddCategory(categoryName)) {
             categoryListStore.AppendValues(categoryName);
             //cbeCategorySelect.AppendText(categoryName);
             int idx = categoryListStore.IterNChildren();
@@ -289,7 +307,7 @@ public partial class MainWindow: Gtk.Window
 		string categoryName = cbeCategorySelect.ActiveText;
 		int idx = cbeCategorySelect.Active;
 		cbeCategorySelect.RemoveText(idx);
-        catParser.RemoveCategory(categoryName);
+        catManager.RemoveCategory(categoryName);
 		cbeCategorySelect.Active = 0;
         UpdateClassLabels();
 	}
@@ -354,7 +372,7 @@ public partial class MainWindow: Gtk.Window
 			return;
 		}
 
-        if (catParser.RemoveClassFromCurrent(selectedIncludedClass)) {
+        if (catManager.RemoveClassFromCurrent(selectedIncludedClass)) {
 			// Append selected class from includedClass to excluded classes
 			listStoreExcluded.AppendValues(selectedIncludedClass);
             // Remove selected class from includedClass
@@ -372,7 +390,7 @@ public partial class MainWindow: Gtk.Window
 			return;
 		}
 
-        if (catParser.AddClassToCurrent(selectedExcludedClass)) {
+        if (catManager.AddClassToCurrent(selectedExcludedClass)) {
 			// Append selected class from excludedClass to included classes
 			listStoreIncluded.AppendValues(selectedExcludedClass);
 			// Remove selected class from excludedClass

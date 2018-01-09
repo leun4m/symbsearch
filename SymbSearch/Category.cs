@@ -5,12 +5,12 @@ using Newtonsoft.Json;
 
 namespace SymbSearch
 {
-    public class CategoryContainer
+    public class CategoryManager
     {
         private Dictionary<string, List<string>> data;
         private List<string> currentCategory = new List<string>();
 
-        public CategoryContainer()
+        public CategoryManager()
         {
             LoadCategories();    
         }
@@ -65,6 +65,11 @@ namespace SymbSearch
         public List<string> GetCategoryNames()
         {
             return new List<string>(data.Keys);
+        }
+
+        public List<string> GetCurrentClasses()
+        {
+            return currentCategory;
         }
 
         public bool CurrentContainsClass(string name)
