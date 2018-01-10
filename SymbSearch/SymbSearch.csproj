@@ -80,9 +80,12 @@
     <Compile Include="SymbolConversion.cs" />
     <Compile Include="JsonParser.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="CategoryTab.cs" />
+    <Compile Include="ConversionTab.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Scripts and Symbols.txt" />
   </ItemGroup>
 </Project>

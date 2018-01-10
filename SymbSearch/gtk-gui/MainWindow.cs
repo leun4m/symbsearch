@@ -5,7 +5,7 @@ public partial class MainWindow
 {
 	private global::Gtk.VBox vbox1;
 
-	private global::Gtk.Notebook notebook1;
+	private global::Gtk.Notebook nbMain;
 
 	private global::Gtk.VBox vbox2;
 
@@ -127,11 +127,11 @@ public partial class MainWindow
 		this.vbox1.Name = "vbox1";
 		this.vbox1.Spacing = 6;
 		// Container child vbox1.Gtk.Box+BoxChild
-		this.notebook1 = new global::Gtk.Notebook();
-		this.notebook1.CanFocus = true;
-		this.notebook1.Name = "notebook1";
-		this.notebook1.CurrentPage = 4;
-		// Container child notebook1.Gtk.Notebook+NotebookChild
+		this.nbMain = new global::Gtk.Notebook();
+		this.nbMain.CanFocus = true;
+		this.nbMain.Name = "nbMain";
+		this.nbMain.CurrentPage = 0;
+		// Container child nbMain.Gtk.Notebook+NotebookChild
 		this.vbox2 = new global::Gtk.VBox();
 		this.vbox2.Name = "vbox2";
 		this.vbox2.Spacing = 6;
@@ -210,14 +210,14 @@ public partial class MainWindow
 		this.vbox2.Add(this.GtkScrolledWindow);
 		global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.GtkScrolledWindow]));
 		w8.Position = 2;
-		this.notebook1.Add(this.vbox2);
+		this.nbMain.Add(this.vbox2);
 		// Notebook tab
 		this.lTabMain = new global::Gtk.Label();
 		this.lTabMain.Name = "lTabMain";
 		this.lTabMain.LabelProp = global::Mono.Unix.Catalog.GetString("Search");
-		this.notebook1.SetTabLabel(this.vbox2, this.lTabMain);
+		this.nbMain.SetTabLabel(this.vbox2, this.lTabMain);
 		this.lTabMain.ShowAll();
-		// Container child notebook1.Gtk.Notebook+NotebookChild
+		// Container child nbMain.Gtk.Notebook+NotebookChild
 		this.vbox4 = new global::Gtk.VBox();
 		this.vbox4.Name = "vbox4";
 		this.vbox4.Spacing = 6;
@@ -283,16 +283,16 @@ public partial class MainWindow
 		this.vbox4.Add(this.GtkScrolledWindow1);
 		global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.GtkScrolledWindow1]));
 		w16.Position = 2;
-		this.notebook1.Add(this.vbox4);
-		global::Gtk.Notebook.NotebookChild w17 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1[this.vbox4]));
+		this.nbMain.Add(this.vbox4);
+		global::Gtk.Notebook.NotebookChild w17 = ((global::Gtk.Notebook.NotebookChild)(this.nbMain[this.vbox4]));
 		w17.Position = 1;
 		// Notebook tab
 		this.lTabConversion = new global::Gtk.Label();
 		this.lTabConversion.Name = "lTabConversion";
 		this.lTabConversion.LabelProp = global::Mono.Unix.Catalog.GetString("Conversion");
-		this.notebook1.SetTabLabel(this.vbox4, this.lTabConversion);
+		this.nbMain.SetTabLabel(this.vbox4, this.lTabConversion);
 		this.lTabConversion.ShowAll();
-		// Container child notebook1.Gtk.Notebook+NotebookChild
+		// Container child nbMain.Gtk.Notebook+NotebookChild
 		this.vbox5 = new global::Gtk.VBox();
 		this.vbox5.Name = "vbox5";
 		this.vbox5.Spacing = 6;
@@ -461,16 +461,16 @@ public partial class MainWindow
 		this.vbox5.Add(this.hbox7);
 		global::Gtk.Box.BoxChild w36 = ((global::Gtk.Box.BoxChild)(this.vbox5[this.hbox7]));
 		w36.Position = 2;
-		this.notebook1.Add(this.vbox5);
-		global::Gtk.Notebook.NotebookChild w37 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1[this.vbox5]));
+		this.nbMain.Add(this.vbox5);
+		global::Gtk.Notebook.NotebookChild w37 = ((global::Gtk.Notebook.NotebookChild)(this.nbMain[this.vbox5]));
 		w37.Position = 2;
 		// Notebook tab
 		this.lTabCategories = new global::Gtk.Label();
 		this.lTabCategories.Name = "lTabCategories";
 		this.lTabCategories.LabelProp = global::Mono.Unix.Catalog.GetString("Categories");
-		this.notebook1.SetTabLabel(this.vbox5, this.lTabCategories);
+		this.nbMain.SetTabLabel(this.vbox5, this.lTabCategories);
 		this.lTabCategories.ShowAll();
-		// Container child notebook1.Gtk.Notebook+NotebookChild
+		// Container child nbMain.Gtk.Notebook+NotebookChild
 		this.vbox3 = new global::Gtk.VBox();
 		this.vbox3.Name = "vbox3";
 		this.vbox3.Spacing = 6;
@@ -566,16 +566,16 @@ public partial class MainWindow
 		w46.Position = 2;
 		w46.Expand = false;
 		w46.Fill = false;
-		this.notebook1.Add(this.vbox3);
-		global::Gtk.Notebook.NotebookChild w47 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1[this.vbox3]));
+		this.nbMain.Add(this.vbox3);
+		global::Gtk.Notebook.NotebookChild w47 = ((global::Gtk.Notebook.NotebookChild)(this.nbMain[this.vbox3]));
 		w47.Position = 3;
 		// Notebook tab
 		this.lTabOptions = new global::Gtk.Label();
 		this.lTabOptions.Name = "lTabOptions";
 		this.lTabOptions.LabelProp = global::Mono.Unix.Catalog.GetString("Options");
-		this.notebook1.SetTabLabel(this.vbox3, this.lTabOptions);
+		this.nbMain.SetTabLabel(this.vbox3, this.lTabOptions);
 		this.lTabOptions.ShowAll();
-		// Container child notebook1.Gtk.Notebook+NotebookChild
+		// Container child nbMain.Gtk.Notebook+NotebookChild
 		this.GtkScrolledWindow4 = new global::Gtk.ScrolledWindow();
 		this.GtkScrolledWindow4.Name = "GtkScrolledWindow4";
 		this.GtkScrolledWindow4.ShadowType = ((global::Gtk.ShadowType)(1));
@@ -594,17 +594,17 @@ THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMP
 		this.textview1.CursorVisible = false;
 		this.textview1.WrapMode = ((global::Gtk.WrapMode)(2));
 		this.GtkScrolledWindow4.Add(this.textview1);
-		this.notebook1.Add(this.GtkScrolledWindow4);
-		global::Gtk.Notebook.NotebookChild w49 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1[this.GtkScrolledWindow4]));
+		this.nbMain.Add(this.GtkScrolledWindow4);
+		global::Gtk.Notebook.NotebookChild w49 = ((global::Gtk.Notebook.NotebookChild)(this.nbMain[this.GtkScrolledWindow4]));
 		w49.Position = 4;
 		// Notebook tab
 		this.lTabAbout = new global::Gtk.Label();
 		this.lTabAbout.Name = "lTabAbout";
 		this.lTabAbout.LabelProp = global::Mono.Unix.Catalog.GetString("About");
-		this.notebook1.SetTabLabel(this.GtkScrolledWindow4, this.lTabAbout);
+		this.nbMain.SetTabLabel(this.GtkScrolledWindow4, this.lTabAbout);
 		this.lTabAbout.ShowAll();
-		this.vbox1.Add(this.notebook1);
-		global::Gtk.Box.BoxChild w50 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.notebook1]));
+		this.vbox1.Add(this.nbMain);
+		global::Gtk.Box.BoxChild w50 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.nbMain]));
 		w50.Position = 0;
 		this.Add(this.vbox1);
 		if ((this.Child != null))
@@ -615,6 +615,7 @@ THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMP
 		this.DefaultHeight = 374;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
+		this.nbMain.SwitchPage += new global::Gtk.SwitchPageHandler(this.OnNbMainSwitchPage);
 		this.eSearchBox.Changed += new global::System.EventHandler(this.OnESearchBoxChanged);
 		this.eSearchBox.KeyPressEvent += new global::Gtk.KeyPressEventHandler(this.OnESearchBoxKeyPressEvent);
 		this.cbCategory.Changed += new global::System.EventHandler(this.OnCbCategoryChanged);

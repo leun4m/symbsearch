@@ -18,10 +18,11 @@
         <property name="MemberName" />
         <property name="Spacing">6</property>
         <child>
-          <widget class="Gtk.Notebook" id="notebook1">
+          <widget class="Gtk.Notebook" id="nbMain">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
-            <property name="CurrentPage">4</property>
+            <property name="CurrentPage">0</property>
+            <signal name="SwitchPage" handler="OnNbMainSwitchPage" />
             <child>
               <widget class="Gtk.VBox" id="vbox2">
                 <property name="MemberName" />
